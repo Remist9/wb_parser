@@ -20,20 +20,39 @@ def get_category():
     response = requests.get(url=url, headers=headers)
     print("Статус-код:", response.status_code)
 
-    with open("responce.json", "w", encoding="utf-8") as f:
+    with open("response.json", "w", encoding="utf-8") as f:
         # буфер что-бы не спамить сайт ВБ запросами
         json.dump(response.json(), f, ensure_ascii=False, indent=4)
     return
 
 
 def items_check():
-    category = []
+    with open("response.json", "r", encoding="utf-8") as f:
+        response = json.load(f)
+
+    with open("categorys.json", "w", encoding="utf-8") as f:
+        json.dump({}, f, ensure_ascii=False, indent=4)
+    categorys = {}
 
     for i in response:
-        pass
+        if "childs" in i:
+            category_name = i.get("name")
+            sub_categories = i["childs"]
+            for z in sub_categories:
+                if "seo" in z:
+                    sub_category_name = z.get("seo")
+                else:
+                    sub_category_name = category_name + "->" + z.get("name")
+                sub_category_url = "https://www.wildberries.ru" + z.get("url")
+                categorys[sub_category_name] = sub_category_url
+
+    with open("categorys.json", "w", encoding="utf-8") as f:
+        json.dump(categorys, f, ensure_ascii=False, indent=4)
+
     return
 
 
 if __name__ == '__main__':
     # get_category() #спарсили json где все категории и суб-категории
+    items_check()
     pass
