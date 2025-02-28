@@ -1,0 +1,19 @@
+[project]
+name = "wb-parser"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Remist9",email = "serega189ser@mail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "lxml (>=5.3.1,<6.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "beautifulsoup4 (>=4.13.3,<5.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
