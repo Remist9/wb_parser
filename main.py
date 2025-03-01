@@ -3,6 +3,8 @@ import time
 from time import sleep
 import json
 from configs.proxy import proxy
+from configs.database import client
+from datetime import datetime
 
 
 def get_category():
@@ -56,6 +58,21 @@ def items_check(response):
     return
 
 
+def database(unic):
+
+    double_check = f"""
+        SELECT sku FROM all_sku WHERE sku IN({', '.join(map(str, unic))})
+    """
+    result = client.execute(double_check)
+    existing_skus = set([sku[0] for sku in result])
+
+    double_check = list(set(unic)-existing_skus)
+    updated_list = [(item, datetime.now(), 1) for item in double_check]
+
+    client.execute(
+        'INSERT INTO all_sku (sku, date_add, status) VALUES', updated_list)
+
+
 def category_parser():
     with open("categorys.json", "r", encoding="utf-8") as f:
         categorys = json.load(f)
@@ -76,7 +93,7 @@ def category_parser():
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36',
     }
 
-    unic = {}
+    unic = []
 
     for i in categorys:
         cat_shard = list(categorys[i].keys())[0]
@@ -92,18 +109,14 @@ def category_parser():
                         if req.status_code == 426:
                             print(
                                 f"Ошибка 426 на странице {page}. Попробую снова через 5 секунд.")
-                            time.sleep(5)
+                            time.sleep(7)
                             continue
                         if req.status_code == 200:
                             try:
                                 data = req.json()
                                 print("Статус-код:", req.status_code)
                                 for i in data.get("data").get("products"):
-                                    item_id = i.get("id")
-                                    if item_id not in unic:
-                                        unic[item_id] = 1
-                                    else:
-                                        unic[item_id] = 0
+                                    unic.append(i.get("id"))
                                 print(f"Старница {page} завершена")
                                 break
                             except requests.exceptions.JSONDecodeError:
@@ -121,8 +134,10 @@ def category_parser():
                         print(f"Произошла ошибка на странице {page}: {e}")
                         time.sleep(5)
                         continue
-
+            database(unic)
+            unic = []
             print("Категория завершена")
+            time.sleep(7)
     print("Работа выполнена")
 
     with open("articul.json", "w", encoding="utf-8") as f:
