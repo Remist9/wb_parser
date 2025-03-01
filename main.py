@@ -26,8 +26,6 @@ def get_category():
 
 
 def items_check(response):
-    with open("categorys.json", "w", encoding="utf-8") as f:
-        json.dump({}, f, ensure_ascii=False, indent=4)  # обнуление
 
     categorys = {}
 
@@ -52,10 +50,7 @@ def items_check(response):
                     categorys[z.get("id")] = {
                         z.get("shard"): z.get("query")}
 
-    with open("categorys.json", "w", encoding="utf-8") as f:
-        json.dump(categorys, f, ensure_ascii=False, indent=4)
-
-    return
+    return categorys
 
 
 def database(unic):
@@ -73,9 +68,7 @@ def database(unic):
         'INSERT INTO all_sku (sku, date_add, status) VALUES', updated_list)
 
 
-def category_parser():
-    with open("categorys.json", "r", encoding="utf-8") as f:
-        categorys = json.load(f)
+def category_parser(categorys):
 
     headers = {
         'accept': '*/*',
@@ -140,11 +133,6 @@ def category_parser():
             time.sleep(7)
     print("Работа выполнена")
 
-    with open("articul.json", "w", encoding="utf-8") as f:
-        json.dump(unic, f, ensure_ascii=False, indent=4)
-
 
 if __name__ == '__main__':
-    # items_check(get_category())
-    category_parser()
-    pass
+    category_parser(items_check(get_category()))
