@@ -1,434 +1,6962 @@
 {
-    "Женские блузки и рубашки": "https://www.wildberries.ru/catalog/zhenshchinam/odezhda/bluzki-i-rubashki",
-    "Женские брюки": "https://www.wildberries.ru/catalog/zhenshchinam/odezhda/bryuki-i-shorty",
-    "Верхняя женская одежда": "https://www.wildberries.ru/catalog/zhenshchinam/odezhda/verhnyaya-odezhda",
-    "Женские джемперы и кардиганы": "https://www.wildberries.ru/catalog/zhenshchinam/odezhda/dzhempery-i-kardigany",
-    "Женские джинсы и джеггинсы": "https://www.wildberries.ru/catalog/zhenshchinam/odezhda/dzhinsy-dzhegginsy",
-    "Комбинезоны и полукомбинезоны женские": "https://www.wildberries.ru/catalog/zhenshchinam/odezhda/kombinezony-polukombinezony",
-    "Женские костюмы": "https://www.wildberries.ru/catalog/zhenshchinam/odezhda/kostyumy",
-    "Лонгсливы женские": "https://www.wildberries.ru/catalog/zhenshchinam/odezhda/longslivy",
-    "Женские пиджаки и жакеты": "https://www.wildberries.ru/catalog/zhenshchinam/odezhda/pidzhaki-i-zhakety",
-    "Женские платья": "https://www.wildberries.ru/catalog/zhenshchinam/odezhda/platya",
-    "Толстовки женские": "https://www.wildberries.ru/catalog/zhenshchinam/odezhda/tolstovki",
-    "Туники женские": "https://www.wildberries.ru/catalog/zhenshchinam/odezhda/tuniki",
-    "Женские футболки и топы": "https://www.wildberries.ru/catalog/zhenshchinam/odezhda/futbolki-i-topy",
-    "Женщинам->Халаты": "https://www.wildberries.ru/catalog/zhenshchinam/odezhda-dlya-doma/halaty",
-    "Шорты женские": "https://www.wildberries.ru/catalog/zhenshchinam/odezhda/bryuki-i-shorty/shorty",
-    "Женские юбки": "https://www.wildberries.ru/catalog/zhenshchinam/odezhda/yubki",
-    "Женское белье": "https://www.wildberries.ru/catalog/zhenshchinam/bele",
-    "Женская одежда больших размеров": "https://www.wildberries.ru/catalog/zhenshchinam/bolshie-razmery",
-    "Товары для беременных и кормящих мам": "https://www.wildberries.ru/catalog/budushchie-mamy",
-    "Женская одежда для высоких": "https://www.wildberries.ru/catalog/zhenshchinam/dlya-vysokih",
-    "Женская одежда для невысоких": "https://www.wildberries.ru/catalog/zhenshchinam/dlya-nevysokih",
-    "Женская домашняя одежда": "https://www.wildberries.ru/catalog/zhenshchinam/odezhda/odezhda-dlya-doma",
-    "Одежда для офиса женская": "https://www.wildberries.ru/catalog/zhenshchinam/ofis",
-    "Женская пляжная одежда и аксессуары": "https://www.wildberries.ru/catalog/zhenshchinam/plyazhnaya-moda",
-    "Женская религиозная одежда": "https://www.wildberries.ru/catalog/zhenshchinam/religioznaya",
-    "Одежда и обувь для свадьбы": "https://www.wildberries.ru/catalog/svadba",
-    "Женская спецодежда и аксессуары": "https://www.wildberries.ru/catalog/zhenshchinam/spetsodezhda",
-    "Подарки для женщин": "https://www.wildberries.ru/catalog/podarki/zhenshchinam",
-    "Детская обувь": "https://www.wildberries.ru/catalog/obuv/detskaya",
-    "Обувь для новорожденных": "https://www.wildberries.ru/catalog/obuv/dlya-novorozhdennyh",
-    "Женская обувь": "https://www.wildberries.ru/catalog/obuv/zhenskaya",
-    "Мужская обувь": "https://www.wildberries.ru/catalog/obuv/muzhskaya",
-    "Обувь->Спецобувь": "https://www.wildberries.ru/catalog/obuv/spetsobuv",
-    "Обувь->Аксессуары для обуви": "https://www.wildberries.ru/catalog/obuv/aksessuary-dlya-obuvi",
-    "Одежда для девочек": "https://www.wildberries.ru/catalog/detyam/dlya-devochek",
-    "Одежда для мальчиков": "https://www.wildberries.ru/catalog/detyam/odezhda/dlya-malchikov",
-    "Одежда для новорожденных": "https://www.wildberries.ru/catalog/detyam/odezhda/dlya-novorozhdennyh",
-    "Детям->Детская электроника": "https://www.wildberries.ru/catalog/elektronika/detskaya-elektronika",
-    "Детям->Конструкторы": "https://www.wildberries.ru/catalog/detyam/konstruktory",
-    "Детям->Детский транспорт": "https://www.wildberries.ru/catalog/sport/dlya-detey/detskiy-transport",
-    "Товары для переноски новорожденных": "https://www.wildberries.ru/catalog/detyam/tovary-dlya-malysha/peredvizhenie",
-    "Детям->Детское питание": "https://www.wildberries.ru/catalog/detyam/detskoe-pitanie",
-    "Детям->Детская комната": "https://www.wildberries.ru/catalog/detyam/detskaya-komnata",
-    "Детская религиозная одежда": "https://www.wildberries.ru/catalog/detyam/religioznaya",
-    "Товары для малышей": "https://www.wildberries.ru/catalog/detyam/tovary-dlya-malysha",
-    "Подгузники для новорожденных": "https://www.wildberries.ru/catalog/detyam/tovary-dlya-malysha/podguzniki/podguzniki-detskie",
-    "Подарки для детей": "https://www.wildberries.ru/catalog/podarki/detyam",
-    "Мужские брюки": "https://www.wildberries.ru/catalog/muzhchinam/odezhda/bryuki-i-shorty",
-    "Мужская верхняя одежда": "https://www.wildberries.ru/catalog/muzhchinam/odezhda/verhnyaya-odezhda",
-    "Мужские джемперы и кардиганы": "https://www.wildberries.ru/catalog/muzhchinam/odezhda/dzhempery-i-kardigany",
-    "Мужские джинсы": "https://www.wildberries.ru/catalog/muzhchinam/odezhda/dzhinsy",
-    "Мужские комбинезоны и полукомбинезоны": "https://www.wildberries.ru/catalog/muzhchinam/odezhda/kombinezony",
-    "Мужские костюмы": "https://www.wildberries.ru/catalog/muzhchinam/odezhda/kostyumy",
-    "Мужские лонгсливы": "https://www.wildberries.ru/catalog/muzhchinam/odezhda/longslivy",
-    "Мужчинам->Майки": "https://www.wildberries.ru/catalog/muzhchinam/mayki",
-    "Мужские пиджаки и жакеты": "https://www.wildberries.ru/catalog/muzhchinam/odezhda/pidzhaki-i-zhakety",
-    "Мужчинам->Пижамы": "https://www.wildberries.ru/catalog/muzhchinam/pizhamy",
-    "Мужские рубашки": "https://www.wildberries.ru/catalog/muzhchinam/odezhda/rubashki",
-    "Мужские толстовки": "https://www.wildberries.ru/catalog/muzhchinam/odezhda/tolstovki",
-    "Мужские футболки": "https://www.wildberries.ru/catalog/muzhchinam/odezhda/futbolki-i-mayki",
-    "Мужские футболки поло": "https://www.wildberries.ru/catalog/muzhchinam/futbolki-polo",
-    "Мужчинам->Халаты": "https://www.wildberries.ru/catalog/muzhchinam/halaty",
-    "Мужские шорты": "https://www.wildberries.ru/catalog/muzhchinam/odezhda/bryuki-i-shorty/shorty",
-    "Мужское белье": "https://www.wildberries.ru/catalog/muzhchinam/bele",
-    "Мужская одежда больших размеров": "https://www.wildberries.ru/catalog/muzhchinam/bolshie-razmery",
-    "Мужская одежда для высоких": "https://www.wildberries.ru/catalog/muzhchinam/dlya-vysokih",
-    "Мужская одежда для невысоких": "https://www.wildberries.ru/catalog/muzhchinam/dlya-nevysokih",
-    "Мужская домашняя одежда": "https://www.wildberries.ru/catalog/muzhchinam/odezhda/odezhda-dlya-doma",
-    "Офисная одежда мужская": "https://www.wildberries.ru/catalog/muzhchinam/ofis",
-    "Мужская пляжная одежда и аксессуары": "https://www.wildberries.ru/catalog/muzhchinam/plyazhnay-odezhda",
-    "Религиозная мужская одежда": "https://www.wildberries.ru/catalog/muzhchinam/religioznaya",
-    "Мужские костюмы и обувь на свадьбу": "https://www.wildberries.ru/catalog/muzhchinam/svadba",
-    "Мужская спецодежда и аксессуары": "https://www.wildberries.ru/catalog/muzhchinam/spetsodezhda",
-    "Подарки для мужчин": "https://www.wildberries.ru/catalog/podarki/muzhchinam",
-    "Товары для ванной": "https://www.wildberries.ru/catalog/dom-i-dacha/vannaya",
-    "Товары для кухни": "https://www.wildberries.ru/catalog/dom-i-dacha/kuhnya",
-    "Дом->Предметы интерьера": "https://www.wildberries.ru/catalog/dlya-doma/predmety-interera",
-    "Товары для спальни": "https://www.wildberries.ru/catalog/dom/spalnya",
-    "Товары для гостиной": "https://www.wildberries.ru/catalog/dom/gostinnaya",
-    "Товары для детской комнаты": "https://www.wildberries.ru/catalog/dom/detskaya",
-    "Товары для досуга и творчества": "https://www.wildberries.ru/catalog/dom/dosug-i-tvorchestvo",
-    "Товары для праздника": "https://www.wildberries.ru/catalog/dlya-doma/vse-dlya-prazdnika",
-    "Дом->Зеркала": "https://www.wildberries.ru/catalog/dom/zerkala",
-    "Дом->Коврики": "https://www.wildberries.ru/catalog/dlya-doma/predmety-interera/kovriki",
-    "Дом->Кронштейны": "https://www.wildberries.ru/catalog/dlya-doma/mebel/kronshteiny",
-    "Освещение для квартиры": "https://www.wildberries.ru/catalog/dom/osveshchenie",
-    "Дом->Для курения": "https://www.wildberries.ru/catalog/dom/dlya-kureniya",
-    "Товары для отдыха на природе": "https://www.wildberries.ru/catalog/dom-i-dacha/otdyh-na-prirode",
-    "Дом->Парфюмерия для дома": "https://www.wildberries.ru/catalog/dlya-doma/predmety-interera/parfyumeriya",
-    "Товары для прихожей": "https://www.wildberries.ru/catalog/dom/prihozhaya",
-    "Предметы религии": "https://www.wildberries.ru/catalog/dlya-doma/predmety-religii",
-    "Дом->Сувенирная продукция": "https://www.wildberries.ru/catalog/dom-i-dacha/predmety-interera/suvenirnaya-produktsiya",
-    "Дом->Хозяйственные товары": "https://www.wildberries.ru/catalog/dlya-doma/bytovaya-himiya/bytovaya-himiya",
-    "Дом->Хранение вещей": "https://www.wildberries.ru/catalog/dom/hranenie-veshchey",
-    "Дом->Цветы, вазы и кашпо": "https://www.wildberries.ru/catalog/dlya-doma/predmety-interera/tsvety-vazy-kashpo",
-    "Дом->Шторы": "https://www.wildberries.ru/catalog/dom/shtory",
-    "Аксессуары для косметики": "https://www.wildberries.ru/catalog/krasota/aksessuary",
-    "Косметика для волос": "https://www.wildberries.ru/catalog/krasota/volosy",
-    "Красота->Аптечная косметика": "https://www.wildberries.ru/catalog/krasota/aptechnaya-kosmetika",
-    "Красота->Детская декоративная косметика": "https://www.wildberries.ru/catalog/krasota/detskaya-dekorativnaya-kosmetika",
-    "Средства защиты от солнца и загара": "https://www.wildberries.ru/catalog/krasota/zashchita-ot-solntsa",
-    "Товары для мам и малышей": "https://www.wildberries.ru/catalog/krasota/dlya-mam-i-malyshey",
-    "Красота->Израильская косметика": "https://www.wildberries.ru/catalog/krasota/izrailskaya-kosmetika",
-    "Красота->Инструменты для парикмахеров": "https://www.wildberries.ru/catalog/krasota/instrumenty-dlya-parikmaherov",
-    "Корейская косметика": "https://www.wildberries.ru/catalog/krasota/koreyskie-brendy",
-    "Косметические аппараты": "https://www.wildberries.ru/catalog/elektronika/kosmeticheskie-apparaty",
-    "Косметика для макияжа": "https://www.wildberries.ru/catalog/krasota/makiyazh",
-    "Мужская косметика": "https://www.wildberries.ru/catalog/krasota/muzhskaya-liniya",
-    "Красота->Наборы для ухода": "https://www.wildberries.ru/catalog/krasota/nabory-dlya-ukxoda",
-    "Средства для ногтей": "https://www.wildberries.ru/catalog/krasota/nogti",
-    "Красота->Органическая косметика": "https://www.wildberries.ru/catalog/krasota/organicheskaya-kosmetika",
-    "Красота->Парфюмерия": "https://www.wildberries.ru/catalog/krasota/parfyumeriya",
-    "Подарочные наборы косметики": "https://www.wildberries.ru/catalog/krasota/podarochnye-nabory",
-    "Красота->Профессиональная косметика": "https://www.wildberries.ru/catalog/krasota/professionalnaya-kosmetika/krasota",
-    "Красота->Средства личной гигиены": "https://www.wildberries.ru/catalog/krasota/sredstva-lichnoy-gigieny",
-    "Средства по уходу за зубами": "https://www.wildberries.ru/catalog/krasota/uhod-za-zubami",
-    "Косметика по уходу за кожей": "https://www.wildberries.ru/catalog/krasota/uhod-za-kozhey",
-    "Красота->Мебель для салонов красоты": "https://www.wildberries.ru/catalog/dom/mebel/mebel-dlya-salonov-krasoty",
-    "Аксессуары->Аксессуары для волос": "https://www.wildberries.ru/catalog/aksessuary/aksessuary-dlya-volos",
-    "Декор для одежды": "https://www.wildberries.ru/catalog/aksessuary/dekor-dlya-odezhdy",
-    "Аксессуары->Бижутерия": "https://www.wildberries.ru/catalog/aksessuary/bizhuteriya",
-    "Аксессуары->Ювелирные изделия": "https://www.wildberries.ru/catalog/yuvelirnye-ukrasheniya",
-    "Аксессуары->Веера": "https://www.wildberries.ru/catalog/aksessuary/veera",
-    "Аксессуары->Галстуки и бабочки": "https://www.wildberries.ru/catalog/aksessuary/galstuki-i-babochki",
-    "Аксессуары->Головные уборы": "https://www.wildberries.ru/catalog/aksessuary/golovnye-ubory",
-    "Аксессуары->Зеркальца": "https://www.wildberries.ru/catalog/aksessuary/zerkaltsa",
-    "Аксессуары->Зонты": "https://www.wildberries.ru/catalog/aksessuary/zonty",
-    "Аксессуары->Кошельки и кредитницы": "https://www.wildberries.ru/catalog/aksessuary/koshelki-i-kreditnitsy",
-    "Аксессуары->Маски для сна": "https://www.wildberries.ru/catalog/aksessuary/maski-dlya-sna",
-    "Аксессуары->Носовые платки": "https://www.wildberries.ru/catalog/aksessuary/nosovye-platki",
-    "Аксессуары->Очки и футляры": "https://www.wildberries.ru/catalog/aksessuary/ochki-i-futlyary",
-    "Аксессуары->Перчатки и варежки": "https://www.wildberries.ru/catalog/aksessuary/perchatki-i-varezhki",
-    "Аксессуары->Платки и шарфы": "https://www.wildberries.ru/catalog/aksessuary/platki-i-sharfy",
-    "Религиозные аксессуары": "https://www.wildberries.ru/catalog/aksessuary/religioznye",
-    "Аксессуары->Ремни и пояса": "https://www.wildberries.ru/catalog/aksessuary/remni-i-poyasa",
-    "Аксессуары->Сумки и рюкзаки": "https://www.wildberries.ru/catalog/aksessuary/sumki-i-ryukzaki",
-    "Аксессуары->Часы и ремешки": "https://www.wildberries.ru/catalog/aksessuary/chasy-i-remeshki",
-    "Аксессуары->Чемоданы и защита багажа": "https://www.wildberries.ru/catalog/muzhchinam/aksessuary/chemodany-i-dorozhnye-sumki",
-    "Автоэлектроника": "https://www.wildberries.ru/catalog/elektronika/avtoelektronika",
-    "Электроника->Гарнитуры и наушники": "https://www.wildberries.ru/catalog/elektronika/igry-i-razvlecheniya/aksessuary/garnitury",
-    "Электроника->Детская электроника": "https://www.wildberries.ru/catalog/elektronika/detskaya-elektronika",
-    "Игровые консоли": "https://www.wildberries.ru/catalog/elektronika/razvlecheniya-i-gadzhety/igrovye-konsoli",
-    "Электроника->Кабели и зарядные устройства": "https://www.wildberries.ru/catalog/elektronika/kabeli-i-zaryadnye-ustroystva",
-    "Электроника->Музыка и видео": "https://www.wildberries.ru/catalog/elektronika/muzyka-i-video",
-    "Электроника->Ноутбуки и компьютеры": "https://www.wildberries.ru/catalog/elektronika/noutbuki-periferiya",
-    "Электроника->Офисная техника": "https://www.wildberries.ru/catalog/elektronika/ofisnaya-tehnika",
-    "Электроника->Развлечения и гаджеты": "https://www.wildberries.ru/catalog/elektronika/razvlecheniya-i-gadzhety",
-    "Электроника->Сетевое оборудование": "https://www.wildberries.ru/catalog/elektronika/setevoe-oborudovanie",
-    "Товары для безопасности дома": "https://www.wildberries.ru/catalog/elektronika/bezopasnost-doma",
-    "Электроника->Смартфоны и телефоны": "https://www.wildberries.ru/catalog/elektronika/smartfony-i-telefony",
-    "Смарт часы и аксессуары": "https://www.wildberries.ru/catalog/elektronika/smart-chasy",
-    "Электроника->Солнечные электростанции и комплектующие": "https://www.wildberries.ru/catalog/elektronika/solnechnye-elektrostantsii-i-komplektuyushchie",
-    "Тв, аудио, фото и видео техника": "https://www.wildberries.ru/catalog/elektronika/tv-audio-foto-video-tehnika",
-    "Электроника->Торговое оборудование": "https://www.wildberries.ru/catalog/elektronika/torgovoe-oborudovanie",
-    "Товары для умного дома": "https://www.wildberries.ru/catalog/elektronika/umnyy-dom",
-    "Электроника->Электротранспорт и аксессуары": "https://www.wildberries.ru/catalog/sport/elektrotransport-i-aksessuary",
-    "Игрушки антистресс": "https://www.wildberries.ru/catalog/igrushki/antistress",
-    "Игрушки для малышей": "https://www.wildberries.ru/catalog/igrushki/dlya-malyshey",
-    "Игрушки для песочницы": "https://www.wildberries.ru/catalog/igrushki/dlya-pesochnitsy",
-    "Детские игровые комплексы": "https://www.wildberries.ru/catalog/igrushki/igrovye-kompleksy",
-    "Игровые наборы для малышей": "https://www.wildberries.ru/catalog/igrushki/igrovye-nabory",
-    "Игрушечное оружие": "https://www.wildberries.ru/catalog/igrushki/igrushechnoe-oruzhie",
-    "Игрушки->Игрушечный транспорт": "https://www.wildberries.ru/catalog/igrushki/igrushechniy-transport",
-    "Игрушки->Игрушки для ванной": "https://www.wildberries.ru/catalog/igrushki/igrushki-dlya-vannoy",
-    "Интерактивные игрушки": "https://www.wildberries.ru/catalog/igrushki/interaktivnye",
-    "Игрушки->Кинетический песок": "https://www.wildberries.ru/catalog/igrushki/kineticheskiy-pesok",
-    "Детские конструкторы": "https://www.wildberries.ru/catalog/igrushki/konstruktory",
-    "Игрушки->Конструкторы LEGO": "https://www.wildberries.ru/catalog/igrushki/konstruktory-lego",
-    "Игрушки->Куклы и аксессуары": "https://www.wildberries.ru/catalog/igrushki/kukly-i-aksessuary",
-    "Музыкальные инструменты": "https://www.wildberries.ru/catalog/igrushki/muzykalnye-instrumenty",
-    "Игрушки->Мыльные пузыри": "https://www.wildberries.ru/catalog/igrushki/mylnye-puzyri",
-    "Игрушки->Мягкие игрушки": "https://www.wildberries.ru/catalog/igrushki/myagkie-igrushki",
-    "Игрушки->Наборы для опытов": "https://www.wildberries.ru/catalog/igrushki/opyty",
-    "Игрушки->Настольные игры": "https://www.wildberries.ru/catalog/igrushki/nastolnye-igry",
-    "Радиоуправляемые игрушки": "https://www.wildberries.ru/catalog/igrushki/radioupravlyaemye-igrushki/radioupravlyaemye-igrushki",
-    "Игрушки->Развивающие игрушки": "https://www.wildberries.ru/catalog/igrushki/razvivayushchie-igrushki",
-    "Игрушки сборные модели": "https://www.wildberries.ru/catalog/igrushki/sbornye-modeli",
-    "Спортивные товары для детей": "https://www.wildberries.ru/catalog/igrushki/sportivnye-igry",
-    "Сюжетно-ролевые игры для детей": "https://www.wildberries.ru/catalog/igrushki/syuzhetno-rolevye-igry",
-    "Игрушки для творчества и рукоделия": "https://www.wildberries.ru/catalog/igrushki/tvorchestvo-i-rukodelie",
-    "Игрушки->Фигурки и роботы": "https://www.wildberries.ru/catalog/igrushki/figurki-i-roboty",
-    "Мебель->По помещениям": "https://www.wildberries.ru/catalog/dom/mebel/po-pomeshcheniyam",
-    "Мебель->Мебель для хранения": "https://www.wildberries.ru/catalog/dom/mebel/mebel-dlya-kxraneniya",
-    "Мебель->Бескаркасная мебель": "https://www.wildberries.ru/catalog/dom/mebel/beskarkasnaya-mebel",
-    "Мебель->Детская мебель": "https://www.wildberries.ru/catalog/dom/mebel/detskaya-mebel",
-    "Мебель->Диваны и кресла": "https://www.wildberries.ru/catalog/dom/mebel/divany-i-kresla",
-    "Мебель->Матрасы": "https://www.wildberries.ru/catalog/dom/mebel/matrasy",
-    "Мебель->Столы и стулья": "https://www.wildberries.ru/catalog/mebel/stoly-i-stulya",
-    "Мебель->Компьютерная и геймерская мебель": "https://www.wildberries.ru/catalog/dom/mebel/kompyuternye-kresla",
-    "Мебель->Мебель для гостиной": "https://www.wildberries.ru/catalog/dom/mebel/mebel-dlya-gostinoy",
-    "Мебель->Мебель для кухни": "https://www.wildberries.ru/catalog/dom/mebel/mebel-dlya-kuhni",
-    "Мебель->Мебель для прихожей": "https://www.wildberries.ru/catalog/dom/mebel/mebel-dlya-prihozhey",
-    "Мебель->Мебель для спальни": "https://www.wildberries.ru/catalog/dom/mebel/mebel-dlya-spalni",
-    "Мебель->Гардеробная мебель": "https://www.wildberries.ru/catalog/dom/mebel/garderobnaya-mebel",
-    "Мебель->Офисная мебель": "https://www.wildberries.ru/catalog/dom/mebel/ofisnaya-mebel",
-    "Мебель->Садовая мебель": "https://www.wildberries.ru/catalog/dom/mebel/sadovaya-mebel",
-    "Мебель->Торговая мебель": "https://www.wildberries.ru/catalog/dom/mebel/torgovaya-mebel",
-    "Мебель->Торговое оборудование": "https://www.wildberries.ru/catalog/dom/mebel/torgovoe-oborudovanie",
-    "Мебель->Мебель для салонов красоты": "https://www.wildberries.ru/catalog/dom/mebel/mebel-dlya-salonov-krasoty",
-    "Мебель->Зеркала": "https://www.wildberries.ru/catalog/dom/mebel/zerkala",
-    "Мебель->Мебельная фурнитура": "https://www.wildberries.ru/catalog/dom/mebel/mebelnaya-furnitura",
-    "Эротическое женское белье": "https://www.wildberries.ru/catalog/zhenshchinam/bele-i-kupalniki/erotik",
-    "Эротические игры и сувениры": "https://www.wildberries.ru/catalog/aksessuary/tovary-dlya-vzroslyh/igrushki-dlya-vzroslyh",
-    "Товары для взрослых->Интимная косметика": "https://www.wildberries.ru/catalog/krasota/intimnaya-kosmetika",
-    "Товары для взрослых->Интимная съедобная косметика": "https://www.wildberries.ru/catalog/tovary-dlya-vzroslyh/intimnaya-sedobnaya-kosmetika",
-    "Презервативы": "https://www.wildberries.ru/catalog/krasota/intimnaya-kosmetika/kontratseptivy/prezervativy",
-    "Товары для взрослых->Секс игрушки": "https://www.wildberries.ru/catalog/aksessuary/tovary-dlya-vzroslyh/seks-igrushki",
-    "Товары для взрослых->Фетиш и БДСМ": "https://www.wildberries.ru/catalog/aksessuary/tovary-dlya-vzroslyh/fetish-i-bdsm",
-    "Продукты->Алкоголь": "https://www.wildberries.ru/catalog/alkogol",
-    "Продукты->Вкусные подарки": "https://www.wildberries.ru/catalog/produkty/vkusnye-podarki",
-    "Подарочные сладости": "https://www.wildberries.ru/catalog/dlya-doma/vse-dlya-prazdnika/dlya-prazdnika/podarochnye-sladosti",
-    "Продукты->Чай и кофе": "https://www.wildberries.ru/catalog/produkty-pitaniya/chay-kofe",
-    "Продукты->Сладости и хлебобулочные изделия": "https://www.wildberries.ru/catalog/pitanie/sladosti",
-    "Продукты->Бакалея": "https://www.wildberries.ru/catalog/pitanie/bakaleya",
-    "Продукты->Детское питание": "https://www.wildberries.ru/catalog/pitanie/detskoe-pitanie",
-    "Продукты здорового питания": "https://www.wildberries.ru/catalog/pitanie/zdorovoe-pitanie",
-    "Продукты->Мясная продукция": "https://www.wildberries.ru/catalog/produkty/myasnaya-produktsiya",
-    "Молоко и сливки": "https://www.wildberries.ru/catalog/pitanie/chay-kofe/moloko-i-slivki",
-    "Продукты->Напитки": "https://www.wildberries.ru/catalog/pitanie/napitki",
-    "Продукты->Снеки": "https://www.wildberries.ru/catalog/pitanie/sneki",
-    "Продукты->Замороженная продукция": "https://www.wildberries.ru/catalog/produkty/zamorozhennaya-produktsiya",
-    "Продукты->Фрукты и ягоды": "https://www.wildberries.ru/catalog/produkty/frukty",
-    "Продукты->Овощи": "https://www.wildberries.ru/catalog/produkty/ovoshchi",
-    "Бытовая техника->Климатическая техника": "https://www.wildberries.ru/catalog/elektronika/tehnika-dlya-doma/uvlazhniteli-i-vozduhootchistiteli",
-    "Товары для красоты и здоровья": "https://www.wildberries.ru/catalog/elektronika/krasota-i-zdorove",
-    "Бытовая техника->Садовая техника": "https://www.wildberries.ru/catalog/bytovaya-tehnika/sadovaya-tehnika",
-    "Бытовая техника->Техника для дома": "https://www.wildberries.ru/catalog/elektronika/tehnika-dlya-doma",
-    "Бытовая техника для кухни": "https://www.wildberries.ru/catalog/elektronika/tehnika-dlya-kuhni",
-    "Бытовая техника->Крупная бытовая техника": "https://www.wildberries.ru/catalog/bytovaya-tehnika/krupnaya-bytovaya-tehnika",
-    "Товары для кошек": "https://www.wildberries.ru/catalog/tovary-dlya-zhivotnyh/dlya-koshek",
-    "Товары для собак": "https://www.wildberries.ru/catalog/tovary-dlya-zhivotnyh/dlya-sobak",
-    "Товары для птиц": "https://www.wildberries.ru/catalog/tovary-dlya-zhivotnyh/dlya-ptits",
-    "Товары для грызунов и хорьков": "https://www.wildberries.ru/catalog/tovary-dlya-zhivotnyh/dlya-gruzunov-i-horkov",
-    "Товары для лошадей": "https://www.wildberries.ru/catalog/zootovary/dlya-loshadey",
-    "Товары для аквариума": "https://www.wildberries.ru/catalog/aksessuary/tovary-dlya-zhivotnyh/akvariumistika",
-    "Зоотовары->Террариумистика": "https://www.wildberries.ru/catalog/zootovary/terrariumistika",
-    "Зоотовары->Фермерство": "https://www.wildberries.ru/catalog/zootovary/fermerstvo",
-    "Зоотовары->Корм и лакомства": "https://www.wildberries.ru/catalog/tovary-dlya-zhivotnyh/korm-i-lakomstva",
-    "Зоотовары->Аксессуары для кормления": "https://www.wildberries.ru/catalog/tovary-dlya-zhivotnyh/aksessuary-dlya-kormleniya",
-    "Зоотовары->Лотки и наполнители": "https://www.wildberries.ru/catalog/tovary-dlya-zhivotnyh/lotki-i-napolniteli",
-    "Зоотовары->Когтеточки и домики": "https://www.wildberries.ru/catalog/tovary-dlya-zhivotnyh/kogtetochki-i-domiki",
-    "Зоотовары->Транспортировка": "https://www.wildberries.ru/catalog/tovary-dlya-zhivotnyh/transportirovka",
-    "Зоотовары->Амуниция и дрессировка": "https://www.wildberries.ru/catalog/tovary-dlya-zhivotnyh/amunitsiya-i-dressirovka",
-    "Зоотовары->Игрушки": "https://www.wildberries.ru/catalog/tovary-dlya-zhivotnyh/igrushki",
-    "Зоотовары->Груминг и уход": "https://www.wildberries.ru/catalog/tovary-dlya-zhivotnyh/gruming-i-ukxod",
-    "Зоотовары->Одежда": "https://www.wildberries.ru/catalog/tovary-dlya-zhivotnyh/odezhda",
-    "Зоотовары->Ветаптека": "https://www.wildberries.ru/catalog/tovary-dlya-zhivotnyh/vetapteka",
-    "Зоотовары->Лекарственные препараты для животных": "https://www.wildberries.ru/catalog/tovary-dlya-zhivotnyh/lekarstvennye-preparaty-dlya-zhivotnykx",
-    "Товары для фитнеса и кроссфита": "https://www.wildberries.ru/catalog/sport/vidy-sporta/fitnes/yoga",
-    "Товары для велоспорта": "https://www.wildberries.ru/catalog/sport/vidy-sporta/velosport",
-    "Товары для йоги": "https://www.wildberries.ru/catalog/sport/vidy-sporta/yoga",
-    "Одежда, обувь и аксессуары для охоты и рыбалки": "https://www.wildberries.ru/catalog/sport/vidy-sporta/ohota-i-rybolovstvo",
-    "Самокаты и ролики": "https://www.wildberries.ru/catalog/sport/vidy-sporta/roliki-samokaty",
-    "Товары для туризма и кемпинга": "https://www.wildberries.ru/catalog/sport/vidy-sporta/turizm-kemping",
-    "Товары для бега и скандинавской ходьбы": "https://www.wildberries.ru/catalog/sport/vidy-sporta/beg/hodba",
-    "Товары для командных видов спорта": "https://www.wildberries.ru/catalog/sport/vidy-sporta/komandnye-vidy-sporta",
-    "Товары для плавания": "https://www.wildberries.ru/catalog/sport/vidy-sporta/plavanie",
-    "Товары для зимних видов спорта": "https://www.wildberries.ru/catalog/sport/vidy-sporta/zimnie-vidy-sporta",
-    "Товары для поддержки и восстановления спортсменов": "https://www.wildberries.ru/catalog/sport/podderzhka-i-vosstanovlenie",
-    "Спортивное питание": "https://www.wildberries.ru/catalog/sport/sportivnoe-pitanie",
-    "Товары для бадминтона и тенниса": "https://www.wildberries.ru/catalog/sport/vidy-sporta/badminton/tennis",
-    "Спорт->Бильярд/Гольф/Дартс/Метание ножей": "https://www.wildberries.ru/catalog/sport/bilyard/darts",
-    "Экипировка для единоборств": "https://www.wildberries.ru/catalog/sport/vidy-sporta/edinoborstva",
-    "Товары для конного спорта": "https://www.wildberries.ru/catalog/sport/konniy-sport",
-    "Одежда и аксессуары для мотоспорта": "https://www.wildberries.ru/catalog/sport/vidy-sporta/motosport",
-    "Спорт->Оборудование для сдачи нормативов": "https://www.wildberries.ru/catalog/sport/oborudovanie-dlya-sdachi-normativov",
-    "Одежда и аксессуары для парусного спорта": "https://www.wildberries.ru/catalog/sport/vidy-sporta/parusnyisport",
-    "Товары для скалолазания и альпинизма": "https://www.wildberries.ru/catalog/sport/vidy-sporta/skalolazanie/alpinizm",
-    "Товары для страйкбола и пейнтбола": "https://www.wildberries.ru/catalog/sport/vidy-sporta/straykbol",
-    "Товары для танцев и гимнастики": "https://www.wildberries.ru/catalog/sport/vidy-sporta/tantsy/gimnastika",
-    "Детская спортивная одежда и аксессуары": "https://www.wildberries.ru/catalog/sport/dlya-detey",
-    "Спортивная одежда и аксессуары для женщин": "https://www.wildberries.ru/catalog/sport/dlya-zhenshchin",
-    "Спортивная одежда и аксессуары для мужчин": "https://www.wildberries.ru/catalog/sport/dlya-muzhchin",
-    "Спорт->Спортивная обувь": "https://www.wildberries.ru/catalog/sport/sportivnaya-obuv",
-    "Спорт->Товары для самообороны": "https://www.wildberries.ru/catalog/sport/tovary-dlya-samooborony",
-    "Электроника для спорта": "https://www.wildberries.ru/catalog/sport/elektronika",
-    "Автотовары->Шины и диски колесные": "https://www.wildberries.ru/catalog/avtotovary/shiny-i-diski",
-    "Автотовары->Запчасти": "https://www.wildberries.ru/catalog/avtotovary/zapchasti-na-legkovye-avtomobili",
-    "Автотовары->Масла и жидкости": "https://www.wildberries.ru/catalog/avtotovary/masla-i-zhidkosti",
-    "Средства по уходу за автомобилем": "https://www.wildberries.ru/catalog/aksessuary/avtotovary/uhod-za-avtomobilem",
-    "Автотовары->Краски и грунтовки": "https://www.wildberries.ru/catalog/avtotovary/kraski",
-    "Автотовары->Аккумуляторы и сопутствующие товары": "https://www.wildberries.ru/catalog/aksessuary/avtotovary/akkumulyatory-i-soputstvuyushchie-tovary",
-    "Автотовары->Аксессуары в салон и багажник": "https://www.wildberries.ru/catalog/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/aksessuary-v-salon-i-bagazhnik",
-    "Автотовары->Коврики": "https://www.wildberries.ru/catalog/avtotovary/kovriki",
-    "Автотовары->Внешний тюнинг": "https://www.wildberries.ru/catalog/aksessuary/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/vneshniy-tyuning",
-    "Автотовары->Другие аксессуары и доп. оборудование": "https://www.wildberries.ru/catalog/aksessuary/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie",
-    "Автотовары->Инструменты": "https://www.wildberries.ru/catalog/avtotovary/instrumenty",
-    "Автотовары->Мойки высокого давления и аксессуары": "https://www.wildberries.ru/catalog/dom/dachniy-sezon/moyki-vysokogo-davleniya-i-aksessuary",
-    "Автотовары->Мототовары": "https://www.wildberries.ru/catalog/avtotovary/mototovary",
-    "Автотовары->OFFroad": "https://www.wildberries.ru/catalog/aksessuary/avtotovary/avtoaksessuary-i-dopolnitelnoe-oborudovanie/offroad",
-    "Автотовары->Запчасти на силовую технику": "https://www.wildberries.ru/catalog/avtotovary/zapchasti-na-silovuyu-tehniku",
-    "Автотовары->Запчасти для лодок и катеров": "https://www.wildberries.ru/catalog/avtotovary/zapchasti-dlya-lodok-i-katerov",
-    "Транспортные средства->Автомобили": "https://www.wildberries.ru/catalog/transportnye-sredstva/avtomobili",
-    "Транспортные средства->Мототехника": "https://www.wildberries.ru/catalog/transportnye-sredstva/mototekxnika",
-    "Транспортные средства->Водомоторная техника": "https://www.wildberries.ru/catalog/transportnye-sredstva/vodomotornaya-tekxnika",
-    "Транспортные средства->Спецтехника": "https://www.wildberries.ru/catalog/transportnye-sredstva/spetstekxnika",
-    "Транспортные средства->Прицепы": "https://www.wildberries.ru/catalog/transportnye-sredstva/pritsepy",
-    "Книги->Художественная литература": "https://www.wildberries.ru/catalog/knigi/hudozhestvennaya-literatura",
-    "Книги->Комиксы и манга": "https://www.wildberries.ru/catalog/knigi/hudozhestvennaya-literatura/komiksy-i-manga",
-    "Книги для детей и родителей": "https://www.wildberries.ru/catalog/knigi/detyam-i-roditelyam",
-    "Книги->Воспитание и развитие ребенка": "https://www.wildberries.ru/catalog/knigi/vospitanie-i-razvitie-rebenka",
-    "Учебная литература": "https://www.wildberries.ru/catalog/knigi/uchebnaya-literatura",
-    "Книги->Самообразование и развитие": "https://www.wildberries.ru/catalog/knigi/samoobrazovanie-i-razvitie",
-    "Книги для бизнеса и по менеджменту": "https://www.wildberries.ru/catalog/knigi/nehudozhestvennaya-literatura/biznes-i-menedzhment",
-    "Книги->Хобби и досуг": "https://www.wildberries.ru/catalog/knigi/hobbi-i-dosug",
-    "Книги по астрологии и эзотерике": "https://www.wildberries.ru/catalog/knigi/nehudozhestvennaya-literatura/astrologiya-i-ezoterika",
-    "Книги->Дом, сад и огород": "https://www.wildberries.ru/catalog/knigi/dom-sad-i-ogorod",
-    "Книги->Красота, здоровье и спорт": "https://www.wildberries.ru/catalog/knigi/krasota-zdorove-i-sport",
-    "Книги о науке и технике": "https://www.wildberries.ru/catalog/knigi/nehudozhestvennaya-literatura/nauka-i-tehnika",
-    "Книги->Интернет и технологии": "https://www.wildberries.ru/catalog/knigi/nehudozhestvennaya-literatura/internet-i-tehnologii",
-    "Книги->Литературоведение и публицистика": "https://www.wildberries.ru/catalog/knigi/literaturovedenie-i-publitsistika",
-    "Исторические книги и военная литература": "https://www.wildberries.ru/catalog/knigi/nehudozhestvennaya-literatura/istoricheskaya-i-voennaya-literatura",
-    "Книги по философии": "https://www.wildberries.ru/catalog/knigi/nehudozhestvennaya-literatura/filosofiya",
-    "Книги о религии": "https://www.wildberries.ru/catalog/knigi/nehudozhestvennaya-literatura/religiya",
-    "Книги->Политика и право": "https://www.wildberries.ru/catalog/knigi/politika-i-pravo",
-    "Книги->Букинистика": "https://www.wildberries.ru/catalog/knigi/bukinistika",
-    "Книги->Книги на иностранных языках": "https://www.wildberries.ru/catalog/knigi/inostrannye-knigi",
-    "Книги->Плакаты": "https://www.wildberries.ru/catalog/knigi/plakaty",
-    "Книги->Календари": "https://www.wildberries.ru/catalog/knigi/kalendari",
-    "Книги->Коллекционные издания": "https://www.wildberries.ru/catalog/knigi/kollektsionnye-izdaniya",
-    "Книги->Репринтные издания": "https://www.wildberries.ru/catalog/knigi/reprintnye-izdaniya",
-    "Книги->Мультимедиа": "https://www.wildberries.ru/catalog/knigi-i-diski/multimedia",
-    "Книги->Аудиокниги": "https://www.wildberries.ru/catalog/knigi/audioknigi",
-    "Книги->Цифровые книги": "https://digital.wildberries.ru/catalog/books?sort=rating",
-    "Книги->Цифровые аудиокниги": "https://digital.wildberries.ru/catalog/audiobooks?sort=rating",
-    "Ювелирные кольца": "https://www.wildberries.ru/catalog/yuvelirnye-ukrasheniya/koltsa",
-    "Ювелирные серьги": "https://www.wildberries.ru/catalog/yuvelirnye-ukrasheniya/sergi",
-    "Ювелирные браслеты": "https://www.wildberries.ru/catalog/yuvelirnye-ukrasheniya/braslety",
-    "Ювелирные изделия->Подвески и шармы": "https://www.wildberries.ru/catalog/yuvelirnye-izdeliya/podveski-i-sharmy",
-    "Комплекты ювелирных украшений": "https://www.wildberries.ru/catalog/yuvelirnye-izdeliya/komplekty",
-    "Ювелирные изделия->Колье, цепи, шнурки": "https://www.wildberries.ru/catalog/yuvelirnye-izdeliya/tsepi-i-shnurki",
-    "Ювелирные броши": "https://www.wildberries.ru/catalog/yuvelirnye-ukrasheniya/broshi",
-    "Ювелирные украшения для пирсинга": "https://www.wildberries.ru/catalog/yuvelirnye-ukrasheniya/pirsing",
-    "Ювелирные часы": "https://www.wildberries.ru/catalog/yuvelirnye-ukrasheniya/chasy",
-    "Ювелирные изделия->Зажимы, запонки, ремни": "https://www.wildberries.ru/catalog/yuvelirnye-izdeliya/zazhimy-i-zaponki",
-    "Ювелирные четки": "https://www.wildberries.ru/catalog/yuvelirnye-ukrasheniya/chetki",
-    "Ювелирные изделия->Сувениры и столовое серебро": "https://www.wildberries.ru/catalog/yuvelirnye-izdeliya/suveniry-i-stolovoe-serebro",
-    "Золотые украшения": "https://www.wildberries.ru/catalog/yuvelirnye-ukrasheniya/zoloto",
-    "Серебряные украшения": "https://www.wildberries.ru/catalog/yuvelirnye-ukrasheniya/serebro",
-    "Ювелирные изделия->Украшения из керамики": "https://www.wildberries.ru/catalog/yuvelirnye-ukrasheniya/ukrasheniya-iz-keramiki",
-    "Ювелирные изделия->Аксессуары для украшений": "https://www.wildberries.ru/catalog/yuvelirnye-izdeliya/aksessuary-dlya-ukrasheniy",
-    "Для ремонта->Колеровка краски": "https://www.wildberries.ru/catalog/dom-i-dacha/instrumenty/kolerovka-kraski",
-    "Для ремонта->Двери, окна и фурнитура": "https://www.wildberries.ru/catalog/dlya-remonta/dveri-okna-i-furnitura",
-    "Инструменты": "https://www.wildberries.ru/catalog/dom-i-dacha/instrumenty/instrumenty",
-    "Для ремонта->Силовая техника и оборудование": "https://www.wildberries.ru/catalog/dlya-remonta/silovaya-tekxnika-i-oborudovanie",
-    "Для ремонта->Спецодежда и СИЗы": "https://www.wildberries.ru/catalog/dlya-remonta/spetsodezhda-i-sizy",
-    "Для ремонта->Отделочные материалы": "https://www.wildberries.ru/catalog/dom-i-dacha/tovary-dlya-remonta/otdelochnye-materialy",
-    "Для ремонта->Электрика": "https://www.wildberries.ru/catalog/bytovaya-tehnika/stroitelstvo-i-remont/elektrika",
-    "Для ремонта->Лакокрасочные материалы": "https://www.wildberries.ru/catalog/dlya-remonta/lakokrasochnye-materialy",
-    "Для ремонта->Сантехника": "https://www.wildberries.ru/catalog/dlya-remonta/santehnika",
-    "Для ремонта->Вентиляция": "https://www.wildberries.ru/catalog/dlya-remonta/ventilyatsiya",
-    "Для ремонта->Водоснабжение и газоснабжение": "https://www.wildberries.ru/catalog/dlya-remonta/vodosnabzhenie-i-gazosnabzhenie",
-    "Для ремонта->Отопление": "https://www.wildberries.ru/catalog/dlya-remonta/otoplenie",
-    "Для ремонта->Крепеж": "https://www.wildberries.ru/catalog/dlya-remonta/krepezh",
-    "Для ремонта->Стройматериалы": "https://www.wildberries.ru/catalog/dlya-remonta/stroymaterialy",
-    "Сад и дача->Растения, семена и грунты": "https://www.wildberries.ru/catalog/dom/dachniy-sezon/rasteniya-semena-i-grunty",
-    "Сад и дача->Удобрения и уход за растениями": "https://www.wildberries.ru/catalog/dom/dachniy-sezon/udobreniya-himikaty-i-sredstva-zashchity",
-    "Сад и дача->Уличное и садовое освещение": "https://www.wildberries.ru/catalog/dom/dachniy-sezon/sadoviy-dekor/sadovoe-osveshchenie",
-    "Сад и дача->Грядки и клумбы": "https://www.wildberries.ru/catalog/dom/dachniy-sezon/sadoviy-dekor/ogrady-i-bordyury-dlya-klumb-i-gazonov",
-    "Сад и дача->Инструменты для уборки снега и реагенты": "https://www.wildberries.ru/catalog/dom/dachniy-sezon/sadoviy-instrument/instrumenty-dlya-uborki-snega-i-reagenty",
-    "Сад и дача->Снегоуборочные машины": "https://www.wildberries.ru/catalog/dom/dachniy-sezon/sadovaya-tehnika/snegouborshchiki",
-    "Сад и дача->Теплицы, парники, укрывной материал": "https://www.wildberries.ru/catalog/dom/dachniy-sezon/teplitsy-parniki-ukryvnoy-material",
-    "Товары для бани": "https://www.wildberries.ru/catalog/dom-i-dacha/tovary-dlya-bani",
-    "Сад и дача->Горшки, кашпо и подставки для растений": "https://www.wildberries.ru/catalog/dachniy-sezon/gorshki-kashpo-i-podstavki-dlya-rasteniy",
-    "Сад и дача->Грили, мангалы и барбекю": "https://www.wildberries.ru/catalog/dom/sad-i-dacha/grili-mangaly-i-barbekyu",
-    "Сад и дача->Садовая техника": "https://www.wildberries.ru/catalog/dom/sad-i-dacha/sadovaya-tehnika",
-    "Сад и дача->Садовые инструменты": "https://www.wildberries.ru/catalog/dom/dachniy-sezon/sadoviy-instrument",
-    "Сад и дача->Мойки высокого давления и аксессуары": "https://www.wildberries.ru/catalog/dom/dachniy-sezon/moyki-vysokogo-davleniya-i-aksessuary",
-    "Сад и дача->Надувная мебель": "https://www.wildberries.ru/catalog/dom/dachniy-sezon/tovary-dlya-kempinga-piknika-i-otdyha/naduvnaya-mebel",
-    "Сад и дача->Товары для кемпинга, пикника и отдыха": "https://www.wildberries.ru/catalog/dom/dachniy-sezon/tovary-dlya-kempinga-piknika-i-otdyha",
-    "Сад и дача->Биотуалеты, дачные умывальники и души": "https://www.wildberries.ru/catalog/dom/dachniy-sezon/dachnye-umyvalniki-dushi-i-tualety",
-    "Сад и дача->Садовый декор": "https://www.wildberries.ru/catalog/dom/dachniy-sezon/sadoviy-dekor",
-    "Сад и дача->Полив и водоснабжение": "https://www.wildberries.ru/catalog/dom/dachniy-sezon/poliv-i-vodosnabzhenie",
-    "Сад и дача->Готовые строения и срубы": "https://www.wildberries.ru/catalog/dachniy-sezon/gotovye-stroeniya-i-sruby",
-    "Сад и дача->Мебель для отдыха": "https://www.wildberries.ru/catalog/dom/dachniy-sezon/sadovaya-mebel",
-    "Сад и дача->Защита от насекомых и грызунов": "https://www.wildberries.ru/catalog/dachniy-sezon/zashchita-ot-nasekomykx-i-gryzunov",
-    "Бассейны и средства для чистки": "https://www.wildberries.ru/catalog/dachniy-sezon/basseyny",
-    "Витамины и БАДы": "https://www.wildberries.ru/catalog/dom-i-dacha/zdorove/vitaminy-i-bady",
-    "Антибактериальные и антисептические препараты": "https://www.wildberries.ru/catalog/dom-i-dacha/zdorove/lekarstvennye-preparaty/antibakterialnye-i-antisepticheskie-preparaty",
-    "Здоровье->Ухо, горло, нос": "https://www.wildberries.ru/catalog/dom-i-dacha/zdorove/kapli-sprei-i-rastvory",
-    "Здоровье->Комплексные пищевые добавки": "https://www.wildberries.ru/catalog/dom-i-dacha/zdorove/kompleksnye-pishchevye-dobavki",
-    "Здоровье->Контрацептивы и лубриканты": "https://www.wildberries.ru/catalog/dom-i-dacha/zdorove/kontratseptivy-i-lubrikanty",
-    "Здоровье->Специализированное питание ": "https://www.wildberries.ru/catalog/zdorove/lechebnoe-pitanie-",
-    " Маски защитные": "https://www.wildberries.ru/catalog/aksessuary/golovnye-ubory/maski-vetrozashchitnye",
-    "Медицинские изделия и приборы": "https://www.wildberries.ru/catalog/dom-i-dacha/zdorove/meditsinskie-izdeliya-i-pribory",
-    "Здоровье->Медицинские приборы": "https://www.wildberries.ru/catalog/dom-i-dacha/zdorove/meditsinskie-izdeliya-i-pribory/meditsinskie-pribory",
-    "Здоровье->Лабораторное оборудование и материалы": "https://www.wildberries.ru/catalog/dom-i-dacha/zdorove/laboratornoe-oborudovanie-i-materialy",
-    "Здоровье->Оздоровление": "https://www.wildberries.ru/catalog/zdorove/ozdorovlenie",
-    "Контактные линзы и корригирующие очки": "https://www.wildberries.ru/catalog/dom-i-dacha/zdorove/optika",
-    "Товары для ортопедии": "https://www.wildberries.ru/catalog/dom-i-dacha/zdorove/ortopediya",
-    "Средства для реабилитации": "https://www.wildberries.ru/catalog/zdorove/meditsinskie-izdeliya-i-pribory/sredstva-reabilitatsii",
-    "Здоровье->Сиропы и бальзамы": "https://www.wildberries.ru/catalog/dom-i-dacha/zdorove/siropy-i-balzamy",
-    "Здоровье->Уход за полостью рта": "https://www.wildberries.ru/catalog/zdorove/uhod-za-polostyu-rta",
-    "Здоровье->Адаптивная одежда и аксессуары": "https://www.wildberries.ru/catalog/dom-i-dacha/zdorove/adaptivnaya-odezhda-i-aksessuary",
-    "Здоровье->Аптека": "https://www.wildberries.ru/catalog/dom-i-dacha/zdorove/apteka",
-    "Канцтовары->Анатомические модели": "https://www.wildberries.ru/catalog/knigi-i-diski/kantstovary/anatomicheskie-modeli",
-    "Канцтовары->Бумажная продукция": "https://www.wildberries.ru/catalog/knigi-i-kantstovary/kantstovary/bumazhnaya-produktsiya",
-    "Канцтовары->Карты и глобусы": "https://www.wildberries.ru/catalog/knigi-i-kantstovary/kantstovary/karty-i-globusy",
-    "Канцтовары->Офисные принадлежности": "https://www.wildberries.ru/catalog/knigi-i-kantstovary/kantstovary/ofisnye-prinadlezhnosti",
-    "Канцтовары->Письменные принадлежности": "https://www.wildberries.ru/catalog/knigi-i-kantstovary/kantstovary/pismennye-prinadlezhnosti",
-    "Товары для рисования и лепки": "https://www.wildberries.ru/catalog/knigi-i-kantstovary/kantstovary/risovanie-i-lepka",
-    "Канцтовары->Счетный материал": "https://www.wildberries.ru/catalog/knigi-i-diski/kantstovary/schetniy-material",
-    "Канцтовары->Торговые принадлежности": "https://www.wildberries.ru/catalog/kantstovary/torgovye-prinadlezhnosti",
-    "Канцтовары->Чертежные принадлежности": "https://www.wildberries.ru/catalog/knigi-i-kantstovary/kantstovary/chertezhnye-prinadlezhnosti",
-    "Сделано в России->Сделано в Алтайском крае": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-barnaule",
-    "Сделано в России->Сделано в Волгограде": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-volgograde",
-    "Сделано в России->Сделано в Воронеже": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-voronezhe",
-    "Сделано в России->Сделано в Иваново": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-ivanovo",
-    "Сделано в России->Сделано в Карелии": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-karelii",
-    "Сделано в России->Сделано в Краснодаре": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-krasnodare",
-    "Сделано в России->Сделано в Московской области": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-krasnogorske",
-    "Сделано в России->Сделано в Мордовии": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-mordovii",
-    "Сделано в России->Сделано в Мурманске": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-murmanske",
-    "Сделано в России->Сделано в Новосибирске": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-novosibirske",
-    "Сделано в России->Сделано в Ростове-на-Дону": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-rostove-na-donu",
-    "Сделано в России->Сделано в Твери": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-tveri",
-    "Сделано в России->Сделано в Югре": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-yugre",
-    "Сделано в России->Сделано в Калуге": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-kaluge",
-    "Сделано в России->Сделано в республике Дагестан": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-respublike-dagestan",
-    "Сделано в России->Сделано в республике Марий Эл": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-respublike-mariy-el",
-    "Сделано в России->Сделано в Томске": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-tomske",
-    "Сделано в России->Сделано в Хабаровске": "https://www.wildberries.ru/catalog/sdelano-v-rossii/sdelano-v-kxabarovske",
-    "Культурный код->Культурный код": "https://www.wildberries.ru/catalog/kulturnyy-kod/kulturnyy-kod",
-    "Культурный код->Народные Промыслы": "https://www.wildberries.ru/catalog/narodnye-kxudozhestvennye-promysly",
-    "Цифровые товары->Электронные Книги": "https://digital.wildberries.ru/catalog/books",
-    "Цифровые товары->Аудиокниги": "https://digital.wildberries.ru/catalog/audiobooks",
-    "Цифровые товары->Ключи и сертификаты": "https://digital.wildberries.ru/catalog/certs",
-    "Цифровые товары->Фильмы и видео": "https://digital.wildberries.ru/catalog/video",
-    "Цифровые товары->Музыка и аудио": "https://digital.wildberries.ru/catalog/audio",
-    "Цифровые товары->Журналы": "https://digital.wildberries.ru/catalog/magazine",
-    "Цифровые товары->Цифровые товары": "https://digital.wildberries.ru/catalog/digital",
-    "Цифровые товары->Услуги": "https://digital.wildberries.ru/catalog/services"
+    "8126": {
+        "bl_shirts": "cat=8126"
+    },
+    "8127": {
+        "pants": "cat=8127"
+    },
+    "63010": {
+        "outwear1": "cat=63010"
+    },
+    "8130": {
+        "jumpers_cardigans": "cat=8130"
+    },
+    "8131": {
+        "jeans": "cat=8131"
+    },
+    "8133": {
+        "overalls": "cat=8133"
+    },
+    "8134": {
+        "costumes": "cat=8134"
+    },
+    "9411": {
+        "sweatshirts_hoodies": "cat=9411"
+    },
+    "8136": {
+        "blazers_wamuses": "cat=8136"
+    },
+    "8137": {
+        "dresses": "cat=8137"
+    },
+    "8140": {
+        "sweatshirts_hoodies": "cat=8140"
+    },
+    "8141": {
+        "sweatshirts_hoodies": "cat=8141"
+    },
+    "8142": {
+        "preset_tops_tshirts1": "cat=8142"
+    },
+    "128996": {
+        "women_bathrobes": "cat=128996"
+    },
+    "10567": {
+        "shorts": "cat=10567"
+    },
+    "8143": {
+        "skirts": "cat=8143"
+    },
+    "128296": {
+        "women_underwear2": "cat=128296"
+    },
+    "8160": {
+        "women_underwear2": "cat=8160"
+    },
+    "10520": {
+        "women_underwear1": "cat=10520"
+    },
+    "8161": {
+        "women_underwear1": "cat=8161"
+    },
+    "8162": {
+        "women_underwear1": "cat=8162"
+    },
+    "8163": {
+        "women_underwear2": "cat=8163"
+    },
+    "8167": {
+        "women_underwear1": "cat=8167"
+    },
+    "8164": {
+        "women_underwear2": "cat=8164"
+    },
+    "8165": {
+        "women_underwear1": "cat=8165"
+    },
+    "8166": {
+        "women_underwear1": "cat=8166"
+    },
+    "8172": {
+        "women_underwear2": "cat=8172"
+    },
+    "8173": {
+        "women_underwear1": "cat=8173"
+    },
+    "335": {
+        "women_bigsize1": "cat=335"
+    },
+    "336": {
+        "women_bigsize1": "cat=336"
+    },
+    "337": {
+        "women_bigsize1": "cat=337"
+    },
+    "338": {
+        "women_bigsize1": "cat=338"
+    },
+    "339": {
+        "women_bigsize1": "cat=339"
+    },
+    "340": {
+        "women_bigsize1": "cat=340"
+    },
+    "341": {
+        "women_bigsize1": "cat=341"
+    },
+    "342": {
+        "women_bigsize3": "cat=342"
+    },
+    "343": {
+        "women_bigsize3": "cat=343"
+    },
+    "344": {
+        "women_bigsize3": "cat=344"
+    },
+    "346": {
+        "women_bigsize4": "cat=346"
+    },
+    "347": {
+        "women_bigsize5": "cat=347"
+    },
+    "348": {
+        "women_bigsize4": "cat=348"
+    },
+    "350": {
+        "moms1": "cat=350"
+    },
+    "351": {
+        "moms1": "cat=351"
+    },
+    "354": {
+        "moms1": "cat=354"
+    },
+    "355": {
+        "moms1": "cat=355"
+    },
+    "356": {
+        "moms1": "cat=356"
+    },
+    "357": {
+        "moms2": "cat=357"
+    },
+    "358": {
+        "moms2": "cat=358"
+    },
+    "359": {
+        "moms3": "cat=359"
+    },
+    "360": {
+        "moms2": "cat=360"
+    },
+    "361": {
+        "moms2": "cat=361"
+    },
+    "362": {
+        "moms2": "cat=362"
+    },
+    "9214": {
+        "moms2": "cat=9214"
+    },
+    "363": {
+        "moms1": "cat=363"
+    },
+    "364": {
+        "moms3": "cat=364"
+    },
+    "365": {
+        "moms2": "cat=365"
+    },
+    "130762": {
+        "short_tall3": "cat=130762"
+    },
+    "130761": {
+        "short_tall3": "cat=130761"
+    },
+    "130763": {
+        "short_tall3": "cat=130763"
+    },
+    "130764": {
+        "short_tall3": "cat=130764"
+    },
+    "130765": {
+        "short_tall3": "cat=130765"
+    },
+    "130766": {
+        "short_tall4": "cat=130766"
+    },
+    "130767": {
+        "short_tall4": "cat=130767"
+    },
+    "130768": {
+        "short_tall4": "cat=130768"
+    },
+    "130769": {
+        "short_tall4": "cat=130769"
+    },
+    "130770": {
+        "short_tall4": "cat=130770"
+    },
+    "60897": {
+        "short-tall2": "cat=60897"
+    },
+    "128987": {
+        "women_homewear1": "cat=128987"
+    },
+    "128988": {
+        "women_homewear1": "cat=128988"
+    },
+    "128989": {
+        "women_homewear1": "cat=128989"
+    },
+    "128990": {
+        "women_homewear1": "cat=128990"
+    },
+    "128991": {
+        "women_homewear1": "cat=128991"
+    },
+    "128992": {
+        "women_homewear1": "cat=128992"
+    },
+    "128993": {
+        "women_homewear2": "cat=128993"
+    },
+    "128994": {
+        "women_homewear2": "cat=128994"
+    },
+    "128995": {
+        "women_homewear2": "cat=128995"
+    },
+    "10462": {
+        "office_bigroot2": "cat=10462"
+    },
+    "10461": {
+        "office_bigroot1": "cat=10461"
+    },
+    "10464": {
+        "office_bigroot1": "cat=10464"
+    },
+    "10465": {
+        "office_bigroot1": "cat=10465"
+    },
+    "10467": {
+        "office_bigroot1": "cat=10467"
+    },
+    "10466": {
+        "office_bigroot1": "cat=10466"
+    },
+    "8533": {
+        "office_bigroot2": "cat=8533"
+    },
+    "10470": {
+        "office_bigroot1": "cat=10470"
+    },
+    "10468": {
+        "office_bigroot1": "cat=10468"
+    },
+    "10045": {
+        "beach1": "cat=10045"
+    },
+    "10044": {
+        "beach1": "cat=10044"
+    },
+    "10046": {
+        "beach1": "cat=10046"
+    },
+    "61440": {
+        "religion": "cat=61440"
+    },
+    "61441": {
+        "religion": "cat=61441"
+    },
+    "10320": {
+        "wedding": "cat=10320"
+    },
+    "130253": {
+        "wedding": "cat=130253&color=12632256;15450807;15631085;15791590;16119260;16119261;16711167;16766720;16777215"
+    },
+    "10318": {
+        "wedding": "cat=10318&color=15631085;15791590;16119260;16119261;16119285;16777200;16777215"
+    },
+    "16217": {
+        "wedding": "cat=16217"
+    },
+    "10316": {
+        "wedding": "cat=10316"
+    },
+    "10315": {
+        "wedding": "cat=10315&color=15631085;15791590;16119260;16119261;16119285;16776656;16777200;16777215"
+    },
+    "130254": {
+        "wedding": "subject=3758"
+    },
+    "128447": {
+        "work_clothes": "cat=128447"
+    },
+    "128448": {
+        "work_clothes": "cat=128448"
+    },
+    "128449": {
+        "work_clothes": "cat=128449"
+    },
+    "128450": {
+        "work_clothes": "cat=128450"
+    },
+    "128451": {
+        "work_clothes": "cat=128451"
+    },
+    "128452": {
+        "work_clothes": "cat=128452"
+    },
+    "128453": {
+        "work_clothes": "cat=128453"
+    },
+    "129175": {
+        "gift31": "cat=129175"
+    },
+    "129177": {
+        "gift32": "cat=129177"
+    },
+    "130614": {
+        "gift14": "cat=130614"
+    },
+    "129179": {
+        "gift15": "cat=129179"
+    },
+    "129180": {
+        "gift14": "cat=129180"
+    },
+    "129181": {
+        "gift37": "cat=129181"
+    },
+    "129182": {
+        "gift18": "cat=129182"
+    },
+    "129183": {
+        "gift14": "cat=129183"
+    },
+    "129184": {
+        "gift33": "cat=129184"
+    },
+    "129185": {
+        "gift23": "cat=129185"
+    },
+    "130616": {
+        "gift34": "cat=130616"
+    },
+    "129187": {
+        "gift34": "cat=129187"
+    },
+    "129188": {
+        "gift21": "cat=129188"
+    },
+    "129190": {
+        "gift27": "cat=129190"
+    },
+    "61030": {
+        "gift28": "cat=61030"
+    },
+    "631": {
+        "children_shoes": "cat=631"
+    },
+    "645": {
+        "children_shoes": "cat=645"
+    },
+    "8225": {
+        "children_shoes": "cat=8225&wbsize=56114;56115;56116;66482;56117;56118;56119;56120;63696;56121;56122;56123;2;1286;293;313;333;353;373;1970;2261;2281;2301;3938;4249;4269;4289;5906;7190;6237;6257;6277;6297;7874;8225;8245;8265;9842;10213;10233;11809;13093;12200;13778;56111;56113"
+    },
+    "8177": {
+        "women_shoes1": "cat=8177"
+    },
+    "8178": {
+        "women_shoes1": "cat=8178"
+    },
+    "8176": {
+        "women_shoes1": "cat=8176"
+    },
+    "8182": {
+        "women_shoes2": "cat=8182"
+    },
+    "62281": {
+        "women_shoes2": "cat=62281"
+    },
+    "8206": {
+        "women_shoes2": "cat=8206"
+    },
+    "8186": {
+        "women_shoes3": "cat=8186"
+    },
+    "8187": {
+        "women_shoes3": "cat=8187"
+    },
+    "8188": {
+        "women_shoes3": "cat=8188"
+    },
+    "8175": {
+        "women_shoes3": "cat=8175"
+    },
+    "8191": {
+        "men_shoes": "cat=8191"
+    },
+    "8194": {
+        "men_shoes": "cat=8194"
+    },
+    "62282": {
+        "men_shoes": "cat=62282"
+    },
+    "8199": {
+        "men_shoes": "cat=8199"
+    },
+    "8201": {
+        "men_shoes": "cat=8201"
+    },
+    "8202": {
+        "men_shoes": "cat=8202"
+    },
+    "8200": {
+        "men_shoes": "cat=8200"
+    },
+    "131282": {
+        "shoes_accessories1": "subject=8592"
+    },
+    "131715": {
+        "shoes_accessories1": "cat=131715"
+    },
+    "131716": {
+        "shoes_accessories1": "cat=131716"
+    },
+    "131717": {
+        "shoes_accessories1": "subject=691"
+    },
+    "131718": {
+        "shoes_accessories1": "cat=131718"
+    },
+    "131721": {
+        "shoes_accessories1": "subject=3068"
+    },
+    "131719": {
+        "shoes_accessories1": "cat=131719"
+    },
+    "131720": {
+        "shoes_accessories1": "cat=131720"
+    },
+    "131722": {
+        "shoes_accessories1": "cat=131722"
+    },
+    "131723": {
+        "shoes_accessories1": "cat=131723"
+    },
+    "131724": {
+        "shoes_accessories1": "cat=131724"
+    },
+    "131725": {
+        "shoes_accessories1": "cat=131725"
+    },
+    "131726": {
+        "shoes_accessories1": "subject=666"
+    },
+    "131727": {
+        "shoes_accessories1": "subject=1442"
+    },
+    "131728": {
+        "shoes_accessories1": "cat=131728"
+    },
+    "147": {
+        "children_girls1": "cat=147"
+    },
+    "8310": {
+        "children_girls1": "cat=8310"
+    },
+    "8311": {
+        "children_girls1": "cat=8311"
+    },
+    "63083": {
+        "children_girls1": "cat=63083"
+    },
+    "8314": {
+        "children_girls1": "cat=8314"
+    },
+    "8315": {
+        "children_girls1": "cat=8315"
+    },
+    "8316": {
+        "children_girls1": "cat=8316"
+    },
+    "8313": {
+        "children_girls2": "cat=8313"
+    },
+    "8317": {
+        "children_girls2": "cat=8317"
+    },
+    "8318": {
+        "children_girls2": "cat=8318"
+    },
+    "8320": {
+        "children_girls2": "cat=8320"
+    },
+    "10057": {
+        "children_girls2": "cat=10057"
+    },
+    "9413": {
+        "children_girls2": "cat=9413"
+    },
+    "128535": {
+        "children_girls2": "cat=128535"
+    },
+    "8321": {
+        "children_girls4": "cat=8321"
+    },
+    "130226": {
+        "children_girls4": "cat=130226"
+    },
+    "8322": {
+        "children_girls5": "cat=8322"
+    },
+    "8323": {
+        "children_girls5": "cat=8323"
+    },
+    "8325": {
+        "children_girls5": "cat=8325"
+    },
+    "8326": {
+        "children_girls5": "cat=8326"
+    },
+    "8327": {
+        "children_girls5": "cat=8327"
+    },
+    "8469": {
+        "children_girls5": "cat=8469"
+    },
+    "8328": {
+        "children_girls6": "cat=8328"
+    },
+    "130665": {
+        "children_girls5": "cat=130665"
+    },
+    "8883": {
+        "children_girls5": "cat=8883"
+    },
+    "8329": {
+        "children_girls5": "cat=8329"
+    },
+    "8331": {
+        "children_boys2": "cat=8331"
+    },
+    "8334": {
+        "children_boys1": "cat=8334"
+    },
+    "63082": {
+        "children_boys1": "cat=63082"
+    },
+    "8344": {
+        "children_boys1": "cat=8344"
+    },
+    "8337": {
+        "children_boys3": "cat=8337"
+    },
+    "8335": {
+        "children_boys2": "cat=8335"
+    },
+    "8341": {
+        "children_boys1": "cat=8341"
+    },
+    "8347": {
+        "children_boys1": "cat=8347"
+    },
+    "8345": {
+        "children_boys1": "cat=8345"
+    },
+    "8339": {
+        "children_boys3": "cat=8339"
+    },
+    "9414": {
+        "children_boys2": "cat=9414"
+    },
+    "128536": {
+        "children_boys2": "cat=128536"
+    },
+    "130266": {
+        "children_boys4": "cat=130266"
+    },
+    "130267": {
+        "children_boys4": "cat=130267"
+    },
+    "130268": {
+        "children_boys4": "cat=130268"
+    },
+    "130269": {
+        "children_boys4": "cat=130269"
+    },
+    "130270": {
+        "children_boys4": "cat=130270"
+    },
+    "130271": {
+        "children_boys4": "cat=130271"
+    },
+    "130272": {
+        "children_boys4": "cat=130272"
+    },
+    "130273": {
+        "children_boys4": "cat=130273"
+    },
+    "130274": {
+        "children_boys4": "cat=130274"
+    },
+    "8340": {
+        "children_boys1": "cat=8340"
+    },
+    "10058": {
+        "children_boys3": "cat=10058"
+    },
+    "8333": {
+        "children_boys2": "cat=8333"
+    },
+    "8342": {
+        "children_boys2": "cat=8342"
+    },
+    "8338": {
+        "children_boys3": "cat=8338"
+    },
+    "8470": {
+        "children_boys1": "cat=8470"
+    },
+    "8332": {
+        "children_boys3": "cat=8332"
+    },
+    "8884": {
+        "children_boys3": "cat=8884"
+    },
+    "61310": {
+        "babies1": "cat=61310"
+    },
+    "200": {
+        "babies1": "cat=200"
+    },
+    "201": {
+        "babies1": "cat=201"
+    },
+    "202": {
+        "babies1": "cat=202"
+    },
+    "63081": {
+        "babies1": "cat=63081"
+    },
+    "212": {
+        "babies1": "cat=212"
+    },
+    "204": {
+        "babies1": "cat=204"
+    },
+    "209": {
+        "babies1": "cat=209"
+    },
+    "208": {
+        "babies1": "cat=208"
+    },
+    "211": {
+        "babies1": "cat=211"
+    },
+    "214": {
+        "babies1": "cat=214"
+    },
+    "130690": {
+        "children_things2": "cat=130690"
+    },
+    "128533": {
+        "babies1": "cat=128533"
+    },
+    "128534": {
+        "babies1": "cat=128534"
+    },
+    "216": {
+        "babies1": "cat=216"
+    },
+    "8558": {
+        "babies1": "cat=8558"
+    },
+    "218": {
+        "babies1": "cat=218"
+    },
+    "130666": {
+        "babies1": "cat=130666"
+    },
+    "58522": {
+        "electronic36": "cat=58513"
+    },
+    "60806": {
+        "toys10": "cat=60806"
+    },
+    "9375": {
+        "sport27": "cat=9374"
+    },
+    "131171": {
+        "children_things2": "cat=131171"
+    },
+    "131172": {
+        "children_things2": "cat=131172"
+    },
+    "131173": {
+        "children_things2": "cat=131173"
+    },
+    "131174": {
+        "children_things2": "cat=131174"
+    },
+    "131175": {
+        "children_things2": "cat=131175"
+    },
+    "131176": {
+        "children_things2": "cat=131176"
+    },
+    "131177": {
+        "children_things2": "cat=131177"
+    },
+    "131178": {
+        "children_things2": "subject=4440"
+    },
+    "131160": {
+        "children_things2": "cat=131160"
+    },
+    "131161": {
+        "children_things2": "cat=131161"
+    },
+    "131162": {
+        "children_things2": "cat=131162"
+    },
+    "131163": {
+        "children_things2": "cat=131163"
+    },
+    "131164": {
+        "children_things2": "cat=131164"
+    },
+    "131165": {
+        "children_things2": "cat=131165"
+    },
+    "131166": {
+        "children_things2": "cat=131166"
+    },
+    "131167": {
+        "children_things2": "cat=131167"
+    },
+    "131168": {
+        "children_things2": "cat=131168"
+    },
+    "131169": {
+        "children_things2": "subject=2139"
+    },
+    "131158": {
+        "children_things2": "cat=131158"
+    },
+    "131159": {
+        "children_things2": "cat=131159"
+    },
+    "131179": {
+        "children_things2": "cat=131179"
+    },
+    "10384": {
+        "children_things2": "subject=2638"
+    },
+    "131397": {
+        "babies_room1": "cat=131397"
+    },
+    "131398": {
+        "babies_room1": "cat=131398"
+    },
+    "131408": {
+        "babies_room1": "cat=131408"
+    },
+    "131409": {
+        "babies_room1": "cat=131409"
+    },
+    "131433": {
+        "babies_room1": "cat=131433"
+    },
+    "131399": {
+        "babies_room1": "cat=131399"
+    },
+    "131410": {
+        "babies_room1": "cat=131410"
+    },
+    "131403": {
+        "babies_room1": "subject=2160"
+    },
+    "131434": {
+        "babies_room1": "subject=2271"
+    },
+    "131435": {
+        "babies_room1": "cat=131435"
+    },
+    "131436": {
+        "babies_room1": "cat=131436"
+    },
+    "131437": {
+        "babies_room1": "subject=2270"
+    },
+    "131438": {
+        "babies_room1": "cat=131438"
+    },
+    "131405": {
+        "babies_room1": "cat=131405"
+    },
+    "131411": {
+        "babies_room1": "cat=131411"
+    },
+    "131431": {
+        "babies_room1": "cat=131431"
+    },
+    "131432": {
+        "babies_room1": "subject=6501"
+    },
+    "131412": {
+        "babies_room1": "cat=131412"
+    },
+    "131413": {
+        "babies_room1": "cat=131413"
+    },
+    "131414": {
+        "babies_room1": "cat=131414"
+    },
+    "131416": {
+        "babies_room1": "cat=131416"
+    },
+    "131417": {
+        "babies_room1": "subject=2014"
+    },
+    "131439": {
+        "babies_room1": "cat=131439"
+    },
+    "131418": {
+        "babies_room1": "cat=131418"
+    },
+    "131419": {
+        "babies_room1": "cat=131419"
+    },
+    "131440": {
+        "babies_room1": "subject=3598"
+    },
+    "131441": {
+        "babies_room1": "subject=1159"
+    },
+    "131442": {
+        "babies_room1": "subject=3604"
+    },
+    "131443": {
+        "babies_room1": "cat=131443"
+    },
+    "131444": {
+        "babies_room1": "subject=3597"
+    },
+    "131445": {
+        "babies_room1": "subject=3601"
+    },
+    "131446": {
+        "babies_room1": "subject=3603"
+    },
+    "131447": {
+        "babies_room1": "subject=3600"
+    },
+    "131448": {
+        "babies_room1": "subject=3599"
+    },
+    "131449": {
+        "babies_room1": "subject=3602"
+    },
+    "131422": {
+        "babies_room2": "cat=131422"
+    },
+    "131423": {
+        "babies_room2": "subject=1995"
+    },
+    "131424": {
+        "babies_room2": "subject=2106"
+    },
+    "131425": {
+        "babies_room2": "cat=131425"
+    },
+    "131426": {
+        "babies_room2": "subject=2775"
+    },
+    "131427": {
+        "babies_room2": "cat=131427"
+    },
+    "131428": {
+        "babies_room2": "cat=131428"
+    },
+    "131429": {
+        "babies_room2": "subject=5860"
+    },
+    "131430": {
+        "babies_room2": "cat=131430"
+    },
+    "61448": {
+        "children_things2": "cat=61448"
+    },
+    "8098": {
+        "children_things3": "cat=8098"
+    },
+    "244": {
+        "children_things3": "cat=244"
+    },
+    "9961": {
+        "children_things3": "cat=9961"
+    },
+    "8100": {
+        "children_things3": "cat=8100"
+    },
+    "249": {
+        "children_things3": "cat=249"
+    },
+    "7107": {
+        "children_things2": "cat=7107"
+    },
+    "130604": {
+        "gift35": "cat=130604"
+    },
+    "130609": {
+        "gift36": "cat=130609"
+    },
+    "130603": {
+        "gift11": "cat=130603"
+    },
+    "130612": {
+        "gift35": "cat=130612"
+    },
+    "130605": {
+        "gift12": "cat=130605"
+    },
+    "130613": {
+        "gift12": "cat=130613"
+    },
+    "130610": {
+        "gift12": "cat=130610"
+    },
+    "130608": {
+        "gift12": "cat=130608"
+    },
+    "130606": {
+        "gift12": "cat=130606"
+    },
+    "130611": {
+        "gift12": "cat=130611"
+    },
+    "8144": {
+        "men_clothes1": "cat=8144"
+    },
+    "63011": {
+        "men_clothes1": "cat=63011"
+    },
+    "8148": {
+        "men_clothes2": "cat=8148"
+    },
+    "8149": {
+        "men_clothes2": "cat=8149"
+    },
+    "8152": {
+        "men_clothes2": "cat=8152"
+    },
+    "8153": {
+        "men_clothes2": "cat=8153"
+    },
+    "9412": {
+        "men_clothes3": "cat=9412"
+    },
+    "129176": {
+        "men_clothes3": "cat=129176"
+    },
+    "8155": {
+        "men_clothes3": "cat=8155"
+    },
+    "129258": {
+        "men_clothes3": "cat=129258"
+    },
+    "8156": {
+        "men_clothes3": "cat=8156"
+    },
+    "8158": {
+        "men_clothes4": "cat=8158"
+    },
+    "8159": {
+        "preset_men_clothes6": "cat=8159"
+    },
+    "129257": {
+        "men_clothes5": "cat=129257"
+    },
+    "129172": {
+        "men_clothes5": "cat=129172"
+    },
+    "11428": {
+        "men_clothes5": "cat=11428"
+    },
+    "567": {
+        "men_mixtape1": "cat=567"
+    },
+    "9003": {
+        "men_mixtape2": "cat=9003"
+    },
+    "9004": {
+        "men_mixtape2": "cat=9004"
+    },
+    "9005": {
+        "men_mixtape2": "cat=9005"
+    },
+    "9006": {
+        "men_mixtape2": "cat=9006"
+    },
+    "9007": {
+        "men_mixtape2": "cat=9007"
+    },
+    "9009": {
+        "men_mixtape3": "cat=9009"
+    },
+    "9010": {
+        "men_mixtape3": "cat=9010"
+    },
+    "60898": {
+        "men_clothes9": "cat=60898"
+    },
+    "60899": {
+        "men_clothes9": "cat=60899"
+    },
+    "8154": {
+        "men_clothes8": "cat=8154"
+    },
+    "10471": {
+        "men_clothes5": "cat=10471"
+    },
+    "10039": {
+        "men_mixtape4": "cat=10039"
+    },
+    "61447": {
+        "men_clothes5": "cat=61447"
+    },
+    "61486": {
+        "men_clothes5": "cat=61486"
+    },
+    "10017": {
+        "wedding": "cat=10017"
+    },
+    "128454": {
+        "work_clothes": "cat=128454"
+    },
+    "128455": {
+        "work_clothes": "cat=128455"
+    },
+    "128456": {
+        "work_clothes": "cat=128456"
+    },
+    "128457": {
+        "work_clothes": "cat=128457"
+    },
+    "128458": {
+        "work_clothes": "cat=128458"
+    },
+    "128459": {
+        "work_clothes": "cat=128459"
+    },
+    "128460": {
+        "work_clothes": "cat=128460"
+    },
+    "130569": {
+        "gift29": "cat=130569"
+    },
+    "130570": {
+        "gift30": "cat=130570"
+    },
+    "130583": {
+        "gift29": "cat=130583"
+    },
+    "130580": {
+        "gift29": "cat=130580"
+    },
+    "130571": {
+        "gift4": "cat=130571"
+    },
+    "130572": {
+        "gift5": "cat=130572"
+    },
+    "130573": {
+        "gift24": "cat=130573"
+    },
+    "130574": {
+        "gift25": "cat=130574"
+    },
+    "130575": {
+        "gift24": "cat=130575"
+    },
+    "130577": {
+        "gift5": "cat=130577"
+    },
+    "130617": {
+        "gift25": "cat=130617"
+    },
+    "130579": {
+        "gift25": "cat=130579"
+    },
+    "130576": {
+        "gift25": "cat=130576"
+    },
+    "130581": {
+        "gift25": "cat=130581"
+    },
+    "128561": {
+        "gift26": "cat=128561"
+    },
+    "260": {
+        "bathroom3": "cat=260"
+    },
+    "60456": {
+        "bathroom3": "cat=60456"
+    },
+    "261": {
+        "bathroom3": "cat=261"
+    },
+    "60454": {
+        "bathroom3": "cat=60454"
+    },
+    "128426": {
+        "bathroom3": "cat=128426"
+    },
+    "262": {
+        "bathroom2": "cat=262"
+    },
+    "131471": {
+        "bathroom2": "cat=131471"
+    },
+    "131472": {
+        "bathroom2": "cat=131472"
+    },
+    "131473": {
+        "bathroom2": "cat=131473"
+    },
+    "131474": {
+        "bathroom2": "cat=131474"
+    },
+    "131475": {
+        "bathroom2": "subject=3319"
+    },
+    "8708": {
+        "kitchen22": "cat=8708"
+    },
+    "8709": {
+        "kitchen22": "cat=8709"
+    },
+    "8710": {
+        "kitchen23": "cat=8710"
+    },
+    "8701": {
+        "kitchen22": "cat=8701"
+    },
+    "8711": {
+        "kitchen16": "cat=8711"
+    },
+    "61239": {
+        "kitchen5": "cat=61239"
+    },
+    "8702": {
+        "kitchen16": "cat=8702"
+    },
+    "8703": {
+        "kitchen16": "cat=8703"
+    },
+    "8704": {
+        "kitchen16": "cat=8704"
+    },
+    "130076": {
+        "kitchen9": "cat=130076"
+    },
+    "130077": {
+        "kitchen9": "cat=130077"
+    },
+    "130078": {
+        "kitchen9": "cat=130078"
+    },
+    "130079": {
+        "kitchen10": "cat=130079"
+    },
+    "130080": {
+        "kitchen9": "cat=130080"
+    },
+    "130081": {
+        "kitchen11": "cat=130081"
+    },
+    "130508": {
+        "kitchen12": "cat=130508"
+    },
+    "130084": {
+        "kitchen9": "cat=130084"
+    },
+    "130082": {
+        "kitchen9": "cat=130082"
+    },
+    "130507": {
+        "kitchen9": "cat=130507"
+    },
+    "130083": {
+        "kitchen9": "cat=130083"
+    },
+    "130505": {
+        "kitchen9": "cat=130505"
+    },
+    "130506": {
+        "kitchen13": "cat=130506"
+    },
+    "130510": {
+        "kitchen9": "cat=130510"
+    },
+    "130481": {
+        "kitchen9": "cat=130481"
+    },
+    "8705": {
+        "kitchen24": "cat=8705"
+    },
+    "8720": {
+        "kitchen22": "cat=8720"
+    },
+    "130073": {
+        "kitchen7": "cat=130073"
+    },
+    "130074": {
+        "kitchen7": "cat=130074"
+    },
+    "130072": {
+        "kitchen7": "cat=130072"
+    },
+    "130066": {
+        "kitchen7": "subject=401"
+    },
+    "130070": {
+        "kitchen7": "subject=1136"
+    },
+    "130071": {
+        "kitchen7": "cat=130071"
+    },
+    "130069": {
+        "kitchen7": "cat=130069"
+    },
+    "130065": {
+        "kitchen7": "cat=130065"
+    },
+    "130068": {
+        "kitchen8": "cat=130068"
+    },
+    "130067": {
+        "kitchen8": "cat=130067"
+    },
+    "130075": {
+        "kitchen8": "subject=7551"
+    },
+    "130854": {
+        "kitchen20": "cat=130854"
+    },
+    "130855": {
+        "kitchen20": "cat=130855"
+    },
+    "130856": {
+        "kitchen20": "cat=130856"
+    },
+    "130857": {
+        "kitchen20": "cat=130857"
+    },
+    "130858": {
+        "kitchen20": "cat=130858"
+    },
+    "130859": {
+        "kitchen21": "cat=130859"
+    },
+    "130860": {
+        "kitchen21": "cat=130860"
+    },
+    "130861": {
+        "kitchen21": "cat=130861"
+    },
+    "130862": {
+        "kitchen20": "cat=130862"
+    },
+    "130864": {
+        "kitchen20": "cat=130864"
+    },
+    "130865": {
+        "kitchen20": "cat=130865"
+    },
+    "130866": {
+        "kitchen20": "cat=130866"
+    },
+    "130867": {
+        "kitchen20": "cat=130867"
+    },
+    "130868": {
+        "kitchen20": "cat=130868"
+    },
+    "130869": {
+        "kitchen20": "cat=130869"
+    },
+    "130870": {
+        "kitchen20": "cat=130870"
+    },
+    "130871": {
+        "kitchen20": "cat=130871"
+    },
+    "130872": {
+        "kitchen20": "cat=130872"
+    },
+    "130873": {
+        "kitchen20": "cat=130873"
+    },
+    "130874": {
+        "kitchen20": "cat=130874"
+    },
+    "130863": {
+        "kitchen20": "cat=130863"
+    },
+    "8706": {
+        "kitchen18": "cat=8706"
+    },
+    "12861": {
+        "kitchen18": "subject=1761"
+    },
+    "8722": {
+        "kitchen18": "cat=8722"
+    },
+    "8707": {
+        "kitchen18": "cat=8707"
+    },
+    "8713": {
+        "kitchen18": "cat=8713"
+    },
+    "8714": {
+        "kitchen18": "cat=8714"
+    },
+    "9566": {
+        "kitchen18": "cat=9566"
+    },
+    "8716": {
+        "kitchen18": "cat=8716"
+    },
+    "8717": {
+        "kitchen19": "cat=8717"
+    },
+    "8724": {
+        "kitchen19": "cat=8724"
+    },
+    "8049": {
+        "kitchen19": "subject=940"
+    },
+    "8718": {
+        "kitchen19": "subject=1021"
+    },
+    "8728": {
+        "kitchen19": "cat=8728"
+    },
+    "8462": {
+        "interior5": "cat=8462"
+    },
+    "131085": {
+        "interior5": "subject=5544"
+    },
+    "130146": {
+        "interior5": "subject=1360"
+    },
+    "130773": {
+        "interior14": "cat=130773"
+    },
+    "130819": {
+        "interior17": "cat=130819"
+    },
+    "130774": {
+        "interior15": "cat=130774"
+    },
+    "130775": {
+        "interior15": "cat=130775"
+    },
+    "130470": {
+        "interior16": "cat=130470"
+    },
+    "130776": {
+        "interior16": "cat=130776"
+    },
+    "130777": {
+        "interior16": "cat=130777"
+    },
+    "130796": {
+        "interior16": "cat=130796"
+    },
+    "130778": {
+        "interior16": "cat=130778"
+    },
+    "130779": {
+        "interior17": "cat=130779"
+    },
+    "130780": {
+        "interior18": "cat=130780"
+    },
+    "130781": {
+        "interior18": "cat=130781"
+    },
+    "130782": {
+        "interior18": "cat=130782"
+    },
+    "130783": {
+        "interior18": "cat=130783"
+    },
+    "130784": {
+        "interior18": "cat=130784"
+    },
+    "130785": {
+        "interior19": "cat=130785"
+    },
+    "130786": {
+        "interior19": "cat=130786"
+    },
+    "130787": {
+        "interior19": "cat=130787"
+    },
+    "130788": {
+        "interior18": "cat=130788"
+    },
+    "130789": {
+        "interior18": "cat=130789"
+    },
+    "130475": {
+        "interior14": "cat=130475"
+    },
+    "130790": {
+        "interior18": "cat=130790"
+    },
+    "130791": {
+        "interior18": "cat=130791"
+    },
+    "130795": {
+        "interior18": "cat=130795"
+    },
+    "130792": {
+        "interior18": "cat=130792"
+    },
+    "130793": {
+        "interior18": "cat=130793"
+    },
+    "130820": {
+        "interior17": "cat=130820"
+    },
+    "130794": {
+        "interior18": "cat=130794"
+    },
+    "130471": {
+        "interior16": "cat=130471"
+    },
+    "130474": {
+        "interior15": "cat=130474"
+    },
+    "130797": {
+        "interior14": "subject=8470"
+    },
+    "130760": {
+        "interior14": "cat=130760"
+    },
+    "130758": {
+        "interior5": "subject=8144"
+    },
+    "130537": {
+        "interior11": "cat=130537"
+    },
+    "130538": {
+        "interior11": "cat=130538"
+    },
+    "130540": {
+        "interior11": "cat=130540"
+    },
+    "130542": {
+        "interior11": "cat=130542"
+    },
+    "130544": {
+        "interior11": "cat=130544"
+    },
+    "130545": {
+        "interior11": "cat=130545"
+    },
+    "130546": {
+        "interior11": "cat=130546"
+    },
+    "130547": {
+        "interior12": "cat=130547"
+    },
+    "130548": {
+        "interior12": "cat=130548"
+    },
+    "130549": {
+        "interior12": "cat=130549"
+    },
+    "130550": {
+        "interior12": "cat=130550"
+    },
+    "130551": {
+        "interior12": "cat=130551"
+    },
+    "130552": {
+        "interior12": "cat=130552"
+    },
+    "130553": {
+        "interior12": "cat=130553"
+    },
+    "130554": {
+        "interior12": "cat=130554"
+    },
+    "130558": {
+        "interior13": "cat=130558"
+    },
+    "130559": {
+        "interior13": "cat=130559"
+    },
+    "130561": {
+        "interior13": "cat=130561"
+    },
+    "130563": {
+        "interior13": "cat=130563"
+    },
+    "130536": {
+        "interior13": "cat=130536"
+    },
+    "130539": {
+        "interior13": "cat=130539"
+    },
+    "130543": {
+        "interior13": "cat=130543"
+    },
+    "130564": {
+        "interior13": "cat=130564"
+    },
+    "130565": {
+        "interior13": "cat=130565"
+    },
+    "130567": {
+        "interior13": "cat=130567"
+    },
+    "130149": {
+        "interior5": "subject=5867"
+    },
+    "130144": {
+        "interior5": "subject=967"
+    },
+    "130147": {
+        "interior5": "subject=5865"
+    },
+    "130145": {
+        "interior5": "subject=968"
+    },
+    "8464": {
+        "interior21": "cat=8464"
+    },
+    "296": {
+        "interior20": "cat=296"
+    },
+    "300": {
+        "interior22": "cat=300"
+    },
+    "303": {
+        "interior23": "cat=303"
+    },
+    "8700": {
+        "interior22": "subject=1793"
+    },
+    "8461": {
+        "interior22": "cat=8461"
+    },
+    "130136": {
+        "interior5": "subject=1441"
+    },
+    "130137": {
+        "interior5": "subject=235"
+    },
+    "130134": {
+        "interior5": "cat=130134"
+    },
+    "130135": {
+        "interior5": "subject=2002"
+    },
+    "130138": {
+        "interior5": "subject=3072"
+    },
+    "62855": {
+        "bedroom2": "cat=62855"
+    },
+    "8466": {
+        "bedroom6": "cat=8466"
+    },
+    "60599": {
+        "interior25": "cat=8459"
+    },
+    "60600": {
+        "bedroom6": "cat=60600"
+    },
+    "60608": {
+        "bedroom2": "cat=60608"
+    },
+    "12811": {
+        "bedroom7": "cat=12811"
+    },
+    "60611": {
+        "bedroom8": "cat=60611"
+    },
+    "130088": {
+        "bedding2": "subject=4747"
+    },
+    "130509": {
+        "bedding2": "subject=5240"
+    },
+    "130091": {
+        "bedding2": "cat=130091"
+    },
+    "130092": {
+        "bedding2": "subject=743"
+    },
+    "130094": {
+        "bedding2": "subject=319"
+    },
+    "130096": {
+        "bedding2": "subject=321"
+    },
+    "130098": {
+        "bedding2": "subject=1045"
+    },
+    "130100": {
+        "bedding2": "cat=130100"
+    },
+    "130102": {
+        "bedding3": "subject=1182"
+    },
+    "130104": {
+        "bedding3": "subject=197"
+    },
+    "130105": {
+        "bedding3": "cat=130105"
+    },
+    "130108": {
+        "bedding2": "subject=2776"
+    },
+    "60619": {
+        "bedroom5": "cat=60619"
+    },
+    "8421": {
+        "livingroom5": "cat=8421"
+    },
+    "299": {
+        "livingroom5": "cat=299"
+    },
+    "60625": {
+        "livingroom6": "cat=60625"
+    },
+    "60626": {
+        "livingroom6": "cat=60626"
+    },
+    "60627": {
+        "livingroom6": "cat=60627"
+    },
+    "60638": {
+        "livingroom6": "cat=60638"
+    },
+    "305": {
+        "livingroom7": "cat=305"
+    },
+    "60578": {
+        "children_room8": "cat=60578"
+    },
+    "60562": {
+        "children_room8": "cat=60562"
+    },
+    "60558": {
+        "children_room8": "cat=60558"
+    },
+    "62159": {
+        "children_room6": "cat=62159"
+    },
+    "60546": {
+        "babies_room1": "cat=131420"
+    },
+    "128546": {
+        "children_room3": "cat=128546"
+    },
+    "60583": {
+        "children_room7": "cat=60583"
+    },
+    "60589": {
+        "children_room7": "cat=60589"
+    },
+    "61866": {
+        "creativity27": "cat=61866"
+    },
+    "9082": {
+        "creativity27": "cat=9082"
+    },
+    "15991": {
+        "creativity28": "cat=15991"
+    },
+    "131477": {
+        "creativity19": "subject=6422"
+    },
+    "130585": {
+        "creativity23": "cat=130585"
+    },
+    "130586": {
+        "creativity24": "cat=130586"
+    },
+    "130587": {
+        "creativity24": "subject=1754"
+    },
+    "130588": {
+        "creativity24": "subject=2746"
+    },
+    "130589": {
+        "creativity24": "subject=5984"
+    },
+    "130590": {
+        "creativity25": "cat=130590"
+    },
+    "130591": {
+        "creativity25": "subject=2557"
+    },
+    "130592": {
+        "creativity25": "subject=1751"
+    },
+    "130815": {
+        "creativity21": "cat=130815"
+    },
+    "130593": {
+        "creativity25": "subject=5499"
+    },
+    "130594": {
+        "creativity26": "cat=130594"
+    },
+    "130595": {
+        "creativity26": "cat=130595"
+    },
+    "130596": {
+        "creativity22": "cat=130596"
+    },
+    "130597": {
+        "creativity21": "subject=6006"
+    },
+    "130598": {
+        "creativity21": "subject=1904"
+    },
+    "130599": {
+        "creativity22": "subject=6009"
+    },
+    "130600": {
+        "creativity21": "subject=6010"
+    },
+    "130601": {
+        "creativity22": "cat=130601"
+    },
+    "130602": {
+        "creativity22": "cat=130602"
+    },
+    "61602": {
+        "creativity19": "cat=61602"
+    },
+    "61609": {
+        "creativity19": "cat=61609"
+    },
+    "61708": {
+        "creativity19": "cat=61708"
+    },
+    "61613": {
+        "creativity6": "cat=61613"
+    },
+    "61616": {
+        "creativity6": "cat=61616"
+    },
+    "61623": {
+        "creativity6": "cat=61623"
+    },
+    "61736": {
+        "creativity7": "cat=61736"
+    },
+    "61643": {
+        "creativity7": "cat=61643"
+    },
+    "61699": {
+        "creativity7": "cat=61699"
+    },
+    "61687": {
+        "creativity15": "cat=61687"
+    },
+    "61719": {
+        "creativity15": "cat=61719"
+    },
+    "61696": {
+        "creativity15": "cat=61696"
+    },
+    "61601": {
+        "creativity20": "cat=61601"
+    },
+    "131479": {
+        "rooms11": "cat=131479"
+    },
+    "131480": {
+        "rooms11": "cat=131480"
+    },
+    "131481": {
+        "rooms11": "cat=131481"
+    },
+    "131482": {
+        "rooms11": "cat=131482"
+    },
+    "131483": {
+        "rooms11": "cat=131483"
+    },
+    "131484": {
+        "rooms11": "cat=131484"
+    },
+    "131485": {
+        "rooms11": "cat=131485"
+    },
+    "131486": {
+        "rooms11": "cat=131486"
+    },
+    "131487": {
+        "rooms11": "cat=131487"
+    },
+    "131488": {
+        "rooms12": "cat=131488"
+    },
+    "131489": {
+        "rooms12": "cat=131489"
+    },
+    "131490": {
+        "rooms12": "cat=131490"
+    },
+    "131491": {
+        "rooms12": "cat=131491"
+    },
+    "131492": {
+        "rooms12": "cat=131492"
+    },
+    "131493": {
+        "rooms12": "cat=131493"
+    },
+    "131494": {
+        "rooms12": "cat=131494"
+    },
+    "131495": {
+        "rooms12": "cat=131495"
+    },
+    "131496": {
+        "rooms12": "cat=131496"
+    },
+    "131497": {
+        "rooms12": "cat=131497"
+    },
+    "131503": {
+        "rooms12": "cat=131503"
+    },
+    "131498": {
+        "rooms12": "cat=131498"
+    },
+    "131499": {
+        "rooms12": "cat=131499"
+    },
+    "131500": {
+        "rooms12": "cat=131500"
+    },
+    "131501": {
+        "rooms12": "cat=131501"
+    },
+    "131502": {
+        "rooms12": "cat=131502"
+    },
+    "61723": {
+        "creativity20": "cat=61723"
+    },
+    "130816": {
+        "creativity20": "cat=130816"
+    },
+    "61731": {
+        "creativity20": "cat=61731"
+    },
+    "61639": {
+        "creativity20": "cat=61639"
+    },
+    "61716": {
+        "creativity20": "cat=61716"
+    },
+    "61598": {
+        "creativity10": "cat=61598"
+    },
+    "61712": {
+        "creativity16": "cat=61712"
+    },
+    "61681": {
+        "creativity16": "cat=61681"
+    },
+    "130695": {
+        "creativity17": "cat=17164"
+    },
+    "61649": {
+        "creativity18": "cat=61649"
+    },
+    "61597": {
+        "creativity18": "cat=61597"
+    },
+    "61657": {
+        "creativity18": "cat=61657"
+    },
+    "130726": {
+        "appliances2": "cat=130723"
+    },
+    "10408": {
+        "creativity1": "cat=10408"
+    },
+    "130992": {
+        "creativity1": "cat=130992"
+    },
+    "63092": {
+        "creativity1": "cat=63092"
+    },
+    "63088": {
+        "creativity1": "cat=63088"
+    },
+    "13327": {
+        "creativity1": "subject=716"
+    },
+    "131366": {
+        "creativity31": "subject=2556"
+    },
+    "13333": {
+        "creativity31": "cat=13333"
+    },
+    "13334": {
+        "creativity32": "cat=13334"
+    },
+    "63090": {
+        "creativity31": "cat=63090"
+    },
+    "131567": {
+        "creativity29": "cat=131567"
+    },
+    "131568": {
+        "creativity29": "subject=262"
+    },
+    "131573": {
+        "creativity30": "cat=131573"
+    },
+    "131569": {
+        "creativity30": "cat=131569"
+    },
+    "131570": {
+        "creativity30": "subject=273"
+    },
+    "131571": {
+        "creativity30": "subject=3199"
+    },
+    "131572": {
+        "creativity30": "subject=4301"
+    },
+    "131574": {
+        "creativity30": "subject=265"
+    },
+    "131575": {
+        "creativity30": "subject=1344"
+    },
+    "131576": {
+        "creativity30": "subject=4839"
+    },
+    "131577": {
+        "creativity30": "subject=2950"
+    },
+    "131578": {
+        "creativity30": "subject=1815"
+    },
+    "131579": {
+        "creativity30": "cat=131579"
+    },
+    "131580": {
+        "creativity30": "cat=131580"
+    },
+    "131581": {
+        "creativity30": "cat=131581"
+    },
+    "131390": {
+        "creativity31": "subject=8749"
+    },
+    "62826": {
+        "interior24": "subject=198"
+    },
+    "8459": {
+        "interior25": "cat=8459"
+    },
+    "10027": {
+        "housecraft6": "cat=10027"
+    },
+    "130193": {
+        "housecraft6": "subject=1262"
+    },
+    "130194": {
+        "housecraft6": "subject=1157"
+    },
+    "130483": {
+        "housecraft6": "subject=5876"
+    },
+    "130195": {
+        "housecraft6": "subject=1133"
+    },
+    "130523": {
+        "housecraft6": "subject=7421"
+    },
+    "130207": {
+        "housecraft6": "subject=3488"
+    },
+    "130200": {
+        "housecraft6": "subject=1158"
+    },
+    "130210": {
+        "housecraft_bigroot2": "subject=1673"
+    },
+    "130201": {
+        "housecraft_bigroot2": "subject=3548"
+    },
+    "130202": {
+        "housecraft7": "subject=330"
+    },
+    "130522": {
+        "housecraft6": "subject=2586"
+    },
+    "130204": {
+        "housecraft_bigroot2": "subject=2420"
+    },
+    "130208": {
+        "housecraft_bigroot2": "subject=6722"
+    },
+    "130205": {
+        "housecraft_bigroot2": "subject=3534"
+    },
+    "130209": {
+        "housecraft_bigroot2": "subject=1263"
+    },
+    "130211": {
+        "housecraft_bigroot2": "subject=2595"
+    },
+    "130212": {
+        "garden10": "subject=6355"
+    },
+    "130215": {
+        "housecraft_bigroot2": "subject=4121"
+    },
+    "128549": {
+        "housecraft12": "subject=6249"
+    },
+    "9204": {
+        "housecraft_bigroot1": "cat=9204"
+    },
+    "9206": {
+        "housecraft_bigroot1": "cat=9206"
+    },
+    "9205": {
+        "housecraft_bigroot1": "cat=9205"
+    },
+    "9207": {
+        "housecraft_bigroot1": "cat=9207"
+    },
+    "10395": {
+        "housecraft_bigroot1": "cat=10395"
+    },
+    "9183": {
+        "interior24": "cat=9183"
+    },
+    "60591": {
+        "hallway1": "cat=60591"
+    },
+    "12784": {
+        "hallway1": "subject=2317"
+    },
+    "60594": {
+        "hallway1": "cat=60594"
+    },
+    "60592": {
+        "hallway1": "cat=60592"
+    },
+    "8394": {
+        "hallway1": "cat=8394"
+    },
+    "7395": {
+        "religion": "cat=7395"
+    },
+    "17135": {
+        "interior4": "cat=17135"
+    },
+    "9726": {
+        "housecraft8": "cat=9726"
+    },
+    "9683": {
+        "housecraft8": "cat=9683"
+    },
+    "9734": {
+        "housecraft8": "cat=9734"
+    },
+    "9735": {
+        "housecraft8": "cat=9735"
+    },
+    "9725": {
+        "housecraft8": "cat=9725"
+    },
+    "9733": {
+        "housecraft8": "cat=9733"
+    },
+    "9730": {
+        "housecraft8": "cat=9730"
+    },
+    "9731": {
+        "housecraft8": "subject=2697"
+    },
+    "9727": {
+        "housecraft8": "cat=9727"
+    },
+    "128301": {
+        "housecraft8": "cat=128301"
+    },
+    "9696": {
+        "housecraft9": "cat=9696"
+    },
+    "9693": {
+        "housecraft9": "cat=9693"
+    },
+    "9715": {
+        "housecraft8": "cat=9715"
+    },
+    "9713": {
+        "housecraft8": "cat=9713"
+    },
+    "13149": {
+        "housecraft8": "subject=1436"
+    },
+    "128302": {
+        "housecraft8": "cat=128302"
+    },
+    "63064": {
+        "housecraft8": "cat=63064"
+    },
+    "13152": {
+        "housecraft8": "subject=2257"
+    },
+    "9716": {
+        "housecraft8": "cat=9716"
+    },
+    "13154": {
+        "housecraft8": "subject=913"
+    },
+    "13156": {
+        "housecraft8": "subject=1202"
+    },
+    "13157": {
+        "housecraft8": "subject=590"
+    },
+    "9704": {
+        "housecraft8": "cat=9704"
+    },
+    "13158": {
+        "housecraft8": "subject=1594"
+    },
+    "13161": {
+        "housecraft8": "subject=481"
+    },
+    "9722": {
+        "housecraft9": "cat=9722"
+    },
+    "9697": {
+        "housecraft9": "cat=9697"
+    },
+    "9723": {
+        "housecraft9": "cat=9723"
+    },
+    "128304": {
+        "housecraft12": "cat=128304"
+    },
+    "62508": {
+        "housecraft12": "cat=62508"
+    },
+    "131385": {
+        "housecraft12": "subject=8750"
+    },
+    "23896": {
+        "housecraft12": "subject=2814"
+    },
+    "23897": {
+        "housecraft12": "cat=23897"
+    },
+    "23900": {
+        "housecraft12": "subject=1520"
+    },
+    "131386": {
+        "housecraft12": "subject=3920"
+    },
+    "62516": {
+        "housecraft12": "cat=62516"
+    },
+    "62523": {
+        "housecraft12": "cat=62523"
+    },
+    "23906": {
+        "housecraft12": "subject=1692"
+    },
+    "128303": {
+        "housecraft12": "cat=128303"
+    },
+    "62514": {
+        "housecraft12": "cat=62514"
+    },
+    "63075": {
+        "housecraft12": "cat=63075"
+    },
+    "23915": {
+        "housecraft12": "subject=1596"
+    },
+    "23917": {
+        "housecraft12": "subject=1597"
+    },
+    "130672": {
+        "hallway1": "subject=3676"
+    },
+    "304": {
+        "housecraft12": "cat=304"
+    },
+    "12838": {
+        "interior4": "subject=223"
+    },
+    "130656": {
+        "interior4": "subject=1193"
+    },
+    "12841": {
+        "interior4": "cat=12841"
+    },
+    "12842": {
+        "interior4": "cat=12842"
+    },
+    "12844": {
+        "interior4": "subject=2521"
+    },
+    "130831": {
+        "housecraft13": "cat=130831"
+    },
+    "130836": {
+        "housecraft11": "subject=1619"
+    },
+    "130835": {
+        "housecraft11": "cat=130835"
+    },
+    "130837": {
+        "housecraft11": "cat=130837"
+    },
+    "131034": {
+        "housecraft14": "cat=131034"
+    },
+    "131035": {
+        "housecraft14": "cat=131035"
+    },
+    "131036": {
+        "housecraft15": "cat=131036"
+    },
+    "131084": {
+        "housecraft15": "subject=2538"
+    },
+    "130833": {
+        "housecraft13": "subject=1617"
+    },
+    "130834": {
+        "housecraft11": "cat=130834"
+    },
+    "63002": {
+        "beauty7": "cat=63002"
+    },
+    "63003": {
+        "beauty7": "cat=63003"
+    },
+    "62998": {
+        "beauty7": "cat=62998"
+    },
+    "62999": {
+        "beauty7": "cat=62999"
+    },
+    "63005": {
+        "beauty7": "cat=63005"
+    },
+    "8987": {
+        "beauty7": "cat=8987"
+    },
+    "16664": {
+        "beauty7": "cat=16664"
+    },
+    "62997": {
+        "beauty7": "cat=62997"
+    },
+    "63001": {
+        "beauty7": "cat=63001"
+    },
+    "63004": {
+        "beauty7": "cat=63004"
+    },
+    "8989": {
+        "beauty26": "cat=8989"
+    },
+    "59872": {
+        "beauty26": "cat=59872"
+    },
+    "8965": {
+        "beauty26": "cat=8965"
+    },
+    "8963": {
+        "beauty26": "cat=8963"
+    },
+    "8962": {
+        "beauty26": "cat=8962"
+    },
+    "8964": {
+        "beauty26": "cat=8964"
+    },
+    "8727": {
+        "beauty27": "cat=8727"
+    },
+    "9454": {
+        "beauty1": "cat=9454"
+    },
+    "8988": {
+        "beauty9": "cat=8988"
+    },
+    "6837": {
+        "beauty9": "cat=6837"
+    },
+    "60751": {
+        "beauty1": "cat=60751"
+    },
+    "60644": {
+        "beauty42": "cat=60644"
+    },
+    "60645": {
+        "beauty43": "cat=60645"
+    },
+    "60646": {
+        "beauty42": "cat=60646"
+    },
+    "58992": {
+        "beauty42": "cat=58992"
+    },
+    "58217": {
+        "koreancosmetics": "subject=49"
+    },
+    "59744": {
+        "appliances1": "cat=5381"
+    },
+    "8938": {
+        "beauty25": "cat=8938"
+    },
+    "8935": {
+        "beauty25": "cat=8935"
+    },
+    "8944": {
+        "beauty12": "cat=8944"
+    },
+    "8925": {
+        "beauty12": "cat=8925"
+    },
+    "23968": {
+        "beauty12": "cat=23968"
+    },
+    "9645": {
+        "beauty15": "cat=9645"
+    },
+    "8998": {
+        "beauty15": "cat=8998"
+    },
+    "23969": {
+        "beauty15": "cat=23969"
+    },
+    "130482": {
+        "beauty46": "subject=403"
+    },
+    "8957": {
+        "beauty7": "cat=62999"
+    },
+    "63008": {
+        "beauty44": "cat=63008"
+    },
+    "61958": {
+        "beauty44": "cat=61958"
+    },
+    "8955": {
+        "beauty45": "subject=443"
+    },
+    "8953": {
+        "beauty45": "cat=8953"
+    },
+    "8958": {
+        "beauty44": "cat=8958"
+    },
+    "8956": {
+        "beauty44": "cat=8956"
+    },
+    "8954": {
+        "beauty17": "cat=8954"
+    },
+    "10012": {
+        "beauty45": "cat=10012"
+    },
+    "9232": {
+        "beauty36": "cat=9232"
+    },
+    "130965": {
+        "beauty29": "cat=130965"
+    },
+    "130966": {
+        "beauty29": "cat=130966"
+    },
+    "130967": {
+        "beauty30": "cat=130967"
+    },
+    "130968": {
+        "beauty30": "cat=130968"
+    },
+    "130969": {
+        "beauty31": "cat=130969"
+    },
+    "130970": {
+        "beauty31": "cat=130970"
+    },
+    "130971": {
+        "beauty31": "cat=130971"
+    },
+    "130974": {
+        "beauty32": "cat=130974"
+    },
+    "130975": {
+        "beauty33": "cat=130975"
+    },
+    "130976": {
+        "beauty34": "cat=130976"
+    },
+    "130977": {
+        "beauty34": "cat=130977"
+    },
+    "130978": {
+        "beauty34": "cat=130978"
+    },
+    "130979": {
+        "beauty38": "cat=130979"
+    },
+    "130980": {
+        "beauty38": "cat=130980"
+    },
+    "130981": {
+        "beauty37": "cat=130981"
+    },
+    "130982": {
+        "beauty38": "cat=130982"
+    },
+    "130983": {
+        "beauty38": "cat=130983"
+    },
+    "130984": {
+        "beauty38": "cat=130984"
+    },
+    "130985": {
+        "beauty39": "cat=130985"
+    },
+    "130986": {
+        "beauty39": "cat=130986"
+    },
+    "130987": {
+        "beauty40": "cat=130987"
+    },
+    "130988": {
+        "beauty38": "cat=130988"
+    },
+    "130989": {
+        "beauty37": "cat=130989"
+    },
+    "130990": {
+        "beauty41": "cat=130990"
+    },
+    "130972": {
+        "beauty35": "cat=130972"
+    },
+    "130973": {
+        "beauty35": "subject=341"
+    },
+    "59860": {
+        "beauty46": "cat=59860"
+    },
+    "7036": {
+        "beauty47": "cat=7036"
+    },
+    "8997": {
+        "beauty46": "cat=8997"
+    },
+    "8996": {
+        "beauty46": "cat=8996"
+    },
+    "8990": {
+        "beauty19": "cat=8990"
+    },
+    "8971": {
+        "beauty20": "cat=8971"
+    },
+    "8968": {
+        "beauty20": "cat=8968"
+    },
+    "62355": {
+        "beauty20": "cat=62355"
+    },
+    "8973": {
+        "beauty21": "cat=8973"
+    },
+    "8985": {
+        "beauty21": "cat=8985"
+    },
+    "8986": {
+        "beauty23": "cat=8986"
+    },
+    "8976": {
+        "beauty22": "cat=8976"
+    },
+    "8975": {
+        "beauty23": "cat=8975"
+    },
+    "8974": {
+        "beauty24": "cat=8974"
+    },
+    "8972": {
+        "beauty24": "cat=8972"
+    },
+    "131075": {
+        "appliances4": "cat=131026"
+    },
+    "9965": {
+        "head_accessories1": "cat=9965"
+    },
+    "9990": {
+        "clothes_accessories2": "cat=9990"
+    },
+    "130484": {
+        "bijouterie1": "cat=130484"
+    },
+    "130485": {
+        "bijouterie1": "subject=201"
+    },
+    "130486": {
+        "bijouterie2": "subject=297"
+    },
+    "130487": {
+        "bijouterie1": "subject=295"
+    },
+    "130488": {
+        "bijouterie1": "subject=4688"
+    },
+    "130489": {
+        "bijouterie1": "subject=1688"
+    },
+    "130490": {
+        "bijouterie1": "subject=1693"
+    },
+    "130491": {
+        "bijouterie1": "cat=130491"
+    },
+    "130492": {
+        "bijouterie1": "subject=302"
+    },
+    "130493": {
+        "bijouterie3": "subject=1559"
+    },
+    "130494": {
+        "bijouterie1": "subject=202"
+    },
+    "130495": {
+        "bijouterie3": "subject=24"
+    },
+    "130964": {
+        "bijouterie3": "subject=8551"
+    },
+    "130496": {
+        "bijouterie3": "subject=5367"
+    },
+    "130497": {
+        "bijouterie4": "subject=298"
+    },
+    "130498": {
+        "bijouterie4": "subject=203"
+    },
+    "130499": {
+        "bijouterie4": "cat=130499"
+    },
+    "130500": {
+        "bijouterie4": "subject=1784"
+    },
+    "130501": {
+        "bijouterie4": "cat=130501"
+    },
+    "130502": {
+        "bijouterie4": "subject=957"
+    },
+    "131074": {
+        "jewellery1": "cat=1023"
+    },
+    "10023": {
+        "hand_accessories2": "subject=2920"
+    },
+    "9980": {
+        "clothes_accessories2": "cat=9980"
+    },
+    "9967": {
+        "head_accessories3": "cat=9967"
+    },
+    "9979": {
+        "hand_accessories2": "subject=63"
+    },
+    "9974": {
+        "hand_accessories2": "cat=9974"
+    },
+    "9973": {
+        "hand_accessories1": "cat=9973"
+    },
+    "9982": {
+        "head_accessories1": "subject=985"
+    },
+    "9978": {
+        "hand_accessories1": "cat=9978"
+    },
+    "9988": {
+        "clothes_accessories1": "cat=9988"
+    },
+    "9987": {
+        "clothes_accessories1": "cat=9987"
+    },
+    "58328": {
+        "clothes_accessories1": "subject=2727"
+    },
+    "58327": {
+        "clothes_accessories1": "subject=1359"
+    },
+    "9986": {
+        "clothes_accessories1": "subject=59"
+    },
+    "131364": {
+        "clothes_accessories1": "subject=6594"
+    },
+    "9977": {
+        "hand_accessories1": "cat=9977"
+    },
+    "9971": {
+        "clothes_accessories3": "cat=9971"
+    },
+    "128332": {
+        "clothes_accessories2": "cat=128332"
+    },
+    "128333": {
+        "clothes_accessories2": "cat=128333"
+    },
+    "9970": {
+        "clothes_accessories3": "cat=9970"
+    },
+    "16146": {
+        "bags1": "cat=16146"
+    },
+    "8820": {
+        "bags1": "subject=136"
+    },
+    "9998": {
+        "bags3": "subject=305"
+    },
+    "10000": {
+        "bags1": "subject=531"
+    },
+    "10001": {
+        "bags3": "subject=1868"
+    },
+    "62908": {
+        "bags1": "cat=62908"
+    },
+    "10006": {
+        "bags2": "cat=10006"
+    },
+    "8828": {
+        "bags3": "subject=4288"
+    },
+    "10294": {
+        "bags3": "subject=2318"
+    },
+    "10003": {
+        "bags3": "subject=2085"
+    },
+    "9976": {
+        "hand_accessories2": "cat=9976"
+    },
+    "62903": {
+        "bags1": "cat=62903"
+    },
+    "9835": {
+        "electronic37": "cat=9835"
+    },
+    "9468": {
+        "electronic38": "cat=9468"
+    },
+    "58513": {
+        "electronic36": "cat=58513"
+    },
+    "130772": {
+        "electronic36": "cat=130772"
+    },
+    "61808": {
+        "electronic36": "subject=4030"
+    },
+    "9509": {
+        "electronic36": "cat=9509"
+    },
+    "15692": {
+        "electronic36": "subject=524"
+    },
+    "10491": {
+        "electronic36": "cat=10491"
+    },
+    "59132": {
+        "electronic39": "cat=59132"
+    },
+    "128516": {
+        "books3": "cat=128516"
+    },
+    "9492": {
+        "electronic43": "subject=2290"
+    },
+    "9963": {
+        "electronic43": "cat=9963"
+    },
+    "131803": {
+        "electronic43": "subject=1681"
+    },
+    "60805": {
+        "electronic43": "cat=60805"
+    },
+    "10009": {
+        "electronic43": "subject=2892"
+    },
+    "60807": {
+        "electronic44": "cat=60807"
+    },
+    "9493": {
+        "electronic44": "cat=9493"
+    },
+    "131796": {
+        "electronic45": "cat=131796"
+    },
+    "131797": {
+        "electronic45": "cat=131797"
+    },
+    "131798": {
+        "electronic45": "subject=5806"
+    },
+    "131799": {
+        "electronic46": "subject=742"
+    },
+    "131800": {
+        "electronic45": "cat=131800"
+    },
+    "131801": {
+        "electronic45": "cat=131801"
+    },
+    "131802": {
+        "electronic45": "cat=131802"
+    },
+    "131795": {
+        "electronic43": "cat=131795"
+    },
+    "128306": {
+        "electronic17": "cat=128306"
+    },
+    "128307": {
+        "electronic17": "cat=128307"
+    },
+    "15580": {
+        "electronic17": "subject=795"
+    },
+    "63017": {
+        "electronic17": "cat=63017"
+    },
+    "15584": {
+        "electronic17": "cat=15584"
+    },
+    "60809": {
+        "electronic17": "cat=60809"
+    },
+    "60808": {
+        "electronic17": "cat=60808"
+    },
+    "9497": {
+        "electronic42": "cat=9497"
+    },
+    "9846": {
+        "electronic37": "cat=9846"
+    },
+    "16292": {
+        "electronic17": "cat=16292"
+    },
+    "60772": {
+        "electronic17": "cat=60772"
+    },
+    "60758": {
+        "electronic17": "cat=60758"
+    },
+    "60763": {
+        "electronic17": "cat=60763"
+    },
+    "60775": {
+        "electronic17": "cat=60775"
+    },
+    "62325": {
+        "electronic20": "subject=1258"
+    },
+    "63080": {
+        "electronic22": "cat=63080"
+    },
+    "128550": {
+        "electronic20": "cat=128550"
+    },
+    "9473": {
+        "electronic20": "cat=9473"
+    },
+    "59131": {
+        "electronic38": "cat=9468"
+    },
+    "9476": {
+        "electronic20": "cat=9476"
+    },
+    "128487": {
+        "electronic20": "cat=128487"
+    },
+    "9467": {
+        "electronic20": "cat=9467"
+    },
+    "9464": {
+        "electronic20": "subject=516"
+    },
+    "9477": {
+        "electronic22": "subject=517"
+    },
+    "9463": {
+        "electronic22": "subject=515"
+    },
+    "9475": {
+        "electronic22": "subject=2376"
+    },
+    "9465": {
+        "electronic22": "cat=9465"
+    },
+    "130692": {
+        "electronic21": "subject=453"
+    },
+    "9927": {
+        "electronic22": "subject=2833"
+    },
+    "130803": {
+        "electronic35": "cat=130803"
+    },
+    "130798": {
+        "electronic23": "cat=130798"
+    },
+    "130799": {
+        "electronic35": "cat=130799"
+    },
+    "130800": {
+        "electronic23": "cat=130800"
+    },
+    "130801": {
+        "electronic35": "cat=130801"
+    },
+    "130875": {
+        "electronic35": "cat=130875"
+    },
+    "131384": {
+        "electronic35": "cat=131384"
+    },
+    "130802": {
+        "electronic23": "cat=130802"
+    },
+    "130804": {
+        "electronic25": "cat=130804"
+    },
+    "130806": {
+        "electronic26": "cat=130806"
+    },
+    "130805": {
+        "electronic25": "cat=130805"
+    },
+    "130808": {
+        "electronic27": "cat=130808"
+    },
+    "130807": {
+        "electronic27": "cat=130807"
+    },
+    "130809": {
+        "electronic27": "cat=130809"
+    },
+    "130821": {
+        "electronic34": "cat=130821"
+    },
+    "130830": {
+        "electronic34": "cat=130830"
+    },
+    "130826": {
+        "electronic33": "cat=130826"
+    },
+    "130827": {
+        "electronic33": "cat=130827"
+    },
+    "130828": {
+        "electronic34": "cat=130828"
+    },
+    "130829": {
+        "electronic34": "cat=130829"
+    },
+    "131380": {
+        "electronic34": "cat=131380"
+    },
+    "131381": {
+        "electronic34": "cat=131381"
+    },
+    "130822": {
+        "electronic31": "cat=130822"
+    },
+    "130823": {
+        "electronic34": "cat=130823"
+    },
+    "130824": {
+        "electronic34": "cat=130824"
+    },
+    "130825": {
+        "electronic32": "cat=130825"
+    },
+    "129326": {
+        "electronic10": "cat=129326"
+    },
+    "129327": {
+        "electronic11": "cat=129327"
+    },
+    "130811": {
+        "electronic29": "cat=130811"
+    },
+    "129328": {
+        "electronic11": "cat=129328"
+    },
+    "129329": {
+        "electronic11": "cat=129329"
+    },
+    "130810": {
+        "electronic28": "cat=130810"
+    },
+    "129330": {
+        "electronic11": "cat=129330"
+    },
+    "129331": {
+        "electronic11": "cat=129331"
+    },
+    "130812": {
+        "electronic29": "cat=130812"
+    },
+    "129332": {
+        "electronic30": "cat=129332"
+    },
+    "129322": {
+        "electronic11": "cat=129322"
+    },
+    "131210": {
+        "electronic22": "subject=1352"
+    },
+    "130693": {
+        "electronic21": "cat=130693"
+    },
+    "59065": {
+        "electronic22": "cat=59065"
+    },
+    "9845": {
+        "electronic17": "cat=9845"
+    },
+    "130749": {
+        "electronic17": "subject=8395"
+    },
+    "9856": {
+        "electronic13": "cat=9856"
+    },
+    "130375": {
+        "electronic13": "cat=130375"
+    },
+    "130401": {
+        "electronic13": "cat=130401"
+    },
+    "130379": {
+        "electronic13": "cat=130379"
+    },
+    "130376": {
+        "electronic13": "cat=130376"
+    },
+    "130377": {
+        "electronic13": "cat=130377"
+    },
+    "130403": {
+        "electronic13": "cat=130403"
+    },
+    "130400": {
+        "electronic13": "subject=1240"
+    },
+    "130402": {
+        "electronic13": "cat=130402"
+    },
+    "130393": {
+        "electronic13": "subject=2104"
+    },
+    "131080": {
+        "electronic13": "subject=6568"
+    },
+    "130394": {
+        "electronic13": "cat=130394"
+    },
+    "130378": {
+        "electronic13": "cat=130378"
+    },
+    "130392": {
+        "electronic13": "cat=130392"
+    },
+    "130623": {
+        "electronic13": "cat=130623"
+    },
+    "9496": {
+        "electronic13": "cat=9496"
+    },
+    "128308": {
+        "electronic13": "cat=128308"
+    },
+    "10028": {
+        "electronic13": "cat=10028"
+    },
+    "58397": {
+        "electronic13": "subject=1142"
+    },
+    "9837": {
+        "electronic13": "cat=9837"
+    },
+    "130374": {
+        "electronic13": "subject=548"
+    },
+    "10459": {
+        "electronic13": "cat=10459"
+    },
+    "9924": {
+        "electronic13": "subject=2819"
+    },
+    "6631": {
+        "electronic13": "cat=6631"
+    },
+    "130753": {
+        "electronic13": "subject=1966"
+    },
+    "9508": {
+        "electronic13": "cat=9508"
+    },
+    "9453": {
+        "electronic38": "subject=2479"
+    },
+    "7588": {
+        "electronic37": "cat=7588"
+    },
+    "9240": {
+        "electronic39": "cat=9240"
+    },
+    "9541": {
+        "toys5": "cat=9541"
+    },
+    "15302": {
+        "toys11": "cat=15302"
+    },
+    "15308": {
+        "toys11": "cat=15308"
+    },
+    "16149": {
+        "toys11": "subject=3544"
+    },
+    "9174": {
+        "toys11": "cat=9174"
+    },
+    "15310": {
+        "toys11": "subject=1032"
+    },
+    "15311": {
+        "toys11": "cat=15311"
+    },
+    "15312": {
+        "toys11": "cat=15312"
+    },
+    "15313": {
+        "toys11": "subject=310"
+    },
+    "10357": {
+        "toys11": "cat=10357"
+    },
+    "8274": {
+        "toys12": "cat=8274"
+    },
+    "8275": {
+        "toys12": "cat=8275"
+    },
+    "8604": {
+        "toys12": "subject=267"
+    },
+    "128562": {
+        "toys8": "cat=128562"
+    },
+    "8277": {
+        "toys8": "cat=8277"
+    },
+    "8278": {
+        "toys9": "subject=227"
+    },
+    "9184": {
+        "toys9": "subject=2095"
+    },
+    "8279": {
+        "toys9": "subject=1052"
+    },
+    "8280": {
+        "toys7": "subject=117"
+    },
+    "128594": {
+        "toys9": "cat=128594"
+    },
+    "8281": {
+        "toys3": "cat=8281"
+    },
+    "8282": {
+        "toys3": "cat=8282"
+    },
+    "8283": {
+        "toys3": "subject=1029"
+    },
+    "8284": {
+        "toys3": "subject=268"
+    },
+    "9642": {
+        "toys3": "subject=2619"
+    },
+    "8285": {
+        "toys6": "cat=8285"
+    },
+    "8286": {
+        "toys3": "subject=123"
+    },
+    "8287": {
+        "toys4": "cat=8287"
+    },
+    "9752": {
+        "toys3": "subject=2763"
+    },
+    "8093": {
+        "toys3": "cat=8093"
+    },
+    "16260": {
+        "toys3": "cat=16260"
+    },
+    "8288": {
+        "toys5": "cat=8288"
+    },
+    "8289": {
+        "toys6": "cat=8289"
+    },
+    "131198": {
+        "furniture1": "cat=131198"
+    },
+    "131200": {
+        "furniture1": "cat=131200"
+    },
+    "131201": {
+        "furniture1": "cat=131201"
+    },
+    "131202": {
+        "furniture1": "subject=7606"
+    },
+    "131203": {
+        "furniture1": "cat=131203"
+    },
+    "131204": {
+        "furniture1": "cat=131204"
+    },
+    "131205": {
+        "furniture1": "cat=131205"
+    },
+    "131206": {
+        "furniture1": "cat=131206"
+    },
+    "131207": {
+        "furniture1": "subject=7621"
+    },
+    "131208": {
+        "furniture1": "cat=131208"
+    },
+    "131209": {
+        "furniture1": "cat=131209"
+    },
+    "131211": {
+        "furniture1": "subject=1128"
+    },
+    "131212": {
+        "furniture1": "subject=7604"
+    },
+    "131213": {
+        "furniture1": "cat=131213"
+    },
+    "131214": {
+        "furniture1": "cat=131214"
+    },
+    "131215": {
+        "furniture1": "cat=131215"
+    },
+    "131216": {
+        "furniture1": "cat=131216"
+    },
+    "131217": {
+        "furniture1": "cat=131217"
+    },
+    "131218": {
+        "furniture1": "subject=7746"
+    },
+    "131219": {
+        "furniture1": "cat=131219"
+    },
+    "131220": {
+        "furniture1": "cat=131220"
+    },
+    "131221": {
+        "furniture1": "subject=4340"
+    },
+    "131222": {
+        "furniture1": "subject=7592"
+    },
+    "131223": {
+        "furniture1": "subject=4289"
+    },
+    "131224": {
+        "furniture1": "subject=1392"
+    },
+    "131226": {
+        "furniture1": "subject=7589"
+    },
+    "131227": {
+        "furniture2": "subject=7648"
+    },
+    "131228": {
+        "furniture2": "cat=131228"
+    },
+    "131229": {
+        "furniture2": "cat=131229"
+    },
+    "131230": {
+        "furniture2": "cat=131230"
+    },
+    "131231": {
+        "furniture2": "subject=7595"
+    },
+    "131232": {
+        "furniture2": "cat=131232"
+    },
+    "131233": {
+        "furniture2": "cat=131233"
+    },
+    "131234": {
+        "furniture2": "subject=8215"
+    },
+    "131235": {
+        "furniture2": "cat=131235"
+    },
+    "131236": {
+        "furniture2": "cat=131236"
+    },
+    "131237": {
+        "furniture2": "cat=131237"
+    },
+    "131238": {
+        "furniture2": "cat=131238"
+    },
+    "131239": {
+        "furniture2": "cat=131239"
+    },
+    "131240": {
+        "furniture2": "cat=131240"
+    },
+    "131241": {
+        "furniture2": "cat=131241"
+    },
+    "131242": {
+        "furniture2": "cat=131242"
+    },
+    "131243": {
+        "furniture2": "cat=131243"
+    },
+    "131244": {
+        "furniture2": "cat=131244"
+    },
+    "131245": {
+        "furniture2": "cat=131245"
+    },
+    "131246": {
+        "furniture2": "cat=131246"
+    },
+    "131247": {
+        "furniture2": "subject=8450"
+    },
+    "131248": {
+        "furniture2": "cat=131248"
+    },
+    "131249": {
+        "furniture2": "subject=7582"
+    },
+    "131250": {
+        "furniture2": "cat=131250"
+    },
+    "131251": {
+        "furniture2": "cat=131251"
+    },
+    "131252": {
+        "furniture2": "cat=131252"
+    },
+    "131253": {
+        "furniture2": "cat=131253"
+    },
+    "131254": {
+        "furniture2": "cat=131254"
+    },
+    "131255": {
+        "furniture2": "subject=7583"
+    },
+    "131256": {
+        "furniture2": "cat=131256"
+    },
+    "131296": {
+        "garden6": "cat=128795"
+    },
+    "131258": {
+        "furniture2": "cat=131258"
+    },
+    "131259": {
+        "furniture2": "cat=131259"
+    },
+    "131260": {
+        "furniture2": "cat=131260"
+    },
+    "131261": {
+        "furniture2": "cat=131261"
+    },
+    "131262": {
+        "furniture2": "subject=5098"
+    },
+    "131263": {
+        "furniture2": "subject=4742"
+    },
+    "131293": {
+        "garden6": "subject=6902"
+    },
+    "131294": {
+        "garden6": "cat=128793"
+    },
+    "131295": {
+        "garden6": "cat=128794"
+    },
+    "131264": {
+        "furniture2": "cat=131264"
+    },
+    "131265": {
+        "furniture2": "cat=131265"
+    },
+    "131266": {
+        "furniture2": "subject=7610"
+    },
+    "131267": {
+        "furniture2": "subject=7627"
+    },
+    "131268": {
+        "furniture2": "subject=7609"
+    },
+    "131269": {
+        "furniture2": "subject=7071"
+    },
+    "131270": {
+        "furniture2": "subject=8271"
+    },
+    "131271": {
+        "furniture2": "cat=131271"
+    },
+    "131272": {
+        "furniture2": "subject=4004"
+    },
+    "131273": {
+        "furniture2": "cat=131273"
+    },
+    "131281": {
+        "furniture2": "subject=7626"
+    },
+    "131181": {
+        "rooms7": "cat=131181"
+    },
+    "131182": {
+        "rooms7": "cat=131182"
+    },
+    "131183": {
+        "rooms7": "cat=131183"
+    },
+    "131184": {
+        "rooms7": "cat=131184"
+    },
+    "131185": {
+        "rooms7": "cat=131185"
+    },
+    "131186": {
+        "rooms7": "cat=131186"
+    },
+    "131187": {
+        "rooms7": "subject=2862"
+    },
+    "131188": {
+        "rooms7": "subject=4341"
+    },
+    "130243": {
+        "rooms8": "subject=7623"
+    },
+    "129317": {
+        "rooms8": "subject=2113"
+    },
+    "129318": {
+        "rooms8": "subject=7624"
+    },
+    "129319": {
+        "rooms8": "cat=129319"
+    },
+    "130663": {
+        "rooms8": "cat=130663"
+    },
+    "129036": {
+        "rooms8": "subject=2272"
+    },
+    "129037": {
+        "rooms8": "cat=129037"
+    },
+    "130231": {
+        "rooms8": "subject=7758"
+    },
+    "130250": {
+        "rooms8": "subject=7614"
+    },
+    "129035": {
+        "rooms8": "subject=7582"
+    },
+    "129041": {
+        "rooms8": "subject=7584"
+    },
+    "130395": {
+        "rooms8": "subject=2188"
+    },
+    "130233": {
+        "rooms8": "subject=2315"
+    },
+    "129039": {
+        "rooms8": "cat=129039"
+    },
+    "129040": {
+        "rooms8": "cat=129040"
+    },
+    "130232": {
+        "rooms8": "subject=2270"
+    },
+    "130884": {
+        "rooms8": "subject=8467"
+    },
+    "129042": {
+        "rooms8": "subject=7585"
+    },
+    "129038": {
+        "rooms8": "subject=7583"
+    },
+    "129043": {
+        "rooms8": "subject=2160"
+    },
+    "130885": {
+        "rooms8": "cat=130885"
+    },
+    "129044": {
+        "rooms8": "cat=129044"
+    },
+    "129045": {
+        "rooms8": "cat=129045"
+    },
+    "130817": {
+        "rooms8": "subject=7699"
+    },
+    "130818": {
+        "rooms8": "subject=7701"
+    },
+    "129102": {
+        "rooms8": "subject=1348"
+    },
+    "131454": {
+        "rooms8": "subject=8830"
+    },
+    "131400": {
+        "mattresses1": "cat=131400"
+    },
+    "131401": {
+        "mattresses2": "cat=131401"
+    },
+    "131402": {
+        "mattresses3": "cat=131402"
+    },
+    "131278": {
+        "mattresses2": "cat=131278"
+    },
+    "131279": {
+        "mattresses4": "subject=5240"
+    },
+    "131280": {
+        "mattresses4": "cat=131280"
+    },
+    "129170": {
+        "rooms13": "cat=129170"
+    },
+    "129171": {
+        "rooms13": "cat=129171"
+    },
+    "130396": {
+        "rooms13": "cat=130396"
+    },
+    "130887": {
+        "rooms13": "subject=7596"
+    },
+    "131453": {
+        "rooms8": "cat=130398"
+    },
+    "130886": {
+        "rooms13": "subject=8234"
+    },
+    "130878": {
+        "rooms14": "cat=130878"
+    },
+    "130879": {
+        "rooms14": "cat=130879"
+    },
+    "130880": {
+        "rooms14": "cat=130880"
+    },
+    "130895": {
+        "rooms8": "cat=129028"
+    },
+    "129046": {
+        "rooms10": "cat=129046"
+    },
+    "130888": {
+        "rooms10": "subject=4340"
+    },
+    "129051": {
+        "rooms10": "subject=1901"
+    },
+    "128305": {
+        "rooms10": "subject=1502"
+    },
+    "129265": {
+        "rooms10": "subject=2231"
+    },
+    "130889": {
+        "rooms10": "subject=7746"
+    },
+    "130896": {
+        "rooms14": "cat=129066"
+    },
+    "130237": {
+        "rooms10": "subject=7592"
+    },
+    "130397": {
+        "rooms10": "subject=7589"
+    },
+    "129050": {
+        "rooms10": "cat=129050"
+    },
+    "129058": {
+        "rooms8": "cat=129058"
+    },
+    "129059": {
+        "rooms8": "cat=129059"
+    },
+    "131082": {
+        "rooms8": "cat=131082"
+    },
+    "130398": {
+        "rooms8": "cat=130398"
+    },
+    "129055": {
+        "rooms8": "cat=129055"
+    },
+    "130242": {
+        "rooms8": "cat=130242"
+    },
+    "130239": {
+        "rooms8": "cat=130239"
+    },
+    "130240": {
+        "rooms8": "cat=130240"
+    },
+    "129063": {
+        "rooms14": "cat=129063"
+    },
+    "129060": {
+        "rooms14": "cat=129060"
+    },
+    "129065": {
+        "rooms14": "subject=7600"
+    },
+    "129066": {
+        "rooms14": "cat=129066"
+    },
+    "129061": {
+        "rooms14": "subject=7618"
+    },
+    "129072": {
+        "rooms2": "cat=129072"
+    },
+    "130634": {
+        "rooms2": "subject=8249"
+    },
+    "129067": {
+        "rooms2": "subject=1128"
+    },
+    "130399": {
+        "rooms2": "cat=130399"
+    },
+    "129070": {
+        "rooms2": "cat=129070"
+    },
+    "129076": {
+        "rooms2": "subject=7605"
+    },
+    "129078": {
+        "rooms2": "subject=7606"
+    },
+    "130241": {
+        "rooms2": "cat=130241"
+    },
+    "129079": {
+        "rooms2": "subject=4968"
+    },
+    "129077": {
+        "rooms2": "subject=4890"
+    },
+    "130248": {
+        "rooms2": "subject=2862"
+    },
+    "129068": {
+        "rooms2": "subject=7621"
+    },
+    "130244": {
+        "rooms2": "subject=7602"
+    },
+    "130890": {
+        "rooms14": "cat=130890"
+    },
+    "130891": {
+        "rooms14": "cat=130891"
+    },
+    "130892": {
+        "rooms14": "subject=8451"
+    },
+    "130893": {
+        "rooms14": "subject=8236"
+    },
+    "129085": {
+        "rooms14": "cat=129085"
+    },
+    "129084": {
+        "rooms14": "cat=129084"
+    },
+    "129083": {
+        "rooms14": "subject=7610"
+    },
+    "130252": {
+        "rooms14": "subject=7627"
+    },
+    "130671": {
+        "rooms14": "subject=8271"
+    },
+    "130235": {
+        "rooms14": "subject=7609"
+    },
+    "130632": {
+        "rooms14": "cat=130632"
+    },
+    "130670": {
+        "rooms14": "subject=4004"
+    },
+    "130238": {
+        "rooms14": "subject=7071"
+    },
+    "131051": {
+        "rooms14": "cat=131051"
+    },
+    "130694": {
+        "rooms15": "cat=130694"
+    },
+    "131328": {
+        "rooms15": "cat=131328"
+    },
+    "131329": {
+        "rooms15": "subject=5869"
+    },
+    "131330": {
+        "rooms15": "subject=5521"
+    },
+    "131331": {
+        "rooms15": "cat=131331"
+    },
+    "131332": {
+        "rooms15": "cat=131332"
+    },
+    "131322": {
+        "rooms15": "cat=131322"
+    },
+    "131323": {
+        "rooms15": "cat=131323"
+    },
+    "131324": {
+        "rooms15": "cat=131324"
+    },
+    "131325": {
+        "rooms15": "cat=131325"
+    },
+    "131350": {
+        "rooms15": "subject=7474"
+    },
+    "131351": {
+        "rooms15": "subject=4132"
+    },
+    "131352": {
+        "rooms15": "cat=131352"
+    },
+    "131353": {
+        "rooms15": "subject=4248"
+    },
+    "131354": {
+        "rooms15": "subject=2724"
+    },
+    "131355": {
+        "rooms15": "subject=3989"
+    },
+    "131356": {
+        "rooms15": "subject=3990"
+    },
+    "131357": {
+        "rooms15": "subject=3512"
+    },
+    "131358": {
+        "rooms15": "subject=4936"
+    },
+    "131335": {
+        "rooms15": "cat=131335"
+    },
+    "131336": {
+        "rooms15": "subject=6444"
+    },
+    "131337": {
+        "rooms15": "cat=131337"
+    },
+    "131338": {
+        "rooms15": "cat=131338"
+    },
+    "131339": {
+        "rooms15": "cat=131339"
+    },
+    "131340": {
+        "rooms15": "subject=5221"
+    },
+    "131341": {
+        "rooms15": "cat=131341"
+    },
+    "131342": {
+        "rooms15": "subject=6207"
+    },
+    "131343": {
+        "rooms15": "cat=131343"
+    },
+    "131344": {
+        "rooms15": "cat=131344"
+    },
+    "131026": {
+        "appliances4": "cat=131026"
+    },
+    "131452": {
+        "interior24": "subject=198"
+    },
+    "130728": {
+        "rooms14": "cat=130728"
+    },
+    "130729": {
+        "rooms14": "cat=130729"
+    },
+    "130730": {
+        "rooms14": "cat=130730"
+    },
+    "130756": {
+        "bedroom6": "cat=8466"
+    },
+    "130757": {
+        "bedroom6": "cat=8466"
+    },
+    "129168": {
+        "rooms10": "cat=129168"
+    },
+    "8174": {
+        "adult1": "cat=8174"
+    },
+    "62073": {
+        "adult1": "cat=62073"
+    },
+    "10013": {
+        "adult1": "cat=10013"
+    },
+    "128338": {
+        "adult1": "cat=128338"
+    },
+    "62071": {
+        "adult1": "cat=62071"
+    },
+    "62198": {
+        "adult2": "cat=62198"
+    },
+    "62200": {
+        "adult2": "cat=62200"
+    },
+    "62328": {
+        "adult2": "subject=5158"
+    },
+    "62206": {
+        "adult2": "cat=62206"
+    },
+    "62204": {
+        "adult2": "cat=62204"
+    },
+    "62195": {
+        "adult2": "cat=62195"
+    },
+    "62385": {
+        "adult2": "cat=62385"
+    },
+    "62201": {
+        "adult2": "cat=62201"
+    },
+    "62064": {
+        "adult1": "cat=62064"
+    },
+    "128892": {
+        "product5": "subject=3451"
+    },
+    "128893": {
+        "product5": "cat=128893"
+    },
+    "128894": {
+        "product5": "cat=128894"
+    },
+    "128896": {
+        "product5": "subject=3410"
+    },
+    "58757": {
+        "product6": "cat=58757"
+    },
+    "15816": {
+        "product1": "subject=6623"
+    },
+    "9513": {
+        "product1": "cat=9513"
+    },
+    "9515": {
+        "product1": "cat=9515"
+    },
+    "9516": {
+        "product1": "subject=1508"
+    },
+    "9517": {
+        "product1": "subject=406"
+    },
+    "16720": {
+        "product1": "cat=16720"
+    },
+    "15795": {
+        "product1": "subject=2886"
+    },
+    "63057": {
+        "product1": "cat=63057"
+    },
+    "62320": {
+        "product1": "cat=62320"
+    },
+    "15799": {
+        "product1": "cat=15799"
+    },
+    "62259": {
+        "product1": "cat=62259"
+    },
+    "62260": {
+        "product1": "cat=62260"
+    },
+    "62321": {
+        "product1": "cat=62321"
+    },
+    "62322": {
+        "product1": "cat=62322"
+    },
+    "62319": {
+        "product1": "cat=62319"
+    },
+    "128337": {
+        "product1": "cat=128337"
+    },
+    "16181": {
+        "product1": "cat=16181"
+    },
+    "16713": {
+        "product4": "cat=16713"
+    },
+    "130732": {
+        "product4": "cat=130732"
+    },
+    "62623": {
+        "product4": "cat=62623"
+    },
+    "16714": {
+        "product4": "cat=16714"
+    },
+    "16715": {
+        "product4": "cat=16715"
+    },
+    "128595": {
+        "product4": "cat=128595"
+    },
+    "16716": {
+        "product4": "cat=16716"
+    },
+    "16717": {
+        "product4": "cat=16717"
+    },
+    "16718": {
+        "product4": "cat=16718"
+    },
+    "17009": {
+        "product4": "subject=3449"
+    },
+    "16719": {
+        "product4": "cat=16719"
+    },
+    "15883": {
+        "product4": "subject=3339"
+    },
+    "15841": {
+        "product4": "subject=3416"
+    },
+    "130838": {
+        "product4": "cat=130838"
+    },
+    "15889": {
+        "product4": "subject=3432"
+    },
+    "16721": {
+        "product4": "cat=16721"
+    },
+    "59104": {
+        "product4": "subject=4236"
+    },
+    "15899": {
+        "product4": "subject=3137"
+    },
+    "9511": {
+        "product5": "subject=2638"
+    },
+    "10299": {
+        "product5": "cat=10299"
+    },
+    "62466": {
+        "product5": "cat=62466"
+    },
+    "10305": {
+        "product5": "cat=10305"
+    },
+    "10557": {
+        "product5": "cat=10557"
+    },
+    "10297": {
+        "product5": "cat=10297"
+    },
+    "128326": {
+        "product5": "cat=128326"
+    },
+    "128327": {
+        "product5": "cat=128327"
+    },
+    "128328": {
+        "product5": "cat=128328"
+    },
+    "131031": {
+        "appliances4": "cat=131031"
+    },
+    "131032": {
+        "appliances4": "subject=1192"
+    },
+    "131046": {
+        "appliances1": "cat=131046"
+    },
+    "131041": {
+        "appliances1": "cat=131041"
+    },
+    "131042": {
+        "appliances1": "subject=2001"
+    },
+    "131043": {
+        "appliances1": "subject=624"
+    },
+    "131050": {
+        "appliances1": "subject=4400"
+    },
+    "131047": {
+        "appliances1": "subject=5454"
+    },
+    "131048": {
+        "appliances1": "subject=6546"
+    },
+    "131049": {
+        "appliances1": "subject=3687"
+    },
+    "131044": {
+        "appliances1": "cat=131044"
+    },
+    "5384": {
+        "appliances1": "cat=5384"
+    },
+    "9822": {
+        "appliances1": "cat=9822"
+    },
+    "5382": {
+        "appliances1": "cat=5382"
+    },
+    "5381": {
+        "appliances1": "cat=5381"
+    },
+    "9804": {
+        "appliances1": "cat=9804"
+    },
+    "9946": {
+        "appliances1": "cat=9946"
+    },
+    "9824": {
+        "appliances1": "cat=9824"
+    },
+    "16465": {
+        "appliances1": "cat=16465"
+    },
+    "5383": {
+        "appliances1": "cat=5383"
+    },
+    "9821": {
+        "appliances1": "cat=9821"
+    },
+    "9244": {
+        "appliances2": "subject=2240"
+    },
+    "9806": {
+        "appliances2": "cat=9806"
+    },
+    "9811": {
+        "appliances2": "cat=9811"
+    },
+    "9810": {
+        "appliances2": "cat=9810"
+    },
+    "9814": {
+        "appliances2": "cat=9814"
+    },
+    "130926": {
+        "appliances2": "cat=130926"
+    },
+    "130927": {
+        "appliances2": "cat=130927"
+    },
+    "130928": {
+        "appliances2": "subject=2791"
+    },
+    "130934": {
+        "appliances2": "subject=2012"
+    },
+    "130929": {
+        "appliances2": "cat=130929"
+    },
+    "130930": {
+        "appliances2": "subject=2995"
+    },
+    "130931": {
+        "appliances2": "cat=130931"
+    },
+    "130932": {
+        "appliances2": "cat=130932"
+    },
+    "130933": {
+        "appliances2": "subject=807"
+    },
+    "9807": {
+        "appliances2": "cat=9807"
+    },
+    "63085": {
+        "appliances2": "cat=63085"
+    },
+    "130723": {
+        "appliances2": "cat=130723"
+    },
+    "9819": {
+        "appliances2": "cat=9819"
+    },
+    "9796": {
+        "appliances4": "cat=9796"
+    },
+    "9799": {
+        "appliances4": "subject=2184"
+    },
+    "9795": {
+        "appliances4": "cat=9795"
+    },
+    "130991": {
+        "appliances4": "subject=4447"
+    },
+    "9790": {
+        "appliances4": "subject=611"
+    },
+    "9798": {
+        "appliances4": "cat=9798"
+    },
+    "9793": {
+        "appliances4": "cat=9793"
+    },
+    "9794": {
+        "appliances4": "cat=9794"
+    },
+    "10501": {
+        "appliances4": "cat=10501"
+    },
+    "131008": {
+        "appliances4": "subject=2517"
+    },
+    "131009": {
+        "appliances4": "subject=2887"
+    },
+    "131011": {
+        "appliances4": "cat=131011"
+    },
+    "131014": {
+        "appliances4": "cat=131014"
+    },
+    "131016": {
+        "appliances4": "cat=131016"
+    },
+    "131013": {
+        "appliances4": "cat=131013"
+    },
+    "131012": {
+        "appliances4": "cat=131012"
+    },
+    "131025": {
+        "appliances4": "cat=131025"
+    },
+    "131015": {
+        "appliances4": "cat=131015"
+    },
+    "131010": {
+        "appliances4": "cat=131010"
+    },
+    "131022": {
+        "appliances4": "cat=131022"
+    },
+    "131024": {
+        "appliances4": "cat=131024"
+    },
+    "131021": {
+        "appliances4": "cat=131021"
+    },
+    "131020": {
+        "appliances4": "subject=5904"
+    },
+    "131023": {
+        "appliances4": "cat=131023"
+    },
+    "131019": {
+        "appliances4": "cat=131019"
+    },
+    "131018": {
+        "appliances4": "cat=131018"
+    },
+    "131006": {
+        "appliances4": "cat=131006"
+    },
+    "131030": {
+        "appliances4": "subject=4563"
+    },
+    "131029": {
+        "appliances4": "cat=131029"
+    },
+    "131027": {
+        "appliances4": "cat=131027"
+    },
+    "16348": {
+        "zoo1": "cat=16348"
+    },
+    "16357": {
+        "zoo1": "cat=16357"
+    },
+    "16356": {
+        "zoo1": "cat=16356"
+    },
+    "16349": {
+        "zoo1": "cat=16349"
+    },
+    "16353": {
+        "zoo1": "cat=16353"
+    },
+    "16355": {
+        "zoo1": "cat=16355"
+    },
+    "16350": {
+        "zoo1": "cat=16350"
+    },
+    "16354": {
+        "zoo1": "cat=16354"
+    },
+    "16358": {
+        "zoo1": "cat=16358"
+    },
+    "63065": {
+        "zoo1": "cat=63065"
+    },
+    "7962": {
+        "zoo2": "cat=7962"
+    },
+    "10536": {
+        "zoo2": "cat=10536"
+    },
+    "7383": {
+        "zoo2": "cat=7383"
+    },
+    "16520": {
+        "zoo2": "cat=16520"
+    },
+    "10539": {
+        "zoo2": "cat=10539"
+    },
+    "7961": {
+        "zoo2": "cat=7961"
+    },
+    "7384": {
+        "zoo2": "cat=7384"
+    },
+    "7396": {
+        "zoo2": "cat=7396"
+    },
+    "7963": {
+        "zoo2": "cat=7963"
+    },
+    "7381": {
+        "zoo2": "cat=7381"
+    },
+    "128734": {
+        "zoo2": "cat=128734"
+    },
+    "7380": {
+        "zoo2": "cat=7380"
+    },
+    "7447": {
+        "zoo2": "cat=7447"
+    },
+    "7432": {
+        "zoo2": "cat=7432"
+    },
+    "16449": {
+        "zoo1": "cat=16449"
+    },
+    "16467": {
+        "zoo1": "cat=16467"
+    },
+    "58591": {
+        "zoo1": "cat=58591"
+    },
+    "63066": {
+        "zoo1": "cat=63066"
+    },
+    "10543": {
+        "zoo1": "cat=10543"
+    },
+    "10544": {
+        "zoo1": "cat=10544"
+    },
+    "10548": {
+        "zoo1": "cat=10548"
+    },
+    "10547": {
+        "zoo1": "cat=10547"
+    },
+    "62254": {
+        "zoo1": "cat=62254"
+    },
+    "128591": {
+        "zoo1": "cat=128591"
+    },
+    "130708": {
+        "zoo3": "cat=130708"
+    },
+    "130709": {
+        "zoo3": "cat=130709"
+    },
+    "130710": {
+        "zoo3": "cat=130710"
+    },
+    "130713": {
+        "zoo4": "cat=130713"
+    },
+    "130711": {
+        "zoo4": "cat=130711"
+    },
+    "130716": {
+        "zoo4": "cat=130716"
+    },
+    "130715": {
+        "zoo4": "subject=731"
+    },
+    "130714": {
+        "zoo4": "cat=130714"
+    },
+    "130712": {
+        "zoo4": "cat=130712"
+    },
+    "130717": {
+        "zoo4": "cat=130717"
+    },
+    "131081": {
+        "zoo4": "subject=8671"
+    },
+    "910": {
+        "sport13": "cat=910"
+    },
+    "62642": {
+        "sport13": "cat=62642"
+    },
+    "62661": {
+        "sport13": "cat=62661"
+    },
+    "62662": {
+        "sport13": "cat=62662"
+    },
+    "62666": {
+        "sport13": "cat=62666"
+    },
+    "58640": {
+        "sport13": "cat=58640"
+    },
+    "914": {
+        "sport13": "cat=914"
+    },
+    "60811": {
+        "sport13": "cat=60811"
+    },
+    "58639": {
+        "sport13": "cat=58639"
+    },
+    "62667": {
+        "sport13": "cat=62667"
+    },
+    "59355": {
+        "sport13": "cat=59355"
+    },
+    "10062": {
+        "sport13": "cat=10062"
+    },
+    "62653": {
+        "sport13": "cat=62653"
+    },
+    "10065": {
+        "sport13": "cat=10065"
+    },
+    "60141": {
+        "sport13": "cat=60141"
+    },
+    "4922": {
+        "sport14": "cat=4922"
+    },
+    "9225": {
+        "sport14": "subject=2151"
+    },
+    "4924": {
+        "sport14": "cat=4924"
+    },
+    "4920": {
+        "sport14": "cat=4920"
+    },
+    "60044": {
+        "sport14": "cat=60044"
+    },
+    "9100": {
+        "sport14": "cat=9100"
+    },
+    "9099": {
+        "sport14": "cat=9099"
+    },
+    "62170": {
+        "sport42": "cat=62170"
+    },
+    "62165": {
+        "sport42": "cat=62165"
+    },
+    "128404": {
+        "sport43": "cat=128404"
+    },
+    "62108": {
+        "sport34": "cat=62108"
+    },
+    "62156": {
+        "sport34": "cat=62156"
+    },
+    "62000": {
+        "sport42": "subject=2508"
+    },
+    "62154": {
+        "sport42": "cat=62154"
+    },
+    "62183": {
+        "sport20": "cat=62183"
+    },
+    "62096": {
+        "sport20": "cat=62096"
+    },
+    "62146": {
+        "sport20": "cat=62146"
+    },
+    "62188": {
+        "sport20": "cat=62188"
+    },
+    "62228": {
+        "sport20": "cat=62228"
+    },
+    "62192": {
+        "sport20": "cat=62192"
+    },
+    "130373": {
+        "sport20": "cat=130373"
+    },
+    "62247": {
+        "sport44": "cat=62247"
+    },
+    "130625": {
+        "sport44": "cat=130625"
+    },
+    "8748": {
+        "sport10": "subject=490"
+    },
+    "8747": {
+        "sport10": "cat=8747"
+    },
+    "838": {
+        "sport10": "subject=485"
+    },
+    "58421": {
+        "sport10": "cat=58421"
+    },
+    "60177": {
+        "sport10": "cat=60177"
+    },
+    "8751": {
+        "sport10": "cat=8751"
+    },
+    "840": {
+        "sport10": "cat=840"
+    },
+    "904": {
+        "sport29": "cat=904"
+    },
+    "130771": {
+        "sport26": "cat=130771"
+    },
+    "875": {
+        "sport29": "cat=875"
+    },
+    "879": {
+        "sport29": "cat=879"
+    },
+    "901": {
+        "sport29": "cat=901"
+    },
+    "63067": {
+        "sport30": "cat=63067"
+    },
+    "63068": {
+        "sport26": "cat=63068"
+    },
+    "871": {
+        "sport26": "cat=871"
+    },
+    "10153": {
+        "sport26": "cat=10153"
+    },
+    "62139": {
+        "sport26": "cat=62139"
+    },
+    "801": {
+        "sport24": "cat=801"
+    },
+    "60062": {
+        "sport24": "cat=60062"
+    },
+    "60068": {
+        "sport23": "cat=60068"
+    },
+    "809": {
+        "sport23": "cat=809"
+    },
+    "63055": {
+        "sport23": "cat=63055"
+    },
+    "63056": {
+        "sport23": "cat=63056"
+    },
+    "8410": {
+        "sport28": "cat=8410"
+    },
+    "15975": {
+        "sport28": "cat=15975"
+    },
+    "8414": {
+        "sport28": "cat=8414"
+    },
+    "8413": {
+        "sport28": "cat=8413"
+    },
+    "16672": {
+        "sport28": "cat=16672"
+    },
+    "819": {
+        "sport28": "cat=819"
+    },
+    "8064": {
+        "sport28": "cat=8064"
+    },
+    "16316": {
+        "sport28": "cat=16316"
+    },
+    "60331": {
+        "sport28": "cat=60331"
+    },
+    "938": {
+        "sport28": "subject=128"
+    },
+    "14705": {
+        "sport28": "subject=274"
+    },
+    "16015": {
+        "sport28": "cat=16015"
+    },
+    "937": {
+        "sport28": "cat=937"
+    },
+    "58668": {
+        "sport28": "cat=58668"
+    },
+    "936": {
+        "sport28": "cat=936"
+    },
+    "942": {
+        "sport28": "cat=942"
+    },
+    "16164": {
+        "sport28": "cat=16164"
+    },
+    "16166": {
+        "sport28": "cat=16166"
+    },
+    "63060": {
+        "sport28": "cat=63060"
+    },
+    "63061": {
+        "sport28": "cat=63061"
+    },
+    "831": {
+        "sport28": "cat=831"
+    },
+    "833": {
+        "sport28": "cat=833"
+    },
+    "10118": {
+        "sport28": "cat=10118"
+    },
+    "836": {
+        "sport28": "cat=836"
+    },
+    "835": {
+        "sport28": "cat=835"
+    },
+    "60733": {
+        "sport28": "cat=60733"
+    },
+    "60729": {
+        "sport28": "cat=60729"
+    },
+    "837": {
+        "sport28": "cat=837"
+    },
+    "14583": {
+        "sport28": "subject=253"
+    },
+    "8687": {
+        "sport31": "cat=8687"
+    },
+    "130657": {
+        "sport31": "cat=130657"
+    },
+    "60081": {
+        "sport31": "cat=60081"
+    },
+    "59737": {
+        "sport31": "cat=59737"
+    },
+    "8688": {
+        "sport31": "cat=8688"
+    },
+    "63087": {
+        "sport31": "cat=63087"
+    },
+    "62050": {
+        "sport31": "cat=62050"
+    },
+    "60481": {
+        "sport31": "cat=60481"
+    },
+    "63091": {
+        "sport31": "cat=63091"
+    },
+    "58403": {
+        "sport31": "cat=58403"
+    },
+    "60467": {
+        "sport31": "cat=60467"
+    },
+    "847": {
+        "sport31": "cat=847"
+    },
+    "848": {
+        "sport31": "cat=848"
+    },
+    "843": {
+        "sport31": "cat=843"
+    },
+    "845": {
+        "sport31": "cat=845"
+    },
+    "63093": {
+        "sport31": "cat=63093"
+    },
+    "7559": {
+        "sport31": "cat=7559"
+    },
+    "58874": {
+        "sport31": "cat=58874"
+    },
+    "59998": {
+        "sport31": "cat=59998"
+    },
+    "60011": {
+        "sport31": "cat=60011"
+    },
+    "60015": {
+        "sport31": "cat=60015"
+    },
+    "131088": {
+        "sport31": "subject=1111"
+    },
+    "131089": {
+        "sport31": "subject=1103"
+    },
+    "131090": {
+        "sport31": "subject=1109"
+    },
+    "131091": {
+        "sport31": "subject=1095"
+    },
+    "131092": {
+        "sport31": "subject=1110"
+    },
+    "131093": {
+        "sport31": "subject=1108"
+    },
+    "131094": {
+        "sport31": "subject=3470"
+    },
+    "131095": {
+        "sport31": "subject=3468"
+    },
+    "131096": {
+        "sport31": "subject=1112"
+    },
+    "131109": {
+        "sport31": "subject=1098"
+    },
+    "131097": {
+        "sport31": "subject=2900"
+    },
+    "131098": {
+        "sport31": "subject=1101"
+    },
+    "131099": {
+        "sport31": "subject=1102"
+    },
+    "131106": {
+        "sport31": "subject=1604"
+    },
+    "131107": {
+        "sport31": "subject=1600"
+    },
+    "131108": {
+        "sport31": "cat=131108"
+    },
+    "131103": {
+        "sport31": "subject=2038"
+    },
+    "131102": {
+        "sport31": "subject=3804"
+    },
+    "131101": {
+        "sport31": "subject=3643"
+    },
+    "131104": {
+        "sport31": "subject=1601"
+    },
+    "131100": {
+        "sport31": "subject=2074"
+    },
+    "8081": {
+        "sport31": "cat=8081"
+    },
+    "9849": {
+        "sport31": "cat=9849"
+    },
+    "9850": {
+        "sport31": "cat=9850"
+    },
+    "62547": {
+        "sport31": "cat=62547"
+    },
+    "60821": {
+        "sport32": "cat=60821"
+    },
+    "60836": {
+        "sport32": "cat=60836"
+    },
+    "60822": {
+        "sport32": "cat=60822"
+    },
+    "60829": {
+        "sport32": "cat=60829"
+    },
+    "60890": {
+        "sport32": "cat=60890"
+    },
+    "60833": {
+        "sport32": "cat=60833"
+    },
+    "8422": {
+        "sport32": "cat=8422"
+    },
+    "60891": {
+        "sport32": "cat=60891"
+    },
+    "62851": {
+        "sport32": "cat=62851"
+    },
+    "60830": {
+        "sport32": "cat=60830"
+    },
+    "60893": {
+        "sport32": "cat=60893"
+    },
+    "60892": {
+        "sport32": "cat=60892"
+    },
+    "61005": {
+        "sport32": "cat=61005"
+    },
+    "10405": {
+        "sport32": "cat=10405"
+    },
+    "130707": {
+        "sport18": "cat=130707"
+    },
+    "10020": {
+        "sport32": "cat=10020"
+    },
+    "60193": {
+        "sport32": "cat=60193"
+    },
+    "58107": {
+        "sport32": "cat=58107"
+    },
+    "130956": {
+        "sport10": "cat=130956"
+    },
+    "130958": {
+        "sport10": "subject=3518"
+    },
+    "130957": {
+        "sport10": "cat=130957"
+    },
+    "58108": {
+        "sport32": "cat=58108"
+    },
+    "60998": {
+        "sport32": "subject=4687"
+    },
+    "62381": {
+        "sport32": "subject=5181"
+    },
+    "59529": {
+        "sport32": "cat=59529"
+    },
+    "59526": {
+        "sport32": "cat=59526"
+    },
+    "856": {
+        "sport32": "cat=856"
+    },
+    "858": {
+        "sport32": "cat=858"
+    },
+    "859": {
+        "sport32": "cat=859"
+    },
+    "8435": {
+        "sport27": "cat=8435"
+    },
+    "8436": {
+        "sport27": "cat=8436"
+    },
+    "7385": {
+        "sport27": "cat=7385"
+    },
+    "9374": {
+        "sport27": "cat=9374"
+    },
+    "62946": {
+        "sport27": "cat=62946"
+    },
+    "9056": {
+        "sport27": "cat=9056"
+    },
+    "9057": {
+        "sport27": "cat=9057"
+    },
+    "9058": {
+        "sport27": "cat=9058"
+    },
+    "9059": {
+        "sport27": "cat=9059"
+    },
+    "9055": {
+        "sport27": "cat=9055"
+    },
+    "9061": {
+        "sport27": "cat=9061"
+    },
+    "9060": {
+        "sport27": "cat=9060"
+    },
+    "8429": {
+        "sport40": "cat=8429"
+    },
+    "8430": {
+        "sport39": "cat=8430"
+    },
+    "62947": {
+        "sport39": "cat=62947"
+    },
+    "9043": {
+        "sport41": "cat=9043"
+    },
+    "9044": {
+        "sport41": "cat=9044"
+    },
+    "129309": {
+        "sport41": "cat=129309"
+    },
+    "9045": {
+        "sport41": "cat=9045"
+    },
+    "9046": {
+        "sport41": "cat=9046"
+    },
+    "9047": {
+        "sport41": "cat=9047"
+    },
+    "9049": {
+        "sport41": "cat=9049"
+    },
+    "9048": {
+        "sport41": "cat=9048"
+    },
+    "8432": {
+        "sport37": "cat=8432"
+    },
+    "8433": {
+        "sport37": "cat=8433"
+    },
+    "130635": {
+        "sport16": "cat=130635"
+    },
+    "62948": {
+        "sport38": "cat=62948"
+    },
+    "9050": {
+        "sport16": "cat=9050"
+    },
+    "9051": {
+        "sport16": "cat=9051"
+    },
+    "129312": {
+        "sport16": "cat=129312"
+    },
+    "9052": {
+        "sport16": "cat=9052"
+    },
+    "9053": {
+        "sport16": "cat=9053"
+    },
+    "9054": {
+        "sport16": "cat=9054"
+    },
+    "58154": {
+        "sport38": "cat=58154"
+    },
+    "998": {
+        "sport18": "cat=998"
+    },
+    "130664": {
+        "sport18": "cat=130664"
+    },
+    "60859": {
+        "sport18": "cat=60859"
+    },
+    "128646": {
+        "autoproduct9": "cat=128646"
+    },
+    "128647": {
+        "autoproduct9": "subject=5284"
+    },
+    "131346": {
+        "autoproduct9": "subject=3798"
+    },
+    "131345": {
+        "autoproduct9": "subject=2965"
+    },
+    "131347": {
+        "autoproduct9": "cat=131347"
+    },
+    "131348": {
+        "autoproduct9": "cat=131348"
+    },
+    "131349": {
+        "autoproduct9": "subject=784"
+    },
+    "131504": {
+        "autoproduct29": "cat=131504"
+    },
+    "131505": {
+        "autoproduct29": "cat=131505"
+    },
+    "131506": {
+        "autoproduct32": "cat=131506"
+    },
+    "131507": {
+        "autoproduct30": "cat=131507"
+    },
+    "131508": {
+        "autoproduct30": "cat=131508"
+    },
+    "131509": {
+        "autoproduct31": "cat=131509"
+    },
+    "131510": {
+        "autoproduct32": "cat=131510"
+    },
+    "131511": {
+        "autoproduct29": "cat=131511"
+    },
+    "128629": {
+        "autoproduct26": "cat=128629"
+    },
+    "128630": {
+        "autoproduct26": "cat=128630"
+    },
+    "128632": {
+        "autoproduct22": "cat=128632"
+    },
+    "128631": {
+        "autoproduct22": "cat=128631"
+    },
+    "130917": {
+        "autoproduct44": "cat=130917"
+    },
+    "130918": {
+        "autoproduct45": "cat=130918"
+    },
+    "130923": {
+        "autoproduct21": "cat=130923"
+    },
+    "130921": {
+        "autoproduct21": "cat=130921"
+    },
+    "130924": {
+        "autoproduct21": "cat=130924"
+    },
+    "131782": {
+        "autoproduct46": "subject=5412"
+    },
+    "131781": {
+        "autoproduct47": "subject=5752"
+    },
+    "131783": {
+        "autoproduct48": "cat=131783"
+    },
+    "131784": {
+        "autoproduct48": "subject=8013"
+    },
+    "131785": {
+        "autoproduct48": "subject=8004"
+    },
+    "131786": {
+        "autoproduct48": "cat=131786"
+    },
+    "131787": {
+        "autoproduct48": "subject=8591"
+    },
+    "131788": {
+        "autoproduct48": "subject=8001"
+    },
+    "131789": {
+        "autoproduct48": "subject=7990"
+    },
+    "131790": {
+        "autoproduct48": "subject=8010"
+    },
+    "131791": {
+        "autoproduct48": "subject=8156"
+    },
+    "131792": {
+        "autoproduct48": "subject=8182"
+    },
+    "131793": {
+        "autoproduct48": "subject=7974"
+    },
+    "131794": {
+        "autoproduct48": "cat=131794"
+    },
+    "128634": {
+        "autoproduct38": "cat=128634"
+    },
+    "131619": {
+        "autoproduct39": "subject=2011"
+    },
+    "131620": {
+        "autoproduct39": "cat=131620"
+    },
+    "131621": {
+        "autoproduct40": "cat=131621"
+    },
+    "131622": {
+        "autoproduct40": "cat=131622"
+    },
+    "131623": {
+        "autoproduct40": "cat=131623"
+    },
+    "131624": {
+        "autoproduct41": "cat=131624"
+    },
+    "131625": {
+        "autoproduct41": "cat=131625"
+    },
+    "131626": {
+        "autoproduct42": "cat=131626"
+    },
+    "131627": {
+        "autoproduct42": "cat=131627"
+    },
+    "130906": {
+        "autoproduct22": "subject=2013"
+    },
+    "128637": {
+        "autoproduct43": "cat=128637"
+    },
+    "128638": {
+        "autoproduct39": "cat=128638"
+    },
+    "130667": {
+        "autoproduct4": "cat=130667"
+    },
+    "128641": {
+        "autoproduct33": "subject=3906"
+    },
+    "128642": {
+        "autoproduct33": "subject=3965"
+    },
+    "128643": {
+        "autoproduct33": "cat=128643"
+    },
+    "130705": {
+        "autoproduct33": "cat=130705"
+    },
+    "130754": {
+        "autoproduct33": "subject=8412"
+    },
+    "130704": {
+        "autoproduct33": "subject=8000"
+    },
+    "130938": {
+        "autoproduct33": "subject=8545"
+    },
+    "130755": {
+        "autoproduct34": "subject=8151"
+    },
+    "128656": {
+        "autoproduct34": "cat=128656"
+    },
+    "128659": {
+        "autoproduct34": "cat=128659"
+    },
+    "130748": {
+        "autoproduct34": "cat=130748"
+    },
+    "130750": {
+        "autoproduct34": "cat=130750"
+    },
+    "128661": {
+        "autoproduct34": "cat=128661"
+    },
+    "130751": {
+        "autoproduct34": "cat=130751"
+    },
+    "130752": {
+        "autoproduct34": "cat=130752"
+    },
+    "128660": {
+        "autoproduct34": "cat=128660"
+    },
+    "129262": {
+        "autoproduct6": "subject=7751"
+    },
+    "129263": {
+        "autoproduct5": "subject=6039"
+    },
+    "129260": {
+        "autoproduct6": "subject=7749"
+    },
+    "129261": {
+        "autoproduct6": "subject=7750"
+    },
+    "129014": {
+        "electronic37": "cat=9835"
+    },
+    "130959": {
+        "autoproduct33": "cat=130959"
+    },
+    "130675": {
+        "autoproduct16": "cat=130675"
+    },
+    "130676": {
+        "autoproduct16": "cat=130676"
+    },
+    "130677": {
+        "autoproduct16": "cat=130677"
+    },
+    "130678": {
+        "autoproduct16": "cat=130678"
+    },
+    "130679": {
+        "autoproduct16": "subject=1346"
+    },
+    "130680": {
+        "autoproduct16": "subject=777"
+    },
+    "130681": {
+        "autoproduct16": "subject=770"
+    },
+    "130682": {
+        "autoproduct16": "cat=130682"
+    },
+    "130683": {
+        "autoproduct16": "subject=2098"
+    },
+    "130691": {
+        "autoproduct16": "subject=931"
+    },
+    "130684": {
+        "autoproduct16": "cat=130684"
+    },
+    "130685": {
+        "autoproduct16": "cat=130685"
+    },
+    "130686": {
+        "autoproduct16": "cat=130686"
+    },
+    "130687": {
+        "autoproduct16": "cat=130687"
+    },
+    "131777": {
+        "autoproduct49": "subject=1058"
+    },
+    "131778": {
+        "autoproduct50": "subject=766"
+    },
+    "131779": {
+        "autoproduct49": "cat=131779"
+    },
+    "131780": {
+        "autoproduct49": "subject=3797"
+    },
+    "129174": {
+        "autoproduct4": "cat=129174"
+    },
+    "128664": {
+        "autoproduct9": "cat=128664"
+    },
+    "128665": {
+        "autoproduct35": "cat=128665"
+    },
+    "128666": {
+        "autoproduct35": "cat=128666"
+    },
+    "128667": {
+        "autoproduct27": "cat=128667"
+    },
+    "128670": {
+        "autoproduct27": "cat=128670"
+    },
+    "131614": {
+        "autoproduct36": "cat=131614"
+    },
+    "131615": {
+        "autoproduct36": "cat=131615"
+    },
+    "131616": {
+        "autoproduct36": "subject=6307"
+    },
+    "130720": {
+        "autoproduct18": "cat=130720"
+    },
+    "130718": {
+        "autoproduct18": "cat=130718"
+    },
+    "130699": {
+        "autoproduct18": "cat=130699"
+    },
+    "130698": {
+        "autoproduct18": "cat=130698"
+    },
+    "130700": {
+        "autoproduct18": "cat=130700"
+    },
+    "130701": {
+        "autoproduct18": "cat=130701"
+    },
+    "130719": {
+        "autoproduct18": "cat=130719"
+    },
+    "130702": {
+        "autoproduct18": "cat=130702"
+    },
+    "130703": {
+        "autoproduct18": "cat=130703"
+    },
+    "129018": {
+        "garden10": "cat=128767"
+    },
+    "131073": {
+        "autoproduct37": "cat=131073"
+    },
+    "128694": {
+        "autoproduct37": "cat=128694"
+    },
+    "128696": {
+        "autoproduct37": "cat=128696"
+    },
+    "128697": {
+        "autoproduct37": "cat=128697"
+    },
+    "129101": {
+        "autoproduct37": "cat=129101"
+    },
+    "128698": {
+        "autoproduct37": "cat=128698"
+    },
+    "131000": {
+        "autoproduct37": "cat=131000"
+    },
+    "128669": {
+        "autoproduct28": "cat=128669"
+    },
+    "128699": {
+        "autoproduct37": "cat=128699"
+    },
+    "131455": {
+        "autoproduct37": "cat=131455"
+    },
+    "131456": {
+        "autoproduct37": "cat=131456"
+    },
+    "131457": {
+        "autoproduct37": "cat=131457"
+    },
+    "131458": {
+        "autoproduct37": "cat=131458"
+    },
+    "131459": {
+        "autoproduct37": "cat=131459"
+    },
+    "131460": {
+        "autoproduct37": "cat=131460"
+    },
+    "131461": {
+        "autoproduct37": "cat=131461"
+    },
+    "131462": {
+        "autoproduct37": "cat=131462"
+    },
+    "131463": {
+        "autoproduct37": "cat=131463"
+    },
+    "131464": {
+        "autoproduct37": "cat=131464"
+    },
+    "131465": {
+        "autoproduct37": "cat=131465"
+    },
+    "131467": {
+        "autoproduct37": "cat=131467"
+    },
+    "131468": {
+        "autoproduct37": "cat=131468"
+    },
+    "131469": {
+        "autoproduct37": "cat=131469"
+    },
+    "131470": {
+        "autoproduct37": "cat=131470"
+    },
+    "131466": {
+        "autoproduct37": "cat=131466"
+    },
+    "131077": {
+        "vehicles": "cat=131077"
+    },
+    "131078": {
+        "vehicles": "cat=131078"
+    },
+    "131079": {
+        "vehicles": "cat=131079"
+    },
+    "131368": {
+        "vehicles": "subject=8743"
+    },
+    "131105": {
+        "vehicles": "subject=8696"
+    },
+    "9215": {
+        "books_fiction": "cat=9215"
+    },
+    "130935": {
+        "books7": "cat=130935"
+    },
+    "9165": {
+        "books_fiction": "cat=9165"
+    },
+    "9170": {
+        "books_fiction": "cat=9170"
+    },
+    "9168": {
+        "books_fiction": "cat=9168"
+    },
+    "16159": {
+        "books_fiction": "cat=16159"
+    },
+    "60739": {
+        "books_fiction": "cat=60739"
+    },
+    "58396": {
+        "books_fiction": "cat=58396"
+    },
+    "9164": {
+        "books_fiction": "cat=9164"
+    },
+    "9169": {
+        "books_fiction": "cat=9169"
+    },
+    "9171": {
+        "books_fiction": "cat=9171"
+    },
+    "9167": {
+        "books_fiction": "cat=9167"
+    },
+    "9123": {
+        "books_children3": "cat=9123"
+    },
+    "9118": {
+        "books_children3": "cat=9118"
+    },
+    "9121": {
+        "books_children3": "cat=9121"
+    },
+    "9112": {
+        "books_children3": "cat=9112"
+    },
+    "9124": {
+        "books_children3": "cat=9124"
+    },
+    "9120": {
+        "books_children3": "cat=9120"
+    },
+    "9132": {
+        "books_children3": "cat=9132"
+    },
+    "9119": {
+        "books_children3": "cat=9119"
+    },
+    "60113": {
+        "books_children3": "cat=60113"
+    },
+    "61756": {
+        "books_children3": "cat=61756"
+    },
+    "9172": {
+        "books3": "cat=9172"
+    },
+    "62706": {
+        "books_children3": "cat=62706"
+    },
+    "9122": {
+        "books_children2": "cat=9122"
+    },
+    "9113": {
+        "books_children3": "cat=9113"
+    },
+    "129289": {
+        "books_children3": "cat=129289"
+    },
+    "9111": {
+        "books_children1": "cat=9111"
+    },
+    "61805": {
+        "books_children1": "cat=61805"
+    },
+    "16213": {
+        "books_children1": "cat=16213"
+    },
+    "9115": {
+        "books_children1": "cat=9115"
+    },
+    "9116": {
+        "books_children1": "cat=9116"
+    },
+    "9117": {
+        "books_children1": "cat=9117"
+    },
+    "9157": {
+        "books3": "cat=9157"
+    },
+    "9134": {
+        "books5": "cat=9134"
+    },
+    "9153": {
+        "books5": "cat=9153"
+    },
+    "9146": {
+        "books5": "cat=9146"
+    },
+    "129276": {
+        "books5": "cat=129276"
+    },
+    "9127": {
+        "books5": "cat=9127"
+    },
+    "129270": {
+        "books5": "cat=129270"
+    },
+    "129271": {
+        "books5": "subject=338"
+    },
+    "9151": {
+        "books5": "cat=9151"
+    },
+    "9138": {
+        "books5": "cat=9138"
+    },
+    "9140": {
+        "books5": "cat=9140"
+    },
+    "9136": {
+        "books5": "cat=9136"
+    },
+    "9155": {
+        "books5": "cat=9155"
+    },
+    "9143": {
+        "books5": "cat=9143"
+    },
+    "9130": {
+        "books5": "cat=9130"
+    },
+    "9129": {
+        "books5": "cat=9129"
+    },
+    "58308": {
+        "books5": "subject=3806"
+    },
+    "16232": {
+        "books5": "subject=397"
+    },
+    "16905": {
+        "books5": "subject=2964"
+    },
+    "129272": {
+        "books5": "subject=6710"
+    },
+    "129284": {
+        "books5": "cat=129284"
+    },
+    "129167": {
+        "books5": "subject=4146"
+    },
+    "129285": {
+        "books5": "cat=129285"
+    },
+    "9131": {
+        "books5": "cat=9131"
+    },
+    "9149": {
+        "books5": "cat=9149"
+    },
+    "9152": {
+        "books5": "cat=9152"
+    },
+    "9133": {
+        "books5": "cat=9133"
+    },
+    "9154": {
+        "books5": "cat=9154"
+    },
+    "9139": {
+        "books5": "cat=9139"
+    },
+    "128334": {
+        "books5": "cat=128334"
+    },
+    "9156": {
+        "books5": "cat=9156"
+    },
+    "9142": {
+        "books5": "cat=9142"
+    },
+    "9135": {
+        "books7": "cat=9135"
+    },
+    "9141": {
+        "books_literary_criticism": "cat=9141"
+    },
+    "9147": {
+        "books5": "cat=9147"
+    },
+    "9128": {
+        "books_memoirs": "cat=9128"
+    },
+    "128566": {
+        "books_archeology": "cat=128566"
+    },
+    "128567": {
+        "books_warfare": "cat=128567"
+    },
+    "128565": {
+        "books_military_history": "cat=128565"
+    },
+    "128568": {
+        "books_russian_history": "cat=128568"
+    },
+    "128564": {
+        "books_national_history": "cat=128564"
+    },
+    "128563": {
+        "books_world_history": "cat=128563"
+    },
+    "128588": {
+        "books_world_history_en": "cat=128588"
+    },
+    "128590": {
+        "books_world_history_de": "cat=128590"
+    },
+    "128589": {
+        "books_world_history_fr": "cat=128589"
+    },
+    "9235": {
+        "books5": "cat=9235"
+    },
+    "129279": {
+        "books7": "cat=129279"
+    },
+    "129280": {
+        "books7": "cat=129280"
+    },
+    "129281": {
+        "books7": "cat=129281"
+    },
+    "129282": {
+        "books7": "cat=129282"
+    },
+    "129283": {
+        "books7": "cat=129283"
+    },
+    "9144": {
+        "books7": "cat=9144"
+    },
+    "129278": {
+        "books7": "subject=2080"
+    },
+    "130899": {
+        "books-old1": "cat=130899"
+    },
+    "130905": {
+        "books-old2": "cat=130905"
+    },
+    "130900": {
+        "books-old2": "cat=130900"
+    },
+    "130901": {
+        "books-old2": "cat=130901"
+    },
+    "130903": {
+        "books-old2": "cat=130903"
+    },
+    "130904": {
+        "books-old2": "cat=130904"
+    },
+    "130902": {
+        "books-old2": "cat=130902"
+    },
+    "130907": {
+        "books-old2": "cat=130907"
+    },
+    "130908": {
+        "books-old3": "cat=130908"
+    },
+    "130909": {
+        "books-old3": "cat=130909"
+    },
+    "130910": {
+        "books-old3": "cat=130910"
+    },
+    "130911": {
+        "books-old3": "cat=130911"
+    },
+    "130912": {
+        "books-old3": "cat=130912"
+    },
+    "130913": {
+        "books-old3": "cat=130913"
+    },
+    "128312": {
+        "books7": "subject=5805"
+    },
+    "130372": {
+        "books7": "subject=1046"
+    },
+    "130525": {
+        "books_printed_products": "subject=744"
+    },
+    "62705": {
+        "books7": "subject=5322"
+    },
+    "128569": {
+        "books_reprint_xviii": "cat=128569"
+    },
+    "128570": {
+        "books_reprint_180x": "cat=128570"
+    },
+    "128571": {
+        "books_reprint_181x": "cat=128571"
+    },
+    "128572": {
+        "books_reprint_182x": "cat=128572"
+    },
+    "128573": {
+        "books_reprint_183x": "cat=128573"
+    },
+    "128574": {
+        "books_reprint_184x": "cat=128574"
+    },
+    "128575": {
+        "books_reprint_185x": "cat=128575"
+    },
+    "128576": {
+        "books_reprint_186x": "cat=128576"
+    },
+    "128577": {
+        "books_reprint_187x": "cat=128577"
+    },
+    "128578": {
+        "books_reprint_188x": "cat=128578"
+    },
+    "128579": {
+        "books_reprint_189x": "cat=128579"
+    },
+    "128580": {
+        "books_reprint_190x": "cat=128580"
+    },
+    "128581": {
+        "books_reprint_191x": "cat=128581"
+    },
+    "128582": {
+        "books_reprint_192x": "cat=128582"
+    },
+    "128583": {
+        "books_reprint_193x": "cat=128583"
+    },
+    "128584": {
+        "books_reprint_en_am": "cat=128584"
+    },
+    "128585": {
+        "books_reprint_en_nz": "cat=128585"
+    },
+    "128587": {
+        "books_reprint_de": "cat=128587"
+    },
+    "128586": {
+        "books_reprint_fr": "cat=128586"
+    },
+    "8051": {
+        "books7": "cat=8051"
+    },
+    "7377": {
+        "books7": "subject=5768"
+    },
+    "13": {
+        "null": null
+    },
+    "14": {
+        "null": null
+    },
+    "9300": {
+        "jewellery1": "subject=54"
+    },
+    "9317": {
+        "jewellery1": "subject=207"
+    },
+    "9350": {
+        "jewellery1": "subject=205"
+    },
+    "63069": {
+        "jewellery1": "cat=63069"
+    },
+    "60289": {
+        "jewellery1": "subject=8546"
+    },
+    "63070": {
+        "jewellery1": "cat=63070"
+    },
+    "9367": {
+        "jewellery1": "subject=452"
+    },
+    "9370": {
+        "jewellery1": "subject=5369"
+    },
+    "9369": {
+        "jewellery1": "cat=9369"
+    },
+    "63071": {
+        "jewellery1": "cat=63071"
+    },
+    "10198": {
+        "jewellery1": "subject=2979"
+    },
+    "63072": {
+        "jewellery1": "cat=63072"
+    },
+    "1024": {
+        "jewellery1": "cat=1024"
+    },
+    "1031": {
+        "jewellery1": "cat=1031"
+    },
+    "9236": {
+        "jewellery1": "cat=9236"
+    },
+    "63073": {
+        "jewellery1": "cat=63073"
+    },
+    "131151": {
+        "repair20": "subject=8702&dtype=1;2;3"
+    },
+    "128905": {
+        "repair20": "cat=128905"
+    },
+    "128906": {
+        "repair20": "cat=128906"
+    },
+    "131005": {
+        "repair20": "cat=131005"
+    },
+    "131116": {
+        "repair16": "subject=8658"
+    },
+    "131115": {
+        "repair16": "subject=8657"
+    },
+    "16683": {
+        "repair21": "cat=16683"
+    },
+    "16731": {
+        "repair21": "cat=16731"
+    },
+    "16735": {
+        "repair21": "cat=16735"
+    },
+    "16738": {
+        "repair21": "cat=16738"
+    },
+    "58511": {
+        "repair21": "subject=655"
+    },
+    "16789": {
+        "repair22": "cat=16789"
+    },
+    "128961": {
+        "repair23": "cat=128961"
+    },
+    "128960": {
+        "repair24": "cat=128960"
+    },
+    "128967": {
+        "repair24": "cat=128967"
+    },
+    "131731": {
+        "repair24": "cat=131731"
+    },
+    "128962": {
+        "repair24": "cat=128962"
+    },
+    "128969": {
+        "repair24": "cat=128969"
+    },
+    "128963": {
+        "repair25": "cat=128963"
+    },
+    "128964": {
+        "repair25": "cat=128964"
+    },
+    "128966": {
+        "repair25": "cat=128966"
+    },
+    "128965": {
+        "repair25": "cat=128965"
+    },
+    "131730": {
+        "repair26": "cat=131730"
+    },
+    "131732": {
+        "repair26": "cat=131732"
+    },
+    "131733": {
+        "repair26": "cat=131733"
+    },
+    "131734": {
+        "repair26": "subject=8592"
+    },
+    "131735": {
+        "repair26": "cat=131735"
+    },
+    "131736": {
+        "repair26": "cat=131736"
+    },
+    "128897": {
+        "repair7": "cat=128897"
+    },
+    "128898": {
+        "repair7": "cat=128898"
+    },
+    "128899": {
+        "repair7": "cat=128899"
+    },
+    "128900": {
+        "repair7": "subject=7641"
+    },
+    "128901": {
+        "repair7": "cat=128901"
+    },
+    "128902": {
+        "repair7": "cat=128902"
+    },
+    "128903": {
+        "repair7": "cat=128903"
+    },
+    "128939": {
+        "repair4": "cat=128939"
+    },
+    "128940": {
+        "repair4": "cat=128940"
+    },
+    "128941": {
+        "repair4": "cat=128941"
+    },
+    "128942": {
+        "repair4": "cat=128942"
+    },
+    "128943": {
+        "repair4": "cat=128943"
+    },
+    "128944": {
+        "repair4": "cat=128944"
+    },
+    "128908": {
+        "repair17": "cat=128908"
+    },
+    "131076": {
+        "repair17": "subject=7323"
+    },
+    "128909": {
+        "repair17": "cat=128909"
+    },
+    "131110": {
+        "repair17": "subject=5358"
+    },
+    "128911": {
+        "repair17": "subject=4912"
+    },
+    "128910": {
+        "repair17": "subject=6442"
+    },
+    "130993": {
+        "repair17": "cat=130993"
+    },
+    "128913": {
+        "repair17": "subject=4789"
+    },
+    "128914": {
+        "repair17": "subject=7302"
+    },
+    "128912": {
+        "repair17": "subject=2401"
+    },
+    "128915": {
+        "repair17": "cat=128915"
+    },
+    "128916": {
+        "repair17": "cat=128916"
+    },
+    "131713": {
+        "repair14": "subject=1708"
+    },
+    "131703": {
+        "repair14": "subject=6066"
+    },
+    "131704": {
+        "repair14": "cat=131704"
+    },
+    "131705": {
+        "repair14": "cat=131705"
+    },
+    "131707": {
+        "repair14": "cat=131707"
+    },
+    "131706": {
+        "repair14": "cat=131706"
+    },
+    "131708": {
+        "repair14": "cat=131708"
+    },
+    "131710": {
+        "repair14": "cat=131710"
+    },
+    "131714": {
+        "repair14": "cat=131714"
+    },
+    "131709": {
+        "repair14": "cat=131709"
+    },
+    "131711": {
+        "repair14": "cat=131711"
+    },
+    "131701": {
+        "repair14": "cat=131701"
+    },
+    "131712": {
+        "repair14": "cat=131712"
+    },
+    "131702": {
+        "repair14": "cat=131702"
+    },
+    "131629": {
+        "repair17": "cat=131629"
+    },
+    "131630": {
+        "repair17": "cat=131630"
+    },
+    "131631": {
+        "repair17": "subject=6002"
+    },
+    "131632": {
+        "repair17": "cat=131632"
+    },
+    "131633": {
+        "repair17": "cat=131633"
+    },
+    "131638": {
+        "repair14": "cat=131638"
+    },
+    "131639": {
+        "repair14": "cat=131639"
+    },
+    "131640": {
+        "repair14": "cat=131640"
+    },
+    "131641": {
+        "repair14": "cat=131641"
+    },
+    "131642": {
+        "repair14": "cat=131642"
+    },
+    "131643": {
+        "repair14": "cat=131643"
+    },
+    "131644": {
+        "repair14": "cat=131644"
+    },
+    "131645": {
+        "repair14": "cat=131645"
+    },
+    "131646": {
+        "repair14": "cat=131646"
+    },
+    "131647": {
+        "repair14": "subject=1699"
+    },
+    "131648": {
+        "repair14": "cat=131648"
+    },
+    "131649": {
+        "repair14": "cat=131649"
+    },
+    "131650": {
+        "repair14": "subject=4474"
+    },
+    "131651": {
+        "repair14": "subject=6163"
+    },
+    "131652": {
+        "repair14": "subject=7686"
+    },
+    "131653": {
+        "repair14": "cat=131653"
+    },
+    "131654": {
+        "repair14": "cat=131654"
+    },
+    "131655": {
+        "repair14": "subject=2549"
+    },
+    "131656": {
+        "repair14": "subject=6941"
+    },
+    "131657": {
+        "repair14": "subject=6963"
+    },
+    "131658": {
+        "repair14": "subject=7659"
+    },
+    "131659": {
+        "repair14": "cat=131659"
+    },
+    "128929": {
+        "repair18": "subject=5419"
+    },
+    "128930": {
+        "repair18": "cat=128930"
+    },
+    "128931": {
+        "repair18": "subject=4106"
+    },
+    "128932": {
+        "repair18": "subject=5996"
+    },
+    "128933": {
+        "repair18": "cat=128933"
+    },
+    "128934": {
+        "repair18": "cat=128934"
+    },
+    "128935": {
+        "repair18": "cat=128935"
+    },
+    "128999": {
+        "repair18": "subject=7361"
+    },
+    "128936": {
+        "repair18": "cat=128936"
+    },
+    "128937": {
+        "repair18": "cat=128937"
+    },
+    "128938": {
+        "repair18": "cat=128938"
+    },
+    "128928": {
+        "repair19": "cat=128928"
+    },
+    "128926": {
+        "repair19": "cat=128926"
+    },
+    "128921": {
+        "repair19": "cat=128921"
+    },
+    "128925": {
+        "repair19": "cat=128925"
+    },
+    "128924": {
+        "repair19": "cat=128924"
+    },
+    "129002": {
+        "repair19": "cat=129002"
+    },
+    "129000": {
+        "repair19": "cat=129000"
+    },
+    "129001": {
+        "repair19": "cat=129001"
+    },
+    "128923": {
+        "repair19": "cat=128923"
+    },
+    "128985": {
+        "repair19": "cat=128985"
+    },
+    "128927": {
+        "repair19": "cat=128927"
+    },
+    "128922": {
+        "repair19": "cat=128922"
+    },
+    "131838": {
+        "repair19": "subject=8901"
+    },
+    "128792": {
+        "garden11": "cat=128792"
+    },
+    "128762": {
+        "garden11": "subject=4820"
+    },
+    "129189": {
+        "garden11": "subject=7748"
+    },
+    "128763": {
+        "garden11": "subject=4195"
+    },
+    "131512": {
+        "garden12": "cat=131512"
+    },
+    "131513": {
+        "garden13": "cat=131513"
+    },
+    "131514": {
+        "garden13": "cat=131514"
+    },
+    "131515": {
+        "garden13": "cat=131515"
+    },
+    "131516": {
+        "garden13": "cat=131516"
+    },
+    "131517": {
+        "garden13": "cat=131517"
+    },
+    "131519": {
+        "garden13": "cat=131519"
+    },
+    "131520": {
+        "garden13": "cat=131520"
+    },
+    "131521": {
+        "garden13": "cat=131521"
+    },
+    "131522": {
+        "garden13": "cat=131522"
+    },
+    "131523": {
+        "garden13": "cat=131523"
+    },
+    "131524": {
+        "garden13": "cat=131524"
+    },
+    "131525": {
+        "garden13": "cat=131525"
+    },
+    "131526": {
+        "garden13": "cat=131526"
+    },
+    "131527": {
+        "garden13": "cat=131527"
+    },
+    "131528": {
+        "garden13": "cat=131528"
+    },
+    "131529": {
+        "garden13": "cat=131529"
+    },
+    "131530": {
+        "garden13": "cat=131530"
+    },
+    "131531": {
+        "garden13": "cat=131531"
+    },
+    "131367": {
+        "garden11": "subject=8742"
+    },
+    "130960": {
+        "garden11": "subject=6627"
+    },
+    "130961": {
+        "garden11": "subject=1349"
+    },
+    "131382": {
+        "garden11": "subject=7295"
+    },
+    "128843": {
+        "garden3": "cat=128843"
+    },
+    "130998": {
+        "garden11": "cat=128792"
+    },
+    "130673": {
+        "garden10": "subject=6355"
+    },
+    "128741": {
+        "garden10": "cat=128741"
+    },
+    "130997": {
+        "garden9": "subject=2783"
+    },
+    "128744": {
+        "garden10": "cat=128744"
+    },
+    "128840": {
+        "garden3": "cat=128840"
+    },
+    "130999": {
+        "garden10": "subject=5219"
+    },
+    "128831": {
+        "garden9": "subject=3135"
+    },
+    "131394": {
+        "garden6": "cat=128806"
+    },
+    "131837": {
+        "garden6": "cat=128801"
+    },
+    "131392": {
+        "garden9": "cat=128830"
+    },
+    "131393": {
+        "garden6": "subject=3749"
+    },
+    "128807": {
+        "garden9": "cat=128807"
+    },
+    "128809": {
+        "garden9": "cat=128809"
+    },
+    "128810": {
+        "garden9": "subject=2783"
+    },
+    "131052": {
+        "garden9": "subject=8550"
+    },
+    "131363": {
+        "appliances1": "subject=6546"
+    },
+    "128844": {
+        "garden9": "cat=128844"
+    },
+    "128845": {
+        "garden9": "subject=2010"
+    },
+    "128846": {
+        "garden9": "subject=1840"
+    },
+    "128864": {
+        "garden9": "subject=6893"
+    },
+    "128847": {
+        "garden9": "cat=128847"
+    },
+    "128848": {
+        "garden9": "cat=128848"
+    },
+    "128850": {
+        "garden9": "subject=4332"
+    },
+    "128851": {
+        "garden9": "subject=3735"
+    },
+    "128852": {
+        "garden9": "cat=128852"
+    },
+    "130662": {
+        "garden9": "subject=7207"
+    },
+    "128853": {
+        "garden9": "cat=128853"
+    },
+    "128854": {
+        "garden9": "cat=128854"
+    },
+    "128855": {
+        "garden9": "subject=3730"
+    },
+    "128863": {
+        "garden9": "cat=128863"
+    },
+    "128743": {
+        "garden10": "cat=128743"
+    },
+    "131002": {
+        "garden10": "cat=131002"
+    },
+    "131003": {
+        "garden10": "cat=131003"
+    },
+    "128751": {
+        "garden10": "cat=128751"
+    },
+    "128752": {
+        "garden10": "subject=2799"
+    },
+    "128753": {
+        "garden10": "cat=128753"
+    },
+    "128754": {
+        "garden10": "subject=602"
+    },
+    "128755": {
+        "garden10": "cat=128755"
+    },
+    "128756": {
+        "garden10": "cat=128756"
+    },
+    "128860": {
+        "garden10": "cat=128860"
+    },
+    "128757": {
+        "garden10": "cat=128757"
+    },
+    "128758": {
+        "garden10": "cat=128758"
+    },
+    "128759": {
+        "garden10": "cat=128759"
+    },
+    "128823": {
+        "garden6": "subject=3749"
+    },
+    "128825": {
+        "garden6": "cat=128825"
+    },
+    "130674": {
+        "garden10": "cat=128767"
+    },
+    "128973": {
+        "garden6": "cat=128784"
+    },
+    "131112": {
+        "garden6": "cat=128781"
+    },
+    "128822": {
+        "garden6": "subject=1234"
+    },
+    "130939": {
+        "garden6": "subject=1214"
+    },
+    "128818": {
+        "garden6": "cat=128818"
+    },
+    "128821": {
+        "garden6": "subject=2222"
+    },
+    "128817": {
+        "garden6": "cat=128817"
+    },
+    "128868": {
+        "garden6": "subject=6898"
+    },
+    "131170": {
+        "garden6": "cat=131170"
+    },
+    "128815": {
+        "garden6": "subject=2569"
+    },
+    "128819": {
+        "garden6": "cat=128819"
+    },
+    "128824": {
+        "garden6": "cat=128824"
+    },
+    "128816": {
+        "garden6": "cat=128816"
+    },
+    "130706": {
+        "garden6": "cat=130706"
+    },
+    "128814": {
+        "garden6": "cat=128814"
+    },
+    "131365": {
+        "garden6": "cat=131365"
+    },
+    "128830": {
+        "garden9": "cat=128830"
+    },
+    "128834": {
+        "garden9": "cat=128834"
+    },
+    "128835": {
+        "garden9": "cat=128835"
+    },
+    "128833": {
+        "garden9": "cat=128833"
+    },
+    "128832": {
+        "garden9": "subject=1194"
+    },
+    "128836": {
+        "garden9": "cat=128836"
+    },
+    "128826": {
+        "garden9": "cat=128826"
+    },
+    "128829": {
+        "garden9": "cat=128829"
+    },
+    "128827": {
+        "garden9": "cat=128827"
+    },
+    "128828": {
+        "garden9": "cat=128828"
+    },
+    "128837": {
+        "garden9": "cat=128837"
+    },
+    "128767": {
+        "garden10": "cat=128767"
+    },
+    "128811": {
+        "garden9": "cat=128811"
+    },
+    "128812": {
+        "garden9": "cat=128812"
+    },
+    "128813": {
+        "garden9": "cat=128813"
+    },
+    "129019": {
+        "housecraft_bigroot1": "cat=9205"
+    },
+    "130914": {
+        "garden9": "subject=3851"
+    },
+    "130915": {
+        "garden9": "cat=130915"
+    },
+    "130916": {
+        "garden9": "subject=586"
+    },
+    "128775": {
+        "garden10": "cat=128775"
+    },
+    "128777": {
+        "garden10": "subject=3851"
+    },
+    "128861": {
+        "garden10": "cat=128861"
+    },
+    "128778": {
+        "garden10": "cat=128778"
+    },
+    "128806": {
+        "garden6": "cat=128806"
+    },
+    "128801": {
+        "garden6": "cat=128801"
+    },
+    "128802": {
+        "garden6": "cat=128802"
+    },
+    "131086": {
+        "garden6": "cat=131086"
+    },
+    "128804": {
+        "garden6": "cat=128804"
+    },
+    "128803": {
+        "garden6": "cat=128803"
+    },
+    "131087": {
+        "garden6": "subject=4916"
+    },
+    "128856": {
+        "garden6": "cat=128856"
+    },
+    "128867": {
+        "garden6": "subject=6896"
+    },
+    "128800": {
+        "garden6": "cat=128800"
+    },
+    "128790": {
+        "garden6": "subject=1218"
+    },
+    "128789": {
+        "garden6": "cat=128789"
+    },
+    "128786": {
+        "garden6": "subject=2217"
+    },
+    "128783": {
+        "garden6": "cat=128783"
+    },
+    "128787": {
+        "garden6": "subject=5641"
+    },
+    "128782": {
+        "garden6": "cat=128782"
+    },
+    "128785": {
+        "garden6": "cat=128785"
+    },
+    "128784": {
+        "garden6": "cat=128784"
+    },
+    "128781": {
+        "garden6": "cat=128781"
+    },
+    "128788": {
+        "garden6": "cat=128788"
+    },
+    "131054": {
+        "garden6": "cat=131054"
+    },
+    "128791": {
+        "garden6": "subject=5949"
+    },
+    "131361": {
+        "garden9": "cat=131361"
+    },
+    "130661": {
+        "garden6": "subject=6902"
+    },
+    "128793": {
+        "garden6": "cat=128793"
+    },
+    "128794": {
+        "garden6": "cat=128794"
+    },
+    "128795": {
+        "garden6": "cat=128795"
+    },
+    "128796": {
+        "garden6": "subject=5098"
+    },
+    "130660": {
+        "garden6": "cat=130660"
+    },
+    "128797": {
+        "garden6": "subject=2520"
+    },
+    "130658": {
+        "garden6": "subject=6950"
+    },
+    "130659": {
+        "garden6": "subject=6951"
+    },
+    "128798": {
+        "garden6": "subject=5015"
+    },
+    "128871": {
+        "garden6": "subject=6901"
+    },
+    "128870": {
+        "garden6": "subject=4742"
+    },
+    "128841": {
+        "garden3": "cat=128841"
+    },
+    "128838": {
+        "garden9": "cat=128838"
+    },
+    "130937": {
+        "garden9": "subject=1370"
+    },
+    "128735": {
+        "garden10": "cat=128735"
+    },
+    "128736": {
+        "garden10": "subject=8417"
+    },
+    "128737": {
+        "garden10": "subject=8416"
+    },
+    "128738": {
+        "garden9": "cat=128738"
+    },
+    "128739": {
+        "garden10": "cat=128739"
+    },
+    "131071": {
+        "shealth2": "cat=131071"
+    },
+    "131072": {
+        "shealth2": "cat=131072"
+    },
+    "131055": {
+        "shealth2": "cat=131055"
+    },
+    "131056": {
+        "shealth2": "cat=131056"
+    },
+    "131057": {
+        "shealth2": "cat=131057"
+    },
+    "131058": {
+        "shealth2": "cat=131058"
+    },
+    "131059": {
+        "shealth2": "cat=131059"
+    },
+    "131060": {
+        "shealth2": "cat=131060"
+    },
+    "131061": {
+        "shealth2": "cat=131061"
+    },
+    "131062": {
+        "shealth2": "cat=131062"
+    },
+    "131063": {
+        "shealth2": "cat=131063"
+    },
+    "131064": {
+        "shealth2": "cat=131064"
+    },
+    "131065": {
+        "shealth2": "cat=131065"
+    },
+    "131066": {
+        "shealth2": "cat=131066"
+    },
+    "131069": {
+        "shealth2": "cat=131069"
+    },
+    "131068": {
+        "shealth2": "cat=131068"
+    },
+    "131067": {
+        "shealth2": "cat=131067"
+    },
+    "131070": {
+        "shealth2": "cat=131070"
+    },
+    "10331": {
+        "shealth8": "cat=10331"
+    },
+    "130696": {
+        "shealth6": "cat=130696"
+    },
+    "131383": {
+        "shealth6": "subject=4378"
+    },
+    "10328": {
+        "shealth8": "cat=10328"
+    },
+    "128310": {
+        "shealth7": "subject=5520"
+    },
+    "17114": {
+        "shealth2": "cat=17114"
+    },
+    "10329": {
+        "shealth2": "cat=10329"
+    },
+    "62257": {
+        "shealth7": "cat=62257"
+    },
+    "131628": {
+        "shealth7": "cat=131628"
+    },
+    "63007": {
+        "shealth7": "cat=63007"
+    },
+    "10364": {
+        "shealth6": "cat=10364"
+    },
+    "5516": {
+        "shealth7": "cat=5516"
+    },
+    "62005": {
+        "shealth7": "cat=62005"
+    },
+    "9176": {
+        "shealth7": "cat=9176"
+    },
+    "62003": {
+        "shealth7": "cat=62003"
+    },
+    "61809": {
+        "shealth7": "cat=61809"
+    },
+    "130371": {
+        "shealth7": "cat=130371"
+    },
+    "63058": {
+        "shealth8": "cat=63058"
+    },
+    "131283": {
+        "shealth7": "cat=131283"
+    },
+    "131359": {
+        "shealth6": "subject=6371"
+    },
+    "130955": {
+        "stationery4": "subject=4570"
+    },
+    "130944": {
+        "stationery4": "cat=130944"
+    },
+    "130940": {
+        "stationery4": "cat=130940"
+    },
+    "130954": {
+        "stationery4": "subject=2362"
+    },
+    "130945": {
+        "stationery4": "subject=3618"
+    },
+    "130949": {
+        "stationery4": "subject=1132"
+    },
+    "130941": {
+        "stationery5": "cat=130941"
+    },
+    "130946": {
+        "stationery4": "subject=469"
+    },
+    "130947": {
+        "stationery5": "cat=130947"
+    },
+    "130943": {
+        "stationery5": "cat=130943"
+    },
+    "130950": {
+        "stationery5": "subject=4143"
+    },
+    "130951": {
+        "stationery4": "subject=3182"
+    },
+    "130952": {
+        "stationery5": "subject=2133"
+    },
+    "130953": {
+        "stationery4": "subject=3619"
+    },
+    "130948": {
+        "stationery5": "cat=130948"
+    },
+    "130942": {
+        "stationery4": "cat=130942"
+    },
+    "17152": {
+        "stationery2": "cat=17152"
+    },
+    "17153": {
+        "stationery2": "cat=17153"
+    },
+    "17159": {
+        "stationery3": "cat=17159"
+    },
+    "17164": {
+        "creativity17": "cat=17164"
+    },
+    "16992": {
+        "stationery2": "cat=16992"
+    },
+    "61872": {
+        "stationery3": "cat=61872"
+    },
+    "17165": {
+        "stationery3": "cat=17165"
+    },
+    "131534": {
+        "preset_made_in_russia": "preset=131534"
+    },
+    "131543": {
+        "preset_made_in_russia": "preset=131543"
+    },
+    "131532": {
+        "preset_made_in_russia": "preset=131532"
+    },
+    "131535": {
+        "preset_made_in_russia": "preset=131535"
+    },
+    "131536": {
+        "preset_made_in_russia": "preset=131536"
+    },
+    "131537": {
+        "preset_made_in_russia": "preset=131537"
+    },
+    "131533": {
+        "preset_made_in_russia": "preset=131533"
+    },
+    "131538": {
+        "preset_made_in_russia": "preset=131538"
+    },
+    "131539": {
+        "preset_made_in_russia": "preset=131539"
+    },
+    "131540": {
+        "preset_made_in_russia": "preset=131540"
+    },
+    "131541": {
+        "preset_made_in_russia": "preset=131541"
+    },
+    "131542": {
+        "preset_made_in_russia": "preset=131542"
+    },
+    "131544": {
+        "preset_made_in_russia": "preset=131544"
+    },
+    "131743": {
+        "preset_made_in_russia": "preset=131743"
+    },
+    "131758": {
+        "preset_made_in_russia": "preset=131758"
+    },
+    "131760": {
+        "preset_made_in_russia": "preset=131760"
+    },
+    "131768": {
+        "preset_made_in_russia": "preset=131768"
+    },
+    "131772": {
+        "preset_made_in_russia": "preset=131772"
+    },
+    "131113": {
+        "preset-culture": "preset=183096"
+    },
+    "131118": {
+        "preset_folkscraft": "preset=131118"
+    },
+    "80": {
+        "null": null
+    },
+    "77": {
+        "null": null
+    },
+    "79": {
+        "null": null
+    },
+    "101": {
+        "null": null
+    },
+    "73": {
+        "null": null
+    },
+    "102": {
+        "null": null
+    },
+    "103": {
+        "null": null
+    },
+    "104": {
+        "null": null
+    },
+    "105": {
+        "null": null
+    },
+    "106": {
+        "null": null
+    },
+    "76": {
+        "null": null
+    },
+    "107": {
+        "null": null
+    },
+    "27": {
+        "null": null
+    },
+    "108": {
+        "null": null
+    },
+    "109": {
+        "null": null
+    },
+    "25": {
+        "null": null
+    },
+    "22": {
+        "null": null
+    },
+    "24": {
+        "null": null
+    },
+    "110": {
+        "null": null
+    },
+    "111": {
+        "null": null
+    },
+    "23": {
+        "null": null
+    },
+    "112": {
+        "null": null
+    },
+    "113": {
+        "null": null
+    },
+    "114": {
+        "null": null
+    },
+    "34": {
+        "null": null
+    },
+    "116": {
+        "null": null
+    },
+    "19": {
+        "null": null
+    },
+    "15": {
+        "null": null
+    },
+    "16": {
+        "null": null
+    },
+    "118": {
+        "null": null
+    },
+    "93": {
+        "null": null
+    },
+    "100": {
+        "null": null
+    }
 }
