@@ -1,12 +1,12 @@
 import requests
 import time
 from time import sleep
-from bs4 import BeautifulSoup
 import json
+from configs.proxy import proxy
 
 
 def get_category():
-    print("hello")
+
     url = "https://static-basket-01.wbbasket.ru/vol0/data/main-menu-ru-ru-v3.json"
 
     headers = {
@@ -20,22 +20,16 @@ def get_category():
     response = requests.get(url=url, headers=headers)
     print("Статус-код:", response.status_code)
 
-    with open("response.json", "w", encoding="utf-8") as f:
-        # буфер что-бы не спамить сайт ВБ запросами id101
-        json.dump(response.json(), f, ensure_ascii=False, indent=4)
-    return
+    return response
 
 
-def items_check():
-    with open("response.json", "r", encoding="utf-8") as f:
-        response = json.load(f)  # id101 удалить буфер сохранения
-
+def items_check(response):
     with open("categorys.json", "w", encoding="utf-8") as f:
         json.dump({}, f, ensure_ascii=False, indent=4)  # обнуление
 
     categorys = {}
 
-    for i in response:
+    for i in response.json():
         if "childs" in i:
             for z in i["childs"]:
                 if "childs" in z:
@@ -82,36 +76,53 @@ def category_parser():
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36',
     }
 
+    unic = {}
+
     for i in categorys:
         cat_shard = list(categorys[i].keys())[0]
         cat_query = list(categorys[i].values())[0]
-        for page in range(1, 51):
-            url = f"https://catalog.wb.ru/catalog/{cat_shard}/v2/catalog?ab_testing=false&appType=1&{cat_query}&curr=rub&dest=-365403&lang=ru&page={page}&sort=popular&spp=30&uclusters=3&uiv=8&uv=QIPAIUWVuZM4JDP0OG63lUJ4P6i9eUN1N3PA-cUsPc237y-PvwlER0UAOeLDPMVPPMzBQCtAwKS9ZEEJNfw-KToivZO6HsSxwfO5Zjb8P-lAPT9YQFe8mcQxu7w-7LyVw3XETUPrw3hBtEJnsgdByT-xwRQ7e0QhuYfFazKcPL8_2L7fPXnCCj4rLjdC0MALtoQ_jbhpQhe4IUB1upg6mT9_wO26SL9hP7qtiLSJPiE8vEFFulFAF777wYy528R6PEPDZLTIuuQekTtiQHm0MTpQvIOwT0BUwLBDeMTfvzAwL0QLPNg_VZmqsU24N6_2wUi5v8CVPkU_2DKKQMZBmg"
+        if cat_query != "null" and cat_shard != "null":
+            for page in range(1, 51):
+                url = f"https://catalog.wb.ru/catalog/{cat_shard}/v2/catalog?ab_testing=false&appType=1&{cat_query}&curr=rub&dest=-365403&lang=ru&page={page}&sort=popular&spp=30&uclusters=3&uiv=8&uv=QIPAIUWVuZM4JDP0OG63lUJ4P6i9eUN1N3PA-cUsPc237y-PvwlER0UAOeLDPMVPPMzBQCtAwKS9ZEEJNfw-KToivZO6HsSxwfO5Zjb8P-lAPT9YQFe8mcQxu7w-7LyVw3XETUPrw3hBtEJnsgdByT-xwRQ7e0QhuYfFazKcPL8_2L7fPXnCCj4rLjdC0MALtoQ_jbhpQhe4IUB1upg6mT9_wO26SL9hP7qtiLSJPiE8vEFFulFAF777wYy528R6PEPDZLTIuuQekTtiQHm0MTpQvIOwT0BUwLBDeMTfvzAwL0QLPNg_VZmqsU24N6_2wUi5v8CVPkU_2DKKQMZBmg"
+                try:
+                    req = requests.get(url=url, headers=headers, proxies=proxy)
 
-            req = requests.get(url=url, headers=headers)
-            print("Статус-код:", req.status_code)
+                    if req.status_code == 426:
+                        print(
+                            f"Ошибка 426 на странице {page}. Попробую снова через 5 секунд.")
+                        time.sleep(5)
+                        req = requests.get(
+                            url=url, headers=headers, proxies=proxy)
+                    if req.status_code == 200:
+                        try:
+                            data = req.json()
+                            print("Статус-код:", req.status_code)
+                            for i in data.get("data").get("products"):
+                                item_id = i.get("id")
+                                if item_id not in unic:
+                                    unic[item_id] = 1
+                                else:
+                                    unic[item_id] = 0
+                            print(f"Старница {page} завершена")
+                        except requests.exceptions.JSONDecodeError:
+                            print(
+                                f"Ошибка при парсинге JSON на странице {page}. Ответ: {req.text}")
+                            time.sleep(5)
+                    else:
+                        print(
+                            f"Ошибка при запросе на страницу {page}: {req.status_code}")
+                        time.sleep(5)
+                except requests.exceptions.RequestException as e:
+                    print(f"Произошла ошибка на странице {page}: {e}")
+                    time.sleep(5)
+            print("Категория завершена")
+    print("Работа выполнена")
 
-            with open("bufer.json", "w", encoding="utf-8") as f:
-                # буфер что-бы не спамить сайт ВБ запросами id101
-                json.dump(req.json(), f, ensure_ascii=False, indent=4)
-
-            break
-        break
-
-
-def check():
-    with open("bufer.json", "r", encoding="utf-8") as f:
-        req = json.load(f)  # id101 удалить буфер сохранения
-
-    for i in req.get("data").get("products"):
-        item_id = i.get("id")
-        print()
-        break
+    with open("articul.json", "w", encoding="utf-8") as f:
+        json.dump(unic, f, ensure_ascii=False, indent=4)
 
 
 if __name__ == '__main__':
-    # get_category() #спарсили json где все категории и суб-категории
-    # items_check()
-    # category_parser()
-    check()
+    # items_check(get_category())
+    category_parser()
     pass
