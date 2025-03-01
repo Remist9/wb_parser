@@ -43,7 +43,13 @@ def items_check():
                     sub_category_name = z.get("seo")
                 else:
                     sub_category_name = category_name + "->" + z.get("name")
-                sub_category_url = "https://www.wildberries.ru" + z.get("url")
+
+                if "https" in z.get("url"):
+                    sub_category_url = z.get("url")
+                else:
+                    sub_category_url = "https://www.wildberries.ru" + \
+                        z.get("url")
+
                 categorys[sub_category_name] = sub_category_url
 
     with open("categorys.json", "w", encoding="utf-8") as f:
