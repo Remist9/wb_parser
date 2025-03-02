@@ -58,19 +58,17 @@ def items_check(response):
     return categorys
 
 
-async def fetch(session, url, headers, proxy, proxy_list, retries=3):
+async def fetch(session, url, headers, proxy, proxy_list, retries=5):
     try:
         async with session.get(url, headers=headers, proxy=proxy) as response:
-            if response.status == 426:
-                print(f"Ошибка 426. Попробую снова через 5 секунд.")
-                await asyncio.sleep(5)
-                return await fetch(session, url, headers, proxy, proxy_list, retries)
-            elif response.status == 200:
+            if response.status == 200:
                 return await response.json()
             else:
-                print(f"Ошибка при запросе: {response.status}")
-                await asyncio.sleep(5)
-                return await fetch(session, url, headers, proxy, proxy_list, retries)
+                print(
+                    f"Ошибка при запросе: {response.status}. Меняем прокси и повторяем запрос")
+                await asyncio.sleep(7)
+                new_proxy = random.choice(proxy_list)  # Выбираем новый прокси
+                return await fetch(session, url, headers, new_proxy, proxy_list, retries)
     except Exception as e:
         if retries > 0:
             print(
@@ -97,7 +95,7 @@ async def process_page(session, url, headers, proxy, semaphore, proxy_list):
             return await process_page(session, url, headers, new_proxy, semaphore, proxy_list)
 
 
-async def process_category(category_id, cat_shard, cat_query, headers, proxy, proxy_list):
+async def process_category(cat_shard, cat_query, headers, proxy, proxy_list):
     semaphore = asyncio.Semaphore(SEMAPHORE_LIMIT)
     unic = []
     async with aiohttp.ClientSession() as session:
@@ -154,10 +152,11 @@ async def category_parser(categorys):
         cat_query = list(category_data.values())[0]
         if cat_query != "null" and cat_shard != "null":
             proxy = random.choice(proxy_list)  # Выбираем случайный прокси
-            unic = await process_category(category_id, cat_shard, cat_query, headers, proxy, proxy_list)
+            unic = await process_category(cat_shard, cat_query, headers, proxy, proxy_list)
             await database(unic)
             # Выводим номер и ID категории
-            print(f"Категория {counter} завершена (ID: {category_id})")
+            print(
+                f"Категория {counter} завершена (ID: {category_id} : {datetime.now()})")
             await asyncio.sleep(7)  # Задержка между категориями
     print("Работа выполнена")
 
