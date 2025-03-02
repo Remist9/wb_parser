@@ -65,7 +65,7 @@ async def fetch(session, url, headers, proxy, proxy_list, retries=5):
                 return await response.json()
             else:
                 print(
-                    f"Ошибка при запросе: {response.status}. Меняем прокси и повторяем запрос")
+                    f"Ошибка при запросе: {response.status}. Меняем прокси {proxy} и повторяем запрос")
                 await asyncio.sleep(7)
                 new_proxy = random.choice(proxy_list)  # Выбираем новый прокси
                 return await fetch(session, url, headers, new_proxy, proxy_list, retries)
@@ -80,9 +80,11 @@ async def fetch(session, url, headers, proxy, proxy_list, retries=5):
             return None
 
 
-async def process_page(session, url, headers, proxy, semaphore, proxy_list):
+async def process_page(session, url, headers, proxy_list, semaphore):
     async with semaphore:
         await asyncio.sleep(DELAY_BETWEEN_REQUESTS)  # Задержка между запросами
+        # Выбираем случайный прокси для каждого запроса
+        proxy = random.choice(proxy_list)
         try:
             data = await fetch(session, url, headers, proxy, proxy_list)
             if data:
@@ -95,15 +97,15 @@ async def process_page(session, url, headers, proxy, semaphore, proxy_list):
             return await process_page(session, url, headers, new_proxy, semaphore, proxy_list)
 
 
-async def process_category(cat_shard, cat_query, headers, proxy, proxy_list):
+async def process_category(cat_shard, cat_query, headers, proxy_list):
     semaphore = asyncio.Semaphore(SEMAPHORE_LIMIT)
     unic = []
     async with aiohttp.ClientSession() as session:
         tasks = []
         for page in range(1, 51):
             url = f"https://catalog.wb.ru/catalog/{cat_shard}/v2/catalog?ab_testing=false&appType=1&{cat_query}&curr=rub&dest=-365403&lang=ru&page={page}&sort=popular&spp=30&uclusters=3&uiv=8&uv=QIPAIUWVuZM4JDP0OG63lUJ4P6i9eUN1N3PA-cUsPc237y-PvwlER0UAOeLDPMVPPMzBQCtAwKS9ZEEJNfw-KToivZO6HsSxwfO5Zjb8P-lAPT9YQFe8mcQxu7w-7LyVw3XETUPrw3hBtEJnsgdByT-xwRQ7e0QhuYfFazKcPL8_2L7fPXnCCj4rLjdC0MALtoQ_jbhpQhe4IUB1upg6mT9_wO26SL9hP7qtiLSJPiE8vEFFulFAF777wYy528R6PEPDZLTIuuQekTtiQHm0MTpQvIOwT0BUwLBDeMTfvzAwL0QLPNg_VZmqsU24N6_2wUi5v8CVPkU_2DKKQMZBmg"
-            tasks.append(process_page(session, url, headers,
-                         proxy, semaphore, proxy_list))
+            tasks.append(process_page(
+                session, url, headers, proxy_list, semaphore))
 
         results = await asyncio.gather(*tasks)
         for products in results:
@@ -152,7 +154,7 @@ async def category_parser(categorys):
         cat_query = list(category_data.values())[0]
         if cat_query != "null" and cat_shard != "null":
             proxy = random.choice(proxy_list)  # Выбираем случайный прокси
-            unic = await process_category(cat_shard, cat_query, headers, proxy, proxy_list)
+            unic = await process_category(cat_shard, cat_query, headers, proxy_list)
             await database(unic)
             # Выводим номер и ID категории
             print(
