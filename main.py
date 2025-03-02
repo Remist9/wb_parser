@@ -1,10 +1,15 @@
+import asyncio
+import aiohttp
 import requests
-import time
-from time import sleep
-import json
-from configs.proxy import proxy
-from configs.database import client
+import random
 from datetime import datetime
+from configs.proxy import proxy_list  # Список прокси
+from configs.database import client  # Клиент ClickHouse
+
+# Ограничение на количество одновременных запросов
+SEMAPHORE_LIMIT = 10
+# Задержка между запросами (в секундах)
+DELAY_BETWEEN_REQUESTS = 1
 
 
 def get_category():
@@ -53,8 +58,63 @@ def items_check(response):
     return categorys
 
 
-def database(unic):
+async def fetch(session, url, headers, proxy, proxy_list, retries=3):
+    try:
+        async with session.get(url, headers=headers, proxy=proxy) as response:
+            if response.status == 426:
+                print(f"Ошибка 426. Попробую снова через 5 секунд.")
+                await asyncio.sleep(5)
+                return await fetch(session, url, headers, proxy, proxy_list, retries)
+            elif response.status == 200:
+                return await response.json()
+            else:
+                print(f"Ошибка при запросе: {response.status}")
+                await asyncio.sleep(5)
+                return await fetch(session, url, headers, proxy, proxy_list, retries)
+    except Exception as e:
+        if retries > 0:
+            print(
+                f"Произошла ошибка: {e}. Осталось попыток: {retries}. Меняем прокси и повторяем запрос.")
+            new_proxy = random.choice(proxy_list)  # Выбираем новый прокси
+            return await fetch(session, url, headers, new_proxy, proxy_list, retries - 1)
+        else:
+            print(f"Превышено количество попыток для URL: {url}")
+            return None
 
+
+async def process_page(session, url, headers, proxy, semaphore, proxy_list):
+    async with semaphore:
+        await asyncio.sleep(DELAY_BETWEEN_REQUESTS)  # Задержка между запросами
+        try:
+            data = await fetch(session, url, headers, proxy, proxy_list)
+            if data:
+                return data.get("data", {}).get("products", [])
+            else:
+                return []
+        except Exception as e:
+            print(f"Произошла ошибка: {e}. Меняем прокси и повторяем запрос.")
+            new_proxy = random.choice(proxy_list)  # Выбираем новый прокси
+            return await process_page(session, url, headers, new_proxy, semaphore, proxy_list)
+
+
+async def process_category(category_id, cat_shard, cat_query, headers, proxy, proxy_list):
+    semaphore = asyncio.Semaphore(SEMAPHORE_LIMIT)
+    unic = []
+    async with aiohttp.ClientSession() as session:
+        tasks = []
+        for page in range(1, 51):
+            url = f"https://catalog.wb.ru/catalog/{cat_shard}/v2/catalog?ab_testing=false&appType=1&{cat_query}&curr=rub&dest=-365403&lang=ru&page={page}&sort=popular&spp=30&uclusters=3&uiv=8&uv=QIPAIUWVuZM4JDP0OG63lUJ4P6i9eUN1N3PA-cUsPc237y-PvwlER0UAOeLDPMVPPMzBQCtAwKS9ZEEJNfw-KToivZO6HsSxwfO5Zjb8P-lAPT9YQFe8mcQxu7w-7LyVw3XETUPrw3hBtEJnsgdByT-xwRQ7e0QhuYfFazKcPL8_2L7fPXnCCj4rLjdC0MALtoQ_jbhpQhe4IUB1upg6mT9_wO26SL9hP7qtiLSJPiE8vEFFulFAF777wYy528R6PEPDZLTIuuQekTtiQHm0MTpQvIOwT0BUwLBDeMTfvzAwL0QLPNg_VZmqsU24N6_2wUi5v8CVPkU_2DKKQMZBmg"
+            tasks.append(process_page(session, url, headers,
+                         proxy, semaphore, proxy_list))
+
+        results = await asyncio.gather(*tasks)
+        for products in results:
+            for product in products:
+                unic.append(product.get("id"))
+    return unic
+
+
+async def database(unic):
     double_check = f"""
         SELECT sku FROM all_sku WHERE sku IN({', '.join(map(str, unic))})
     """
@@ -68,8 +128,7 @@ def database(unic):
         'INSERT INTO all_sku (sku, date_add, status) VALUES', updated_list)
 
 
-def category_parser(categorys):
-
+async def category_parser(categorys):
     headers = {
         'accept': '*/*',
         'accept-language': 'ru,en;q=0.9',
@@ -86,53 +145,22 @@ def category_parser(categorys):
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36',
     }
 
-    unic = []
+    if not proxy_list:
+        raise ValueError(
+            "Список прокси пуст. Проверьте файл configs/proxy.py.")
 
-    for i in categorys:
-        cat_shard = list(categorys[i].keys())[0]
-        cat_query = list(categorys[i].values())[0]
+    for counter, (category_id, category_data) in enumerate(categorys.items(), start=1):
+        cat_shard = list(category_data.keys())[0]
+        cat_query = list(category_data.values())[0]
         if cat_query != "null" and cat_shard != "null":
-            for page in range(1, 51):
-                url = f"https://catalog.wb.ru/catalog/{cat_shard}/v2/catalog?ab_testing=false&appType=1&{cat_query}&curr=rub&dest=-365403&lang=ru&page={page}&sort=popular&spp=30&uclusters=3&uiv=8&uv=QIPAIUWVuZM4JDP0OG63lUJ4P6i9eUN1N3PA-cUsPc237y-PvwlER0UAOeLDPMVPPMzBQCtAwKS9ZEEJNfw-KToivZO6HsSxwfO5Zjb8P-lAPT9YQFe8mcQxu7w-7LyVw3XETUPrw3hBtEJnsgdByT-xwRQ7e0QhuYfFazKcPL8_2L7fPXnCCj4rLjdC0MALtoQ_jbhpQhe4IUB1upg6mT9_wO26SL9hP7qtiLSJPiE8vEFFulFAF777wYy528R6PEPDZLTIuuQekTtiQHm0MTpQvIOwT0BUwLBDeMTfvzAwL0QLPNg_VZmqsU24N6_2wUi5v8CVPkU_2DKKQMZBmg"
-
-                while True:
-                    try:
-                        req = requests.get(
-                            url=url, headers=headers, proxies=proxy)
-                        if req.status_code == 426:
-                            print(
-                                f"Ошибка 426 на странице {page}. Попробую снова через 5 секунд.")
-                            time.sleep(7)
-                            continue
-                        if req.status_code == 200:
-                            try:
-                                data = req.json()
-                                print("Статус-код:", req.status_code)
-                                for i in data.get("data").get("products"):
-                                    unic.append(i.get("id"))
-                                print(f"Старница {page} завершена")
-                                break
-                            except requests.exceptions.JSONDecodeError:
-                                print(
-                                    f"Ошибка при парсинге JSON на странице {page}. Ответ: {req.text}")
-                                time.sleep(5)
-                                continue
-                        else:
-                            print(
-                                f"Ошибка при запросе на страницу {page}: {req.status_code}")
-                            time.sleep(5)
-                            continue
-
-                    except requests.exceptions.RequestException as e:
-                        print(f"Произошла ошибка на странице {page}: {e}")
-                        time.sleep(5)
-                        continue
-            database(unic)
-            unic = []
-            print("Категория завершена")
-            time.sleep(7)
+            proxy = random.choice(proxy_list)  # Выбираем случайный прокси
+            unic = await process_category(category_id, cat_shard, cat_query, headers, proxy, proxy_list)
+            await database(unic)
+            # Выводим номер и ID категории
+            print(f"Категория {counter} завершена (ID: {category_id})")
+            await asyncio.sleep(7)  # Задержка между категориями
     print("Работа выполнена")
 
 
 if __name__ == '__main__':
-    category_parser(items_check(get_category()))
+    asyncio.run(category_parser(items_check(get_category())))
