@@ -145,6 +145,9 @@ async def category_parser(categorys):
         'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36',
     }
 
+    with open("log.txt", "w", encoding="utf-8") as f:
+        f.write("")
+
     if not proxy_list:
         raise ValueError(
             "Список прокси пуст. Проверьте файл configs/proxy.py.")
@@ -159,6 +162,9 @@ async def category_parser(categorys):
             # Выводим номер и ID категории
             print(
                 f"Категория {counter} завершена (ID: {category_id} : {datetime.now()})")
+            with open("log.txt", "a", encoding="utf-8") as f:
+                f.write(
+                    f"Категория {counter} завершена (ID: {category_id} : {datetime.now()})\n")
             await asyncio.sleep(7)  # Задержка между категориями
     print("Работа выполнена")
 
