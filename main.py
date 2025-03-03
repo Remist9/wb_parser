@@ -9,7 +9,7 @@ from configs.database import client  # Клиент ClickHouse
 # Ограничение на количество одновременных запросов
 SEMAPHORE_LIMIT = 10
 # Задержка между запросами (в секундах)
-DELAY_BETWEEN_REQUESTS = 1
+DELAY_BETWEEN_REQUESTS = 2
 
 
 def get_category():
@@ -58,77 +58,137 @@ def items_check(response):
     return categorys
 
 
-async def fetch(session, url, headers, proxy, proxy_list, retries=5):
-    try:
-        async with session.get(url, headers=headers, proxy=proxy) as response:
-            if response.status == 200:
-                return await response.json()
-            else:
-                print(
-                    f"Ошибка при запросе: {response.status}. Меняем прокси {proxy} и повторяем запрос")
-                await asyncio.sleep(7)
-                new_proxy = random.choice(proxy_list)  # Выбираем новый прокси
-                return await fetch(session, url, headers, new_proxy, proxy_list, retries)
-    except Exception as e:
-        if retries > 0:
+async def fetch(session, url, headers, proxy):
+    """
+    Выполняет запрос с использованием одного прокси.
+    Бесконечно пытается подключиться, пока запрос не будет успешным.
+    Если 5 раз подряд возникает ошибка 404, пропускаем категорию.
+    """
+    error_count = 0  # Счетчик ошибок подряд
+    not_found_count = 0  # Счетчик ошибок 404 подряд
+
+    while True:
+        try:
+            async with session.get(url, headers=headers, proxy=proxy) as response:
+                if response.status == 200:
+                    error_count = 0  # Сбрасываем счетчик ошибок при успешном запросе
+                    not_found_count = 0  # Сбрасываем счетчик 404
+                    return await response.json()
+                elif response.status == 404:
+                    not_found_count += 1  # Увеличиваем счетчик 404
+                    error_count += 1  # Увеличиваем общий счетчик ошибок
+                    print(
+                        f"Ошибка 404: Страница не найдена. Повторная попытка... Ошибок 404 подряд: {not_found_count}")
+
+                    # Если 5 раз подряд 404, пропускаем категорию
+                    if not_found_count >= 5:
+                        print("Пропускаем категорию из-за 5 ошибок 404 подряд.")
+                        return None  # Пропускаем категорию
+                else:
+                    error_count += 1  # Увеличиваем счетчик ошибок
+                    print(
+                        f"Ошибка при запросе: {response.status}. Повторная попытка... Ошибок подряд: {error_count}")
+
+                # Увеличиваем тайм-аут до 60 секунд после 5 ошибок подряд
+                if error_count > 5:
+                    await asyncio.sleep(60)  # Тайм-аут 1 минута
+                else:
+                    await asyncio.sleep(7)  # Тайм-аут 7 секунд
+        except Exception as e:
+            error_count += 1  # Увеличиваем счетчик ошибок
             print(
-                f"Произошла ошибка: {e}. Осталось попыток: {retries}. Меняем прокси и повторяем запрос.")
-            new_proxy = random.choice(proxy_list)  # Выбираем новый прокси
-            return await fetch(session, url, headers, new_proxy, proxy_list, retries - 1)
-        else:
-            print(f"Превышено количество попыток для URL: {url}")
-            return None
+                f"Произошла ошибка: {e}. Повторная попытка... Ошибок подряд: {error_count}")
+
+            # Увеличиваем тайм-аут до 60 секунд после 5 ошибок подряд
+            if error_count > 5:
+                await asyncio.sleep(60)  # Тайм-аут 1 минута
+            else:
+                await asyncio.sleep(7)  # Тайм-аут 7 секунд
 
 
-async def process_page(session, url, headers, proxy_list, semaphore):
+async def process_page(session, url, headers, proxy, semaphore):
+    """
+    Обрабатывает одну страницу категории.
+    """
     async with semaphore:
         await asyncio.sleep(DELAY_BETWEEN_REQUESTS)  # Задержка между запросами
-        # Выбираем случайный прокси для каждого запроса
-        proxy = random.choice(proxy_list)
-        try:
-            data = await fetch(session, url, headers, proxy, proxy_list)
-            if data:
-                return data.get("data", {}).get("products", [])
-            else:
-                return []
-        except Exception as e:
-            print(f"Произошла ошибка: {e}. Меняем прокси и повторяем запрос.")
-            new_proxy = random.choice(proxy_list)  # Выбираем новый прокси
-            return await process_page(session, url, headers, new_proxy, semaphore, proxy_list)
+        data = await fetch(session, url, headers, proxy)
+        if data:
+            return data.get("data", {}).get("products", [])
+        else:
+            return []
 
 
-async def process_category(cat_shard, cat_query, headers, proxy_list):
+async def process_category(cat_shard, cat_query, headers, proxy):
+    """
+    Обрабатывает одну категорию (50 страниц) с использованием одного прокси.
+    Если fetch возвращает None, пропускаем категорию.
+    """
     semaphore = asyncio.Semaphore(SEMAPHORE_LIMIT)
     unic = []
     async with aiohttp.ClientSession() as session:
         tasks = []
-        for page in range(1, 51):
+        for page in range(1, 51):  # 50 страниц
             url = f"https://catalog.wb.ru/catalog/{cat_shard}/v2/catalog?ab_testing=false&appType=1&{cat_query}&curr=rub&dest=-365403&lang=ru&page={page}&sort=popular&spp=30&uclusters=3&uiv=8&uv=QIPAIUWVuZM4JDP0OG63lUJ4P6i9eUN1N3PA-cUsPc237y-PvwlER0UAOeLDPMVPPMzBQCtAwKS9ZEEJNfw-KToivZO6HsSxwfO5Zjb8P-lAPT9YQFe8mcQxu7w-7LyVw3XETUPrw3hBtEJnsgdByT-xwRQ7e0QhuYfFazKcPL8_2L7fPXnCCj4rLjdC0MALtoQ_jbhpQhe4IUB1upg6mT9_wO26SL9hP7qtiLSJPiE8vEFFulFAF777wYy528R6PEPDZLTIuuQekTtiQHm0MTpQvIOwT0BUwLBDeMTfvzAwL0QLPNg_VZmqsU24N6_2wUi5v8CVPkU_2DKKQMZBmg"
-            tasks.append(process_page(
-                session, url, headers, proxy_list, semaphore))
+            tasks.append(process_page(session, url, headers, proxy, semaphore))
 
         results = await asyncio.gather(*tasks)
         for products in results:
+            if products is None:  # Если fetch вернул None, пропускаем категорию
+                print(f"Категория {cat_shard} пропущена из-за ошибок 404.")
+                return None
             for product in products:
                 unic.append(product.get("id"))
     return unic
 
 
 async def database(unic):
+    """
+    Выгружает данные в БД.
+    """
     double_check = f"""
-        SELECT sku FROM all_sku WHERE sku IN({', '.join(map(str, unic))})
+        SELECT sku FROM all_sku_1 WHERE sku IN({', '.join(map(str, unic))})
     """
     result = client.execute(double_check)
     existing_skus = set([sku[0] for sku in result])
 
-    double_check = list(set(unic)-existing_skus)
+    double_check = list(set(unic) - existing_skus)
     updated_list = [(item, datetime.now(), 1) for item in double_check]
 
     client.execute(
-        'INSERT INTO all_sku (sku, date_add, status) VALUES', updated_list)
+        'INSERT INTO all_sku_1 (sku, date_add, status) VALUES', updated_list)
+
+
+async def category_worker(queue, headers, proxy):
+    while True:
+        try:
+            category_id, category_data = queue.get_nowait()
+        except asyncio.QueueEmpty:
+            break  # Очередь пуста, завершаем работу
+
+        try:
+            cat_shard = list(category_data.keys())[0]
+            cat_query = list(category_data.values())[0]
+            if cat_query != "null" and cat_shard != "null":
+                print(
+                    f"Начата обработка категории {category_id} с прокси {proxy}")
+                unic = await process_category(cat_shard, cat_query, headers, proxy)
+                await database(unic)
+                print(
+                    f"Категория {category_id} завершена (ID: {category_id} : {datetime.now()})")
+                with open("log.txt", "a", encoding="utf-8") as f:
+                    f.write(
+                        f"Категория завершена (ID: {category_id} : {datetime.now()})\n")
+        except Exception as e:
+            print(f"Ошибка при обработке категории {category_id}: {e}")
+        finally:
+            queue.task_done()
 
 
 async def category_parser(categorys):
+    """
+    Основная функция для парсинга категорий.
+    """
     headers = {
         'accept': '*/*',
         'accept-language': 'ru,en;q=0.9',
@@ -152,20 +212,26 @@ async def category_parser(categorys):
         raise ValueError(
             "Список прокси пуст. Проверьте файл configs/proxy.py.")
 
-    for counter, (category_id, category_data) in enumerate(categorys.items(), start=1):
-        cat_shard = list(category_data.keys())[0]
-        cat_query = list(category_data.values())[0]
-        if cat_query != "null" and cat_shard != "null":
-            proxy = random.choice(proxy_list)  # Выбираем случайный прокси
-            unic = await process_category(cat_shard, cat_query, headers, proxy_list)
-            await database(unic)
-            # Выводим номер и ID категории
-            print(
-                f"Категория {counter} завершена (ID: {category_id} : {datetime.now()})")
-            with open("log.txt", "a", encoding="utf-8") as f:
-                f.write(
-                    f"Категория {counter} завершена (ID: {category_id} : {datetime.now()})\n")
-            await asyncio.sleep(7)  # Задержка между категориями
+    # Создаем очередь категорий
+    queue = asyncio.Queue()
+
+    # Добавляем все категории в очередь
+    for category_id, category_data in categorys.items():
+        queue.put_nowait((category_id, category_data))
+
+    # Создаем worker'ов для обработки категорий
+    workers = []
+    for proxy in proxy_list[:10]:  # Используем первые 10 прокси
+        worker = asyncio.create_task(category_worker(queue, headers, proxy))
+        workers.append(worker)
+
+    # Ждем завершения всех задач в очереди
+    await queue.join()
+
+    # Отменяем worker'ов после завершения
+    for w in workers:
+        w.cancel()
+
     print("Работа выполнена")
 
 
