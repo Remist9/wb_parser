@@ -276,13 +276,16 @@ def reset_activity():
     try:
         # Создаем новую таблицу с обновленными значениями
         client.execute("""
-            CREATE TABLE all_sku_new (
-                sku UInt64,
-                date_add Date,
-                status UInt8
-            ) ENGINE = MergeTree()
-            ORDER BY (sku, status)
-        """)
+            CREATE TABLE ai.all_sku_new 
+            ( 
+                sku Int64, 
+                date_add DateTime,  
+                status Int8
+            ) 
+            ENGINE = ReplacingMergeTree(status) 
+            ORDER BY sku 
+            SETTINGS index_granularity = 8192
+                """)
 
         # Вставляем данные с обнуленным статусом
         client.execute("""
@@ -300,6 +303,13 @@ def reset_activity():
         print("Активность всех артикулов обнулена.")
     except Exception as e:
         print(f"Ошибка при обнулении активности: {e}")
+
+    try:
+        print("Выполняем принудительное слияние данных...")
+        client.execute("OPTIMIZE TABLE all_sku FINAL")
+        print("Принудительное слияние завершено.")
+    except Exception as e:
+        print(f"Ошибка при выполнении принудительного слияния: {e}")
 
 
 if __name__ == '__main__':
