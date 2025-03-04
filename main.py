@@ -146,17 +146,50 @@ async def database(unic):
     """
     Выгружает данные в БД.
     """
-    double_check = f"""
-        SELECT sku FROM all_sku_1 WHERE sku IN({', '.join(map(str, unic))})
-    """
-    result = client.execute(double_check)
-    existing_skus = set([sku[0] for sku in result])
+    # Проверяем, не пуст ли список unic
+    if not unic:
+        print("Список товаров пуст. Пропускаем вставку в БД.")
+        return
 
-    double_check = list(set(unic) - existing_skus)
-    updated_list = [(item, datetime.now(), 1) for item in double_check]
+    # Получаем список артикулов, которые уже есть в БД со статусом 1
+    try:
+        existing_skus_query = f"""
+            SELECT sku
+            FROM all_sku
+            WHERE sku IN ({', '.join(map(str, unic))}) AND status = 1
+        """
+        existing_skus = set([row[0]
+                            for row in client.execute(existing_skus_query)])
+    except Exception as e:
+        print(f"Ошибка при получении существующих артикулов: {e}")
+        return
 
-    client.execute(
-        'INSERT INTO all_sku_1 (sku, date_add, status) VALUES', updated_list)
+    # Фильтруем артикулы: оставляем только те, которых нет в existing_skus
+    new_skus = [sku for sku in unic if sku not in existing_skus]
+
+    # Если новых артикулов нет, завершаем выполнение
+    if not new_skus:
+        print("Нет новых артикулов для вставки.")
+        return
+
+    # Преобразуем список новых артикулов в список кортежей для вставки
+    # Все артикулы добавляются со статусом 1
+    updated_list = [(sku, datetime.now(), 1) for sku in new_skus]
+
+    # Вставляем данные в БД
+    try:
+        client.execute(
+            'INSERT INTO all_sku (sku, date_add, status) VALUES', updated_list)
+        print(f"Успешно вставлено {len(updated_list)} артикулов.")
+    except Exception as e:
+        print(f"Ошибка при вставке артикулов в БД: {e}")
+
+    try:
+        print("Выполняем принудительное слияние данных...")
+        client.execute("OPTIMIZE TABLE all_sku FINAL")
+        print("Принудительное слияние завершено.")
+    except Exception as e:
+        print(f"Ошибка при выполнении принудительного слияния: {e}")
 
 
 async def category_worker(queue, headers, proxy):
@@ -235,5 +268,40 @@ async def category_parser(categorys):
     print("Работа выполнена")
 
 
+def reset_activity():
+    """
+    Обнуляет все значения активности в таблице перед началом парсинга.
+    Использует ручное обновление через INSERT и SELECT.
+    """
+    try:
+        # Создаем новую таблицу с обновленными значениями
+        client.execute("""
+            CREATE TABLE all_sku_new (
+                sku UInt64,
+                date_add Date,
+                status UInt8
+            ) ENGINE = MergeTree()
+            ORDER BY (sku, status)
+        """)
+
+        # Вставляем данные с обнуленным статусом
+        client.execute("""
+            INSERT INTO all_sku_new
+            SELECT sku, date_add, 0
+            FROM all_sku
+        """)
+
+        # Удаляем старую таблицу
+        client.execute("DROP TABLE all_sku")
+
+        # Переименовываем новую таблицу
+        client.execute("RENAME TABLE all_sku_new TO all_sku")
+
+        print("Активность всех артикулов обнулена.")
+    except Exception as e:
+        print(f"Ошибка при обнулении активности: {e}")
+
+
 if __name__ == '__main__':
+    reset_activity()
     asyncio.run(category_parser(items_check(get_category())))
