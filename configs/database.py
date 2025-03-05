@@ -1,10 +1,9 @@
-import aiochclient
+from clickhouse_driver import Client
 
-
-async def client():
-    return aiochclient.Client(
-        url='http://localhost:8123',
-        user='user',
-        password='user',
-        database='ai'
-    )
+client = Client(
+    host='localhost',  # Адрес сервера
+    port=9000,         # Порт ClickHouse (по умолчанию 9000 для TCP)
+    user='user',    # Имя пользователя
+    password='user',       # Пароль (если есть)
+    database='ai'  # База данных
+)
