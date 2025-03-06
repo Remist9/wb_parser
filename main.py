@@ -502,12 +502,12 @@ if __name__ == '__main__':
         "Accept-Encoding": "identity"
     }
 
+    reset_activity()
+    asyncio.run(category_parser(items_check(get_category())))
+
     offset = 0
 
     for pack_size in range(5000, 1000000, 5000):
         rows, offset = get_search(pack_size, offset)
         search_urls_list = get_search_urls(rows)
         asyncio.run(search_parser(search_urls_list, headers))
-
-    # reset_activity()
-    # asyncio.run(category_parser(items_check(get_category())))
