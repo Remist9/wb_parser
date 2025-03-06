@@ -16,51 +16,7 @@ DELAY_BETWEEN_REQUESTS = 2
 PAGE_LIMIT = 50
 FETCH_TIMEOUT = 10
 
-
-def get_category():
-
-    url = "https://static-basket-01.wbbasket.ru/vol0/data/main-menu-ru-ru-v3.json"
-
-    headers = {
-        'sec-ch-ua-platform': '"Windows"',
-        'Referer': 'https://www.wildberries.ru/',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36',
-        'sec-ch-ua': '"Not A(Brand";v="8", "Chromium";v="132", "YaBrowser";v="25.2", "Yowser";v="2.5"',
-        'sec-ch-ua-mobile': '?0',
-    }
-
-    response = requests.get(url=url, headers=headers)
-    print("Статус-код:", response.status_code)
-
-    return response
-
-
-def items_check(response):
-
-    categorys = {}
-
-    for i in response.json():
-        if "childs" in i:
-            for z in i["childs"]:
-                if "childs" in z:
-                    for c in z["childs"]:
-                        if "childs" in c:
-                            for v in c["childs"]:
-                                if "childs" in v:
-                                    for b in v["childs"]:
-                                        categorys[b.get("id")] = {
-                                            b.get("shard"): b.get("query")}
-                                else:
-                                    categorys[v.get("id")] = {
-                                        v.get("shard"): v.get("query")}
-                        else:
-                            categorys[c.get("id")] = {
-                                c.get("shard"): c.get("query")}
-                else:
-                    categorys[z.get("id")] = {
-                        z.get("shard"): z.get("query")}
-
-    return categorys
+# -------------------------------------------------------------------------- Общая часть
 
 
 async def fetch(session, url, headers, proxy):
@@ -79,7 +35,9 @@ async def fetch(session, url, headers, proxy):
                     error_count = 0  # Сбрасываем счетчик ошибок при успешном запросе
                     not_found_count = 0  # Сбрасываем счетчик 404
                     # Декодируем Gzip
-                    if response.headers.get('content-encoding') == 'gzip':
+                    if 'application/json' in response.headers.get('content-type'):
+                        return await response.json()
+                    elif response.headers.get('content-encoding') == 'gzip':
                         buf = await response.read()
                         with gzip.GzipFile(fileobj=io.BytesIO(buf)) as f:
                             data = f.read().decode('utf-8')
@@ -134,6 +92,54 @@ async def process_page(session, url, headers, proxy, semaphore):
             return data.get("data", {}).get("products", [])
         else:
             return []
+
+# -------------------------------------------------------------------------- Часть для работы с категориями
+
+
+def get_category():
+
+    url = "https://static-basket-01.wbbasket.ru/vol0/data/main-menu-ru-ru-v3.json"
+
+    headers = {
+        'sec-ch-ua-platform': '"Windows"',
+        'Referer': 'https://www.wildberries.ru/',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 YaBrowser/25.2.0.0 Safari/537.36',
+        'sec-ch-ua': '"Not A(Brand";v="8", "Chromium";v="132", "YaBrowser";v="25.2", "Yowser";v="2.5"',
+        'sec-ch-ua-mobile': '?0',
+    }
+
+    response = requests.get(url=url, headers=headers)
+    print("Статус-код:", response.status_code)
+
+    return response
+
+
+def items_check(response):
+
+    categorys = {}
+
+    for i in response.json():
+        if "childs" in i:
+            for z in i["childs"]:
+                if "childs" in z:
+                    for c in z["childs"]:
+                        if "childs" in c:
+                            for v in c["childs"]:
+                                if "childs" in v:
+                                    for b in v["childs"]:
+                                        categorys[b.get("id")] = {
+                                            b.get("shard"): b.get("query")}
+                                else:
+                                    categorys[v.get("id")] = {
+                                        v.get("shard"): v.get("query")}
+                        else:
+                            categorys[c.get("id")] = {
+                                c.get("shard"): c.get("query")}
+                else:
+                    categorys[z.get("id")] = {
+                        z.get("shard"): z.get("query")}
+
+    return categorys
 
 
 async def process_category(cat_shard, cat_query, headers, proxy):
@@ -284,6 +290,8 @@ async def category_parser(categorys):
 
     print("Работа выполнена")
 
+# -------------------------------------------------------------------------- Обнуоение активности sku + перенос запросов в БД
+
 
 def reset_activity():
     """
@@ -424,7 +432,7 @@ def get_search_urls(rows):
             f"https://search.wb.ru/exactmatch/ru/common/v9/search?ab_testing=false&appType=1&curr=rub&dest=-365403&lang=ru&query={encoded_i}&resultset=catalog&sort=popular&spp=30&suppressSpellcheck=false&uclusters=3&uiv=8&uv=QIPAIUWVuZM4JDP0OG63lUJ4P6i9eUN1N3PA-cUsPc237y-PvwlER0UAOeLDPMVPPMzBQCtAwKS9ZEEJNfw-KToivZO6HsSxwfO5Zjb8P-lAPT9YQFe8mcQxu7w-7LyVw3XETUPrw3hBtEJnsgdByT-xwRQ7e0QhuYfFazKcPL8_2L7fPXnCCj4rLjdC0MALtoQ_jbhpQhe4IUB1upg6mT9_wO26SL9hP7qtiLSJPiE8vEFFulFAF777wYy528R6PEPDZLTIuuQekTtiQHm0MTpQvIOwT0BUwLBDeMTfvzAwL0QLPNg_VZmqsU24N6_2wUi5v8CVPkU_2DKKQMZBmg")
 
     return search_urls_list
-# --------------------------------------------------------------------------
+# -------------------------------------------------------------------------- Часть для работы с запросами
 
 
 async def process_search(url, headers, proxy):
