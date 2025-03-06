@@ -2,6 +2,8 @@ import asyncio
 import aiohttp
 import requests
 import json
+import gzip
+import io
 from datetime import datetime
 from configs.proxy import proxy_list  # Список прокси
 from configs.database import client  # Клиент ClickHouse
@@ -76,7 +78,19 @@ async def fetch(session, url, headers, proxy):
                 if response.status == 200:
                     error_count = 0  # Сбрасываем счетчик ошибок при успешном запросе
                     not_found_count = 0  # Сбрасываем счетчик 404
-                    return await response.json()
+                    # Декодируем Gzip
+                    if response.headers.get('content-encoding') == 'gzip':
+                        buf = await response.read()
+                        with gzip.GzipFile(fileobj=io.BytesIO(buf)) as f:
+                            data = f.read().decode('utf-8')
+                    else:
+                        data = await response.text()
+                    try:
+                        json_data = json.loads(data)
+                        return json_data
+                    except json.JSONDecodeError:
+                        print("Полученные данные не являются корректным JSON.")
+                        return None
                 elif response.status == 404:
                     not_found_count += 1  # Увеличиваем счетчик 404
                     error_count += 1  # Увеличиваем общий счетчик ошибок
@@ -396,110 +410,6 @@ def get_search(pack_size, offset):
         offset += pack_size
 
         return rows, offset
-# --------------------------------------------------------------------------
-
-
-async def fetch_page(session, url, proxy, semaphore, headers):
-    """Функция для запроса страницы с реконнектом при ошибке 502"""
-    async with semaphore:  # Ограничиваем число одновременных запросов
-        for _ in range(10):  # До 10 попыток при ошибках
-            try:
-                async with session.get(url, proxy=proxy, headers=headers, timeout=FETCH_TIMEOUT) as req:
-                    if req.status == 200:
-                        text_data = await req.text()
-                        return json.loads(text_data)  # Преобразуем в JSON
-                    elif req.status == 404:
-                        print(f"Страница не найдена: {url}")
-                        return None
-                    elif req.status == 502:
-                        print(
-                            f"Ошибка 502 (Bad Gateway) на {url}. Пытаемся переподключиться...")
-                        await asyncio.sleep(7)  # Ждем перед повторной попыткой
-            except asyncio.TimeoutError:
-                print(f"Тайм-аут запроса: {url}")
-            except Exception as e:
-                print(f"Ошибка при запросе: {e}")
-            await asyncio.sleep(7)  # Ждем перед повторной попыткой
-    return None  # Если не удалось получить ответ после 10 попыток
-
-
-async def parse_url_mask(session, url_mask, proxy, semaphore, headers, result_queue):
-    """Функция для парсинга одной url_mask (категории)"""
-    unic = []
-    empty_pages = 0  # Считаем пустые страницы
-
-    for start_page in range(1, PAGE_LIMIT + 1, SEMAPHORE_LIMIT):
-        tasks = []
-        for page in range(start_page, min(start_page + SEMAPHORE_LIMIT, PAGE_LIMIT + 1)):
-            page_url = f"{url_mask}&page={page}"
-            tasks.append(fetch_page(session, page_url,
-                         proxy, semaphore, headers))
-
-        # Обрабатываем результаты по мере готовности
-        batch_empty = True  # Флаг: пустая ли пачка
-
-        for task in asyncio.as_completed(tasks):
-            data = await task
-            if data and 'data' in data and 'products' in data['data']:
-                products = data['data']['products']
-
-                if products:  # Если есть товары, сбрасываем флаг
-                    batch_empty = False
-                    for product in products:
-                        unic.append(product.get('id'))
-
-        if batch_empty:  # Если вся пачка пустая, увеличиваем счётчик
-            empty_pages += 1
-        else:
-            empty_pages = 0  # Сброс, если хоть одна страница имела товары
-
-        if empty_pages >= 3:  # Если три пачки подряд пустые — выходим
-            print(f"Остановка парсинга для {url_mask} из-за пустых страниц.")
-            await result_queue.put(unic)
-            break
-
-    # Отправляем данные в очередь на сохранение
-    if unic:  # Если есть данные, отправляем их в очередь
-        await result_queue.put(unic)
-        print(f"Обработано {len(unic)} товаров")
-    else:
-        print(f"Нет товаров для {url_mask}")
-
-
-async def save_results(result_queue):
-    """Функция для асинхронного сохранения данных в БД"""
-    while True:
-        unic = await result_queue.get()
-        if unic is None:
-            break  # Завершаем, если получен сигнал остановки
-        await database(unic)
-
-
-async def search_page_parsing(url_list, proxy_list, headers):
-    """Основная функция парсинга"""
-    semaphore = asyncio.Semaphore(
-        SEMAPHORE_LIMIT)  # Ограничиваем число запросов
-    result_queue = asyncio.Queue()  # Очередь для результатов
-
-    async with aiohttp.ClientSession() as session:
-        tasks = []
-
-        # Запускаем обработку url_mask
-        for idx, url_mask in enumerate(url_list[:SEMAPHORE_LIMIT]):
-            proxy = proxy_list[idx % len(proxy_list)]  # Прокси по кругу
-            tasks.append(parse_url_mask(session, url_mask, proxy,
-                         semaphore, headers, result_queue))
-
-        # Запускаем фоновое сохранение данных
-        save_task = asyncio.create_task(save_results(result_queue))
-
-        # Обрабатываем url_mask без ожидания зависших потоков
-        for task in asyncio.as_completed(tasks):
-            await task
-
-        # Завершаем очередь сохранения данных
-        await result_queue.put(None)
-        await save_task
 
 
 def get_search_urls(rows):
@@ -514,6 +424,64 @@ def get_search_urls(rows):
             f"https://search.wb.ru/exactmatch/ru/common/v9/search?ab_testing=false&appType=1&curr=rub&dest=-365403&lang=ru&query={encoded_i}&resultset=catalog&sort=popular&spp=30&suppressSpellcheck=false&uclusters=3&uiv=8&uv=QIPAIUWVuZM4JDP0OG63lUJ4P6i9eUN1N3PA-cUsPc237y-PvwlER0UAOeLDPMVPPMzBQCtAwKS9ZEEJNfw-KToivZO6HsSxwfO5Zjb8P-lAPT9YQFe8mcQxu7w-7LyVw3XETUPrw3hBtEJnsgdByT-xwRQ7e0QhuYfFazKcPL8_2L7fPXnCCj4rLjdC0MALtoQ_jbhpQhe4IUB1upg6mT9_wO26SL9hP7qtiLSJPiE8vEFFulFAF777wYy528R6PEPDZLTIuuQekTtiQHm0MTpQvIOwT0BUwLBDeMTfvzAwL0QLPNg_VZmqsU24N6_2wUi5v8CVPkU_2DKKQMZBmg")
 
     return search_urls_list
+# --------------------------------------------------------------------------
+
+
+async def process_search(url, headers, proxy):
+    semaphore = asyncio.Semaphore(SEMAPHORE_LIMIT)
+    unic = []
+    async with aiohttp.ClientSession() as session:
+        tasks = []
+        for page in range(1, 51):
+            page_url = url + f"&page={page}"
+            tasks.append(process_page(session, page_url,
+                                      headers, proxy, semaphore))
+
+        results = await asyncio.gather(*tasks)
+        for products in results:
+            if products is None:
+                print(f"Запрос пропущем из за ошибки 404")
+                return None
+            for product in products:
+                unic.append(product.get("id"))
+    return unic
+
+
+async def search_worker(queue, headers, proxy):
+    while True:
+        try:
+            url_mask = queue.get_nowait()
+        except asyncio.QueueEmpty:
+            break
+        try:
+            print(f"Начата обработка нового поискового запроса")
+            unic = await process_search(url_mask, headers, proxy)
+            await database(unic)
+            print("Запрос завершен")
+        except Exception as e:
+            print(f"Ошибка при обработке запроса{e}")
+        finally:
+            queue.task_done()
+
+
+async def search_parser(url_list, headers):
+    if not proxy_list:
+        raise ValueError(
+            "Список прокси пуст. Проверьте файл configs/proxy.py.")
+    queue = asyncio.Queue()
+    for url_mask in url_list:
+        queue.put_nowait(url_mask)
+    workers = []
+    for proxy in proxy_list[:10]:
+        worker = asyncio.create_task(search_worker(queue, headers, proxy))
+        workers.append(worker)
+
+    await queue.join()
+
+    for w in workers:
+        w.cancel()
+
+    print("Работа выполнена")
 
 
 if __name__ == '__main__':
@@ -539,7 +507,7 @@ if __name__ == '__main__':
     for pack_size in range(5000, 1000000, 5000):
         rows, offset = get_search(pack_size, offset)
         search_urls_list = get_search_urls(rows)
-        asyncio.run(search_page_parsing(search_urls_list, proxy_list, headers))
+        asyncio.run(search_parser(search_urls_list, headers))
 
     # reset_activity()
     # asyncio.run(category_parser(items_check(get_category())))
