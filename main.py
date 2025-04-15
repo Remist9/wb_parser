@@ -5,7 +5,7 @@ import json
 import gzip
 import io
 from datetime import datetime
-from configs.proxy import proxy_list  # Список прокси
+from configs.proxy import proxy_list  # Список прокси 10 штук
 from configs.database import client  # Клиент ClickHouse
 from urllib.parse import quote
 
